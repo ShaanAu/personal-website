@@ -8,7 +8,10 @@ education:
   - course: Level 4 in Data Analytics
     institution: Whitehat
     year: 2019 - 2021
-  - course: A Levels In Media Studies (A), Mathematics (C) & BTEC Level 3 in Computing (D*)
+  - course: A Levels In Media Studies (A), Mathematics (C)
+    institution: Reigate Sixth Form College
+    year: 2017 - 2019
+  - course: BTEC Level 3 National Extended Certificate in Computing (D*)
     institution: Reigate Sixth Form College
     year: 2017 - 2019
 email: ""

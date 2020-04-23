@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587679363251.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1328851990",
+    "id" : "D2295C0C",
+    "lastKnownWriteTime" : 1587680411,
+    "last_content_update" : 1587680411315,
+    "path" : "~/Documents/repos/shaan/config/_default/params.toml",
+    "project_path" : "config/_default/params.toml",
+    "properties" : {
+        "cursorPosition" : "100,1",
+        "scrollLine" : "84"
+    },
+    "relative_order" : 26,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "toml"
+}
