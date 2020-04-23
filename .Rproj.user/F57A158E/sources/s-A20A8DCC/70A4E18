@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "3603348798",
     "id" : "70A4E18",
-    "lastKnownWriteTime" : 1587309979,
-    "last_content_update" : 1587309979,
+    "lastKnownWriteTime" : 1587673406,
+    "last_content_update" : 1587673406157,
     "path" : "~/Documents/repos/shaan/content/home/skills.md",
     "project_path" : "content/home/skills.md",
     "properties" : {
-        "cursorPosition" : "14,30",
-        "scrollLine" : "0"
+        "cursorPosition" : "35,16",
+        "scrollLine" : "23"
     },
     "relative_order" : 7,
     "source_on_save" : false,

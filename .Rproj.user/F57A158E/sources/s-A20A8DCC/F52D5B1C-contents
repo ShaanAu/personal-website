@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "Accomplish&shy;ments"
+title = "Certifications"
 subtitle = ""
 
 # Date format
@@ -19,31 +19,21 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
-  organization = "Coursera"
+  organization = "Stanford University"
   organization_url = "https://www.coursera.org"
   title = "Machine Learning"
   url = ""
-  certificate_url = "https://www.coursera.org"
+  certificate_url = "https://www.coursera.org/account/accomplishments/records/NMLE3W5W8MSR"
   date_start = "2018-10-01"
   date_end = ""
   description = ""
 
 [[item]]
-  organization = "edX"
-  organization_url = "https://www.edx.org"
-  title = "Blockchain Fundamentals"
-  url = "https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals"
-  certificate_url = "https://www.edx.org"
-  date_start = "2018-03-01"
-  date_end = ""
-  description = "Formulated informed blockchain models, hypotheses, and use cases."
-  
-[[item]]
   organization = "DataCamp"
   organization_url = "https://www.datacamp.com"
   title = "Data Scientist With Python"
   url = ""
-  certificate_url = "https://www.datacamp.com"
+  certificate_url = "https://www.datacamp.com/statement-of-accomplishment/track/49ff9b174658bfb2cd2c12d14772aed9d5a22167"
   date_start = "2017-07-01"
   date_end = "2017-12-21"
   description = ""

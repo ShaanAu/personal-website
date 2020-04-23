@@ -39,6 +39,32 @@ date_format = "Jan 2006"
   location = "London"
   date_start = "2019-09-30"
   date_end = ""
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  description = """My program involves me rotating across various teams within the bank, whilst working as a Data Scientist and also studying for my degree within Data Science.
+
+
+Core Data Science Team, Sep 2019 – Present
+
+
+My first rotation was within the Core Data Science team of the bank where my roles and responsibilities comprised of:
+
+
+* Creating a mortgage dashboard using Python with Plotly & Dash.
+* Liaising with the key stakeholders of the project.
+* Creating an internal package within the bank to automate Impala and Hive queries in Python.
+* EDA and Feature Engineering in SQL and Python."""
+
+[[experience]]
+    title = "CTO"
+  company = "Suneeta Cosmetics Ltd"
+  company_url = "https://genzoomer.ai"
+  location = "London"
+  date_start = "2017-01-11"
+  date_end = ""
+  description = """
+  Responsibilities include:
+  
+  * Helping the development of an iOS application for Suneeta London using Swift, whilst using Git for version control.
+* Managing all the technical parts of the company, including the development of https://suneetacosmetics.co.uk and the sister company https://suneetacbd.co.uk.
+  """
 
 +++
