@@ -7,5 +7,5 @@ image:
 summary: This repository comprises of my work where I am learning Machine Learning, Deep Learning and Reinforcement Learning.
 tags: 
 - Machine Learning
-title: Machine Learning Work
+title: My Machine Learning Work
 ---
