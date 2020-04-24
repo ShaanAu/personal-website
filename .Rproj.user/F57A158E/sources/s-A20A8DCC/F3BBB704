@@ -1,21 +1,21 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1587739402168.000,
+    "created" : 1587763421674.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
-    "id" : "56913F8F",
-    "lastKnownWriteTime" : 1587739762,
-    "last_content_update" : 1587739762793,
+    "hash" : "852952723",
+    "id" : "F3BBB704",
+    "lastKnownWriteTime" : 1587763849,
+    "last_content_update" : 1587763849728,
     "path" : "~/Documents/repos/shaan/themes/hugo-academic/layouts/partials/site_footer.html",
     "project_path" : "themes/hugo-academic/layouts/partials/site_footer.html",
     "properties" : {
-        "cursorPosition" : "23,10",
-        "scrollLine" : "11"
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0"
     },
-    "relative_order" : 40,
+    "relative_order" : 45,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "html"
