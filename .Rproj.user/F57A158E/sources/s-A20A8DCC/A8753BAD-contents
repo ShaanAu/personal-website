@@ -26,7 +26,7 @@ interests:
 organizations:
 - name: Santander UK
   url: ""
-role: Data Science Degree Apprentice
+role: Data Science Apprentice
 social:
 - icon: envelope
   icon_pack: fas
