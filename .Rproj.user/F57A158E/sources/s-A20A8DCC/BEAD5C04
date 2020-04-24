@@ -5,7 +5,7 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "4291061521",
     "id" : "BEAD5C04",
     "lastKnownWriteTime" : 1587678406,
     "last_content_update" : 1587678406655,
@@ -15,7 +15,7 @@
         "cursorPosition" : "51,52",
         "scrollLine" : "34"
     },
-    "relative_order" : 19,
+    "relative_order" : 17,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "toml"

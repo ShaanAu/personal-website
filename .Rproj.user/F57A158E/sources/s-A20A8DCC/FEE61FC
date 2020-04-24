@@ -5,15 +5,17 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3555055505",
+    "hash" : "0",
     "id" : "FEE61FC",
-    "lastKnownWriteTime" : 1587309979,
-    "last_content_update" : 1587309979,
+    "lastKnownWriteTime" : 1587686893,
+    "last_content_update" : 1587686893223,
     "path" : "~/Documents/repos/shaan/content/home/talks.md",
     "project_path" : "content/home/talks.md",
     "properties" : {
+        "cursorPosition" : "35,8",
+        "scrollLine" : "25"
     },
-    "relative_order" : 24,
+    "relative_order" : 28,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "markdown"

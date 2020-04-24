@@ -5,15 +5,17 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2920453616",
+    "hash" : "3426236084",
     "id" : "426272E3",
-    "lastKnownWriteTime" : 1587309979,
-    "last_content_update" : 1587309979,
+    "lastKnownWriteTime" : 1587683070,
+    "last_content_update" : 1587683070970,
     "path" : "~/Documents/repos/shaan/content/home/publications.md",
     "project_path" : "content/home/publications.md",
     "properties" : {
+        "cursorPosition" : "6,14",
+        "scrollLine" : "0"
     },
-    "relative_order" : 14,
+    "relative_order" : 18,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "markdown"

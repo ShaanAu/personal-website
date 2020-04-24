@@ -5,15 +5,17 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3171250777",
+    "hash" : "0",
     "id" : "E9C057C9",
     "lastKnownWriteTime" : 1587309979,
     "last_content_update" : 1587309979,
     "path" : "~/Documents/repos/shaan/content/home/slider.md",
     "project_path" : "content/home/slider.md",
     "properties" : {
+        "cursorPosition" : "27,0",
+        "scrollLine" : "9"
     },
-    "relative_order" : 11,
+    "relative_order" : 19,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "markdown"

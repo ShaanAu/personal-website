@@ -24,14 +24,19 @@ subtitle = ""
   [[content.filter_button]]
     name = "All"
     tag = "*"
+  [[content.filter_button]]
+    name = "Data Science"
+    tag = "Data Science"
   
   [[content.filter_button]]
     name = "Data Science"
-    tag = "Deep Learning"
+    tag = "Video Game"
     
   [[content.filter_button]]
     name = "Career"
     tag = "Demo"
+    
+
  
 
 [design]

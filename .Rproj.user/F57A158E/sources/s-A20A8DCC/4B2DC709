@@ -5,15 +5,17 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1546603690",
+    "hash" : "1998418146",
     "id" : "4B2DC709",
-    "lastKnownWriteTime" : 1587309979,
-    "last_content_update" : 1587309979,
+    "lastKnownWriteTime" : 1587683049,
+    "last_content_update" : 1587683049578,
     "path" : "~/Documents/repos/shaan/content/home/featured.md",
     "project_path" : "content/home/featured.md",
     "properties" : {
+        "cursorPosition" : "7,14",
+        "scrollLine" : "0"
     },
-    "relative_order" : 9,
+    "relative_order" : 27,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "markdown"

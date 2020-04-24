@@ -45,7 +45,7 @@ local_business_type = ""
 org_name = ""
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = ""
+description = "Hi I am Shaan, a Data Science Degree Apprentice at Santander UK, Founder at GenZoomer.ai and CTO at Suneeta Cosmetics Ltd & this is my personal website"
 
 ############################
 ## Site Features
