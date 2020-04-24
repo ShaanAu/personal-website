@@ -6,6 +6,6 @@ image:
   focal_point: Smart
 summary: My Sixth Form Coursework Made in 'C#' based on Flappy Bird with additional functionality .
 tags: 
-- Video Game
-title: Sixth Form Video Game Coursework
+- Other
+title: Year 13 Video Game - Wing It
 ---

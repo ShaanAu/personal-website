@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587748264125.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "257416851",
+    "id" : "97B185DB",
+    "lastKnownWriteTime" : 1587748454,
+    "last_content_update" : 1587748454394,
+    "path" : "~/Documents/repos/shaan/themes/hugo-academic/layouts/partials/site_head.html",
+    "project_path" : "themes/hugo-academic/layouts/partials/site_head.html",
+    "properties" : {
+        "cursorPosition" : "101,31",
+        "scrollLine" : "93"
+    },
+    "relative_order" : 44,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "html"
+}

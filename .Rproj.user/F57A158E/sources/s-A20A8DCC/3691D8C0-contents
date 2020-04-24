@@ -25,16 +25,16 @@ subtitle = ""
     name = "All"
     tag = "*"
   [[content.filter_button]]
-    name = "Data Science"
-    tag = "Data Science"
+    name = "Machine Learning"
+    tag = "Machine Learning"
   
   [[content.filter_button]]
-    name = "Data Science"
-    tag = "Video Game"
+    name = "Websites"
+    tag = "Website"
     
   [[content.filter_button]]
-    name = "Career"
-    tag = "Demo"
+    name = "Other"
+    tag = "Other"
     
 
  
