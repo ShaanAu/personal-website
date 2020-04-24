@@ -14,9 +14,9 @@
     
     <item>
       <title>Machine Learning</title>
-      <link>/post/getting-started/</link>
+      <link>/post/machine-learning-post/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/post/getting-started/</guid>
+      <guid>/post/machine-learning-post/</guid>
       <description>&lt;p&gt;Hello everyone, over the past couple of years you have probably heard about the new phase within the industry regarding Artificial Intelligence. As a result, many companies have gone on to hire data specialists &amp;amp; machine learning engineers without truly understanding what they provide and whether their company has the right infrastructure set up. In light of this, I will be talking about some of the key concepts in Machine Learning which is a subset of artificial intelligence, and is the “Field of programming which gives computers the ability to learn without being explicitly programmed.” Arthur Samuel&lt;/p&gt;
 &lt;p&gt;What does that mean exactly? Well from a very high-level (easy-to-understand) perspective it means that data is input into a model created by data scientists, which from the existing data will use the data given to the computer and make a prediction. A good example is predicting stocks, you provide data of existing stock information for the program to make a prediction of stock prices.&lt;/p&gt;
 &lt;p&gt;There are three main types of Machine Learning that I wish to talk about within this post, where I will go into a little bit of detail regarding how they work, for people unfamiliar with these concepts and for those wishing to refresh their memory.&lt;/p&gt;

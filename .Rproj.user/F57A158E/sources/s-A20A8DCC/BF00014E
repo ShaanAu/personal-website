@@ -5,13 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2882787139",
+    "hash" : "0",
     "id" : "BF00014E",
-    "lastKnownWriteTime" : 1587309979,
-    "last_content_update" : 1587309979,
+    "lastKnownWriteTime" : 1587728887,
+    "last_content_update" : 1587728887577,
     "path" : "~/Documents/repos/shaan/content/home/posts.md",
     "project_path" : "content/home/posts.md",
     "properties" : {
+        "cursorPosition" : "39,10",
+        "scrollLine" : "29"
     },
     "relative_order" : 6,
     "source_on_save" : false,

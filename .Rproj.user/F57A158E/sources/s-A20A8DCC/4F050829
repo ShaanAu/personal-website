@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "4F050829",
-    "lastKnownWriteTime" : 1587727743,
-    "last_content_update" : 1587727743466,
+    "lastKnownWriteTime" : 1587733705,
+    "last_content_update" : 1587733705235,
     "path" : "~/Documents/repos/shaan/config/_default/menus.toml",
     "project_path" : "config/_default/menus.toml",
     "properties" : {
-        "cursorPosition" : "28,13",
-        "scrollLine" : "8"
+        "cursorPosition" : "55,16",
+        "scrollLine" : "36"
     },
     "relative_order" : 11,
     "source_on_save" : false,
