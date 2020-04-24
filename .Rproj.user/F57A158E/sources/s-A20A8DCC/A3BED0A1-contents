@@ -13,81 +13,49 @@ image:
   preview_only: false
 lastmod: "2019-04-17T00:00:00Z"
 projects: []
-subtitle: 'Create a beautifully simple website in under 10 minutes :rocket:'
+subtitle: 'The basics of Machine Learning explained in an easy to understand format :brain:'
 summary: Create a beautifully simple website in under 10 minutes.
 tags:
 - Academic
-title: 'Academic: the website builder for Hugo'
+title: 'What Is Machine Learning?'
 ---
 
-**Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 _widgets_, _themes_, and _language packs_ included!**
+Hello everyone, over the past couple of years you have probably heard about the new phase within the industry regarding Artificial Intelligence. As a result, many companies have gone on to hire data specialists & machine learning engineers without truly understanding what they provide and whether their company has the right infrastructure set up. In light of this, I will be talking about some of the key concepts in Machine Learning which is a subset of artificial intelligence, and is the “Field of programming which gives computers the ability to learn without being explicitly programmed.” Arthur Samuel
 
-[Check out the latest **demo**](https://academic-demo.netlify.com/) of what you'll get in less than 10 minutes, or [view the **showcase**](https://sourcethemes.com/academic/#expo) of personal, project, and business sites.
+What does that mean exactly? Well from a very high-level (easy-to-understand) perspective it means that data is input into a model created by data scientists, which from the existing data will use the data given to the computer and make a prediction. A good example is predicting stocks, you provide data of existing stock information for the program to make a prediction of stock prices.
 
-- 👉 [**Get Started**](#install)
-- 📚 [View the **documentation**](https://sourcethemes.com/academic/docs/)
-- 💬 [**Ask a question** on the forum](https://discourse.gohugo.io)
-- 👥 [Chat with the **community**](https://spectrum.chat/academic)
-- 🐦 Twitter: [@source_themes](https://twitter.com/source_themes) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithAcademic](https://twitter.com/search?q=%23MadeWithAcademic&src=typd)
-- 💡 [Request a **feature** or report a **bug**](https://github.com/gcushen/hugo-academic/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://sourcethemes.com/academic/docs/update/) and [Release Notes](https://sourcethemes.com/academic/updates/)
-- :heart: **Support development** of Academic:
-  - ☕️ [**Donate a coffee**](https://paypal.me/cushen)
-  - 💵 [Become a backer on **Patreon**](https://www.patreon.com/cushen)
-  - 🖼️ [Decorate your laptop or journal with an Academic **sticker**](https://www.redbubble.com/people/neutreno/works/34387919-academic)
-  - 👕 [Wear the **T-shirt**](https://academic.threadless.com/)
-  - :woman_technologist: [**Contribute**](https://sourcethemes.com/academic/docs/contribute/)
+There are three main types of Machine Learning that I wish to talk about within this post, where I will go into a little bit of detail regarding how they work, for people unfamiliar with these concepts and for those wishing to refresh their memory.
 
-{{< figure src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png" title="Academic is mobile first with a responsive design to ensure that your site looks stunning on every device." >}}
+**Reinforcement Learning**
 
-**Key features:**
+Reinforcement learning is commonly used within fields such as Robotics & Game Theory and where there is a multitude of actions that can occur, given an initial state. What this means, is that the machine will learn by itself, then optimize from the previous choices made to take the next best action. This is different from the other types of machine learning which may not output the “optimised solution”. An example of this would be if you were to have a Flappy Bird game programmed by reinforcement learning, the first attempt of the bird may initially collide to the ground, then it may collide with a pole, however, reinforcement learning will eventually optimise the birds route after each failed attempt until it creates the best path for the bird, to get as far as possible in the game. This could be applied to other types of games as well, for example, an AI from a chess game, can be programmed using reinforcement learning, and from each game played it will gradually become better over time. Reinforcement learning is generally not used within the industry apart from the fields mentioned above, mainly because companies prefer to use other methods which are generally easier to program, however noticeable exceptions that are becoming increasingly popular within the industry are Chatbots and devices such as Alexa and Siri, these are examples of reinforcement learning.
 
-- **Page builder** - Create *anything* with [**widgets**](https://sourcethemes.com/academic/docs/page-builder/) and [**elements**](https://sourcethemes.com/academic/docs/writing-markdown-latex/)
-- **Edit any type of content** - Blog posts, publications, talks, slides, projects, and more!
-- **Create content** in [**Markdown**](https://sourcethemes.com/academic/docs/writing-markdown-latex/), [**Jupyter**](https://sourcethemes.com/academic/docs/jupyter/), or [**RStudio**](https://sourcethemes.com/academic/docs/install/#install-with-rstudio)
-- **Plugin System** - Fully customizable [**color** and **font themes**](https://sourcethemes.com/academic/themes/)
-- **Display Code and Math** - Code highlighting and [LaTeX math](https://en.wikibooks.org/wiki/LaTeX/Mathematics) supported
-- **Integrations** - [Google Analytics](https://analytics.google.com), [Disqus commenting](https://disqus.com), Maps, Contact Forms, and more!
-- **Beautiful Site** - Simple and refreshing one page design
-- **Industry-Leading SEO** - Help get your website found on search engines and social media
-- **Media Galleries** - Display your images and videos with captions in a customizable gallery
-- **Mobile Friendly** - Look amazing on every screen with a mobile friendly version of your site
-- **Multi-language** - 15+ language packs including English, 中文, and Português
-- **Multi-user** - Each author gets their own profile page
-- **Privacy Pack** - Assists with GDPR
-- **Stand Out** - Bring your site to life with animation, parallax backgrounds, and scroll effects
-- **One-Click Deployment** - No servers. No databases. Only files.
 
-## Themes
+**Supervised Machine Learning**
 
-Academic comes with **automatic day (light) and night (dark) mode** built-in. Alternatively, visitors can  choose their preferred mode - click the sun/moon icon in the top right of the [Demo](https://academic-demo.netlify.com/) to see it in action! Day/night mode can also be disabled by the site admin in `params.toml`.
+Supervised Machine Learning, is the second of the three fields within Machine Learning and by far the most popular field used within the industry. This is because Supervised Machine Learning is trained on labelled data and there is already a rough idea of what the prediction will be. For example, what mode of transport will Person A take to work? Or what is the value of Company A? Thus, before the algorithm is implemented, there is already a rough idea of what algorithm will predict. Hence, the program knows there is a value/category which the outcome can be picked from. One of the most common types of Supervised Machine Learning examples within the Data Science community is the Titanic: Machine Learning problem, where you use Classification to predict whether each passenger survives or doesn’t. I will now try and break it down further.
 
-[Choose a stunning **theme** and **font**](https://sourcethemes.com/academic/themes/) for your site. Themes are fully [customizable](https://sourcethemes.com/academic/docs/customization/#custom-theme).
+**There are two main types of Supervised Machine Learning Algorithms:**
 
-## Ecosystem
+* Regression
+* Classification
 
-* **[Academic Admin](https://github.com/sourcethemes/academic-admin):** An admin tool to import publications from BibTeX or import assets for an offline site
-* **[Academic Scripts](https://github.com/sourcethemes/academic-scripts):** Scripts to help migrate content to new versions of Academic
 
-## Install
+Classification is used in problems such as predicting what mode of transport Person A takes to work, so the training data (data which the model uses to learn from) is based on categorical data. Hence, as the classes of transport are already defined, i.e. bus, car, train etc. the question is a classification problem.
 
-You can choose from one of the following four methods to install:
+Whereas Regression is used in problems which still have a rough idea of what value will be predicted, however, the input data is continuous and an example would be predicting the weight of Person A or the value of Company A. Hence, regression is used when you have a continuous output.
 
-* [**one-click install using your web browser (recommended)**](https://sourcethemes.com/academic/docs/install/#install-with-web-browser)
-* [install on your computer using **Git** with the Command Prompt/Terminal app](https://sourcethemes.com/academic/docs/install/#install-with-git)
-* [install on your computer by downloading the **ZIP files**](https://sourcethemes.com/academic/docs/install/#install-with-zip)
-* [install on your computer with **RStudio**](https://sourcethemes.com/academic/docs/install/#install-with-rstudio)
+This can be further broken down however, for now, I will leave it at that and I hope to break it down further in a later post.
 
-Then [personalize and deploy your new site](https://sourcethemes.com/academic/docs/get-started/).
+**Unsupervised Machine Learning**
 
-## Updating
+Finally, the last type of Machine Learning, where you have your training data but no idea what the prediction will be based on the input data. You may be thinking, that sounds awfully similar to Reinforcement Learning? However, reinforcement learning is focused on taking the next action, i.e. simulating the next move within a Chess game. Whereas, Unsupervised Learning is more focused on finding the patterns and differences between sets of data. An example of this would be a 3D Cluster with the respective axis of age, salary and gender and thus, create its own categories for data points which have similar results on the 3D cluster.
 
-[View the Update Guide](https://sourcethemes.com/academic/docs/update/).
 
-Feel free to *star* the project on [Github](https://github.com/gcushen/hugo-academic/) to help keep track of [updates](https://sourcethemes.com/academic/updates).
+Unsupervised Learning is different from supervised due to assigning what data points it believes would be categories rather than having pre-defined categories such as mode of transport for Person A to work.
 
-## License
+Unsupervised learning will generally require more “computational” power than supervised learning, and supervised learning is generally more accurate than unsupervised learning. So where possible, it is advised to use supervised learning over unsupervised learning.
 
-Copyright 2016-present [George Cushen](https://georgecushen.com).
+I will delve into more detail about unsupervised learning in a different post, as I wish to keep this article about the basics, and there is so much more to explore.
 
-Released under the [MIT](https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md) license.
+Thank you for taking the time to read my “What Is Machine Learning.” I hope you found it useful, regardless of your industry & sector of work/education and now you won’t need to nod your head when a colleague mentions Artificial Intelligence or Machine Learning without knowing what it truly achieves within the workplace.
