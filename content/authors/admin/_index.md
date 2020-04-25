@@ -43,7 +43,7 @@ social:
 superuser: true
 title: Shaan Aucharagram
 user_groups:
-
+  
 ---
 
 I am Shaan, a data science degree apprenntice at Santander UK. I truly believe that many companies are not leveraging Data to its full potential, and is why I have a strong interest in decision science. I also have a strong interest in the financial markets, and how data can be used to make informed decisions in that perspective.

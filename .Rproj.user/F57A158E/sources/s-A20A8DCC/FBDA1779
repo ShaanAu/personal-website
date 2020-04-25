@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587846963279.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "FBDA1779",
+    "lastKnownWriteTime" : 1587309978,
+    "last_content_update" : 1587309978,
+    "path" : "~/Documents/repos/shaan/themes/hugo-academic/layouts/shortcodes/video.html",
+    "project_path" : "themes/hugo-academic/layouts/shortcodes/video.html",
+    "properties" : {
+        "cursorPosition" : "15,0",
+        "scrollLine" : "6"
+    },
+    "relative_order" : 66,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "html"
+}

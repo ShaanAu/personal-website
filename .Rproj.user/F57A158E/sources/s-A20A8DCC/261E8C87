@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587846561970.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1583859187",
+    "id" : "261E8C87",
+    "lastKnownWriteTime" : 1587309979,
+    "last_content_update" : 1587309979,
+    "path" : "~/Documents/repos/shaan/static/admin/config.yml",
+    "project_path" : "static/admin/config.yml",
+    "properties" : {
+    },
+    "relative_order" : 64,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "yaml"
+}
