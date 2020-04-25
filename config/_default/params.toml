@@ -13,7 +13,7 @@ theme = "minimal"
 name = "shaan"
 
 # Enable users to switch between day and night mode?
-day_night = true
+day_night = false
 
 # Override the theme's font set (optional).
 #   Latest font sets (may require updating): https://sourcethemes.com/academic/themes/
@@ -87,7 +87,7 @@ phone = "+44 7491 671 806"
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "Work Locations", city = "London", region = "Brighton,", postcode = "Surrey", country = "", country_code = ""}
+# address = {street = "Work Locations", city = "London", region = "Brighton,", postcode = "Surrey", country = "", country_code = ""}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
@@ -106,9 +106,14 @@ address = {street = "Work Locations", city = "London", region = "Brighton,", pos
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
 contact_links = [
+  {icon = "envelope", icon_pack= "fas", name = "info@shaanaucharagram.com", link = "mailto:info@shaanaucharagram.com"},
+
   {icon = "linkedin", icon_pack = "fab", name = "Connect With Me On Linkedin", link = "https://www.linkedin.com/in/shaan-aucharagram/"},
   
-  {icon = "twitter", icon_pack = "fab", name = "Tweet Me", link = "https://twitter.com/Twitter/shaan_au/"}
+  {icon = "twitter", icon_pack = "fab", name = "Message Me On Twitter", link = "https://twitter.com/Twitter/shaan_au/"},
+  
+
+  
   ]
 
 ############################
@@ -116,7 +121,7 @@ contact_links = [
 ############################
 
 # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
-sharing_image = ""
+sharing_image = "avatar.jpg"
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
 twitter = "@shaan_au"

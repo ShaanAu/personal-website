@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "3284247914",
     "id" : "A8753BAD",
-    "lastKnownWriteTime" : 1587762087,
-    "last_content_update" : 1587762087226,
+    "lastKnownWriteTime" : 1587843830,
+    "last_content_update" : 1587843830923,
     "path" : "~/Documents/repos/shaan/content/authors/admin/_index.md",
     "project_path" : "content/authors/admin/_index.md",
     "properties" : {
-        "cursorPosition" : "35,28",
-        "scrollLine" : "25"
+        "cursorPosition" : "45,0",
+        "scrollLine" : "34"
     },
     "relative_order" : 2,
     "source_on_save" : false,

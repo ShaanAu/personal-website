@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "1853828927",
     "id" : "D2295C0C",
-    "lastKnownWriteTime" : 1587841752,
-    "last_content_update" : 1587841752935,
+    "lastKnownWriteTime" : 1587843475,
+    "last_content_update" : 1587843475362,
     "path" : "~/Documents/repos/shaan/config/_default/params.toml",
     "project_path" : "config/_default/params.toml",
     "properties" : {
-        "cursorPosition" : "83,68",
-        "scrollLine" : "77"
+        "cursorPosition" : "113,2",
+        "scrollLine" : "99"
     },
     "relative_order" : 9,
     "source_on_save" : false,
