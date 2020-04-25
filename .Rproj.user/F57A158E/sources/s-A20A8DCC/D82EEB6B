@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587766063917.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2395448023",
+    "id" : "D82EEB6B",
+    "lastKnownWriteTime" : 1587309977,
+    "last_content_update" : 1587309977,
+    "path" : "~/Documents/repos/shaan/themes/hugo-academic/data/themes/rose.toml",
+    "project_path" : "themes/hugo-academic/data/themes/rose.toml",
+    "properties" : {
+    },
+    "relative_order" : 54,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "toml"
+}

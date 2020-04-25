@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587765964176.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3906336050",
+    "id" : "8C3E71F7",
+    "lastKnownWriteTime" : 1587309977,
+    "last_content_update" : 1587309977,
+    "path" : "~/Documents/repos/shaan/themes/hugo-academic/data/themes/forest.toml",
+    "project_path" : "themes/hugo-academic/data/themes/forest.toml",
+    "properties" : {
+    },
+    "relative_order" : 49,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "toml"
+}
