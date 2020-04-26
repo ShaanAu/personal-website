@@ -2,7 +2,6 @@
 authors:
 - admin
 bio: Hi I am Shaan, Data Science Degree Apprentice at Santander UK & Founder at GenZoomer.ai, technology enthusiast and youth activist. When I am not geeking out over technology, you can find me engaging in various sports or producing amateur films.
-  matter.
 education:
   courses:
   - course: Level 4 in Data Analytics
