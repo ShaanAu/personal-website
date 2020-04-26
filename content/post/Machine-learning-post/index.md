@@ -2,12 +2,12 @@
 authors:
 - admin
 categories:
-- Demo
+- Machine Learning
 date: "2016-04-20T00:00:00Z"
 draft: false
 featured: false
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/CpkOjOcXdUY)'
+  caption: 
   focal_point: ""
   placement: 2
   preview_only: false
@@ -16,7 +16,8 @@ projects: []
 subtitle: 'The basics of Machine Learning explained in an easy to understand format :brain:'
 summary: Machine Learning explained without the jargon.
 tags:
-- Academic
+- Machine Learning
+- Artificial Intelligence
 title: 'What Is Machine Learning?'
 ---
 

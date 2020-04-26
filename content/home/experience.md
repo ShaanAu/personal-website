@@ -17,6 +17,8 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+
+
 [[experience]]
   title = "Founder"
   company = "GenZoomer.ai"
@@ -57,17 +59,29 @@ My first rotation was within the Core Data Science team of the bank where my rol
 * EDA and Feature Engineering in SQL and Python."""
 
 [[experience]]
-    title = "CTO"
+    title = "Chief Technology Officer"
   company = "Suneeta Cosmetics Ltd"
-  company_url = "https://genzoomer.ai"
+  company_url = "https://suneetacosmetics.com"
   location = "London"
   date_start = "2017-01-11"
-  date_end = ""
+  date_end = "2019-09-29"
   description = """
   Responsibilities include:
   
   * Helping the development of an iOS application for Suneeta London using Swift, whilst using Git for version control.
 * Managing all the technical parts of the company, including the development of https://suneetacosmetics.co.uk and the sister company https://suneetacbd.co.uk.
+* Implementing Search Engine Optimization (SEO) on both websites to improve search results within Google
+* Leveraging data provided to create insights for the company and help improve customer retention, by targetting customers which were likely to leave with a promotion offer.
+  """
+[[experience]]
+    title = "Young Apprenticeship Ambassador"
+  company = "National Apprenticeship Services"
+  company_url = "https://amazingapprenticeships.com/yaan/"
+  location = "London"
+  date_start = "2020-04-11"
+  date_end = ""
+  description = """
+  I am a member of the London Young Apprenticeship Ambassador Network, which aims to promote apprenticeships to students, I am able to act as a role model by sharing my personal journey as an apprentice, as well as challenging the associated stigma of apprenticeships. This is by visiting schools in-person or remotely during COVID-19.
   """
 
 +++

@@ -20,11 +20,11 @@ date_format = "Jan 2006"
 
 [[item]]
   organization = "Stanford University"
-  organization_url = "https://www.coursera.org"
+  organization_url = "https://www.stanford.edu"
   title = "Machine Learning"
   url = ""
   certificate_url = "https://www.coursera.org/account/accomplishments/records/NMLE3W5W8MSR"
-  date_start = "2018-10-01"
+  date_start = "2019-11-01"
   date_end = ""
   description = ""
 
@@ -34,8 +34,8 @@ date_format = "Jan 2006"
   title = "Data Scientist With Python"
   url = ""
   certificate_url = "https://www.datacamp.com/statement-of-accomplishment/track/49ff9b174658bfb2cd2c12d14772aed9d5a22167"
-  date_start = "2017-07-01"
-  date_end = "2017-12-21"
-  description = ""
+  date_start = "2019-11-15"
+  date_end = ""
+  description = "Comprised of 26 Individual Courses"
 
 +++

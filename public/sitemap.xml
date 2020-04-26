@@ -8,17 +8,32 @@
   </url>
   
   <url>
+    <loc>/tag/career/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/career/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/category/demo/</loc>
+    <loc>/tag/genzoomer.ai/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/genzoomer.ai/</loc>
+    <loc>/post/networking-101/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/networking/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -48,12 +63,12 @@
   </url>
   
   <url>
-    <loc>/tag/apprenticeships/</loc>
-    <lastmod>2019-04-20T00:00:00+00:00</lastmod>
+    <loc>/category/website/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/category/career/</loc>
+    <loc>/tag/apprenticeships/</loc>
     <lastmod>2019-04-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -69,7 +84,7 @@
   
   <url>
     <loc>/tag/machine-learning/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -103,7 +118,12 @@
   </url>
   
   <url>
-    <loc>/tag/academic/</loc>
+    <loc>/tag/artificial-intelligence/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/machine-learning/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
