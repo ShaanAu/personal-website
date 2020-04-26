@@ -68,10 +68,10 @@ My first rotation was within the Core Data Science team of the bank where my rol
   description = """
   Responsibilities include:
   
-  * Helping the development of an iOS application for Suneeta London using Swift, whilst using Git for version control.
+  * Leading the development of an iOS application for Suneeta London using Swift, whilst using Git for version control. Note: App was cancelled in development due to other priorities foor the company.
 * Managing all the technical parts of the company, including the development of https://suneetacosmetics.co.uk and the sister company https://suneetacbd.co.uk.
-* Implementing Search Engine Optimization (SEO) on both websites to improve search results within Google
-* Leveraging data provided to create insights for the company and help improve customer retention, by targetting customers which were likely to leave with a promotion offer.
+* Implementing Search Engine Optimization (SEO) on both websites to improve search results within Google.
+* Leveraging data provided to create insights for the company and help improve customer retention, by targeting customers which were likely to leave and offering them a promotion.
   """
 [[experience]]
     title = "Young Apprenticeship Ambassador"
