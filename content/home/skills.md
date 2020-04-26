@@ -7,7 +7,7 @@ active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
 title = "Skills"
-subtitle = "% is a Reflection of Skill Level"
+subtitle = "% is a reflection of skill level"
 
 # Showcase personal skills or business features.
 # 
@@ -45,7 +45,7 @@ subtitle = "% is a Reflection of Skill Level"
   icon = "database"
   icon_pack = "fas"
   name = "Data Engineering"
-  description = "55%" 
+  description = "60%" 
   
     [[feature]]
   icon = "brain"
@@ -58,6 +58,18 @@ subtitle = "% is a Reflection of Skill Level"
   icon_pack = "fas"
   name = "Statistics"
   description = "75%"  
+  
+  [[feature]]
+  icon = "briefcase"
+  icon_pack = "far"
+  name = "Business Acumen"
+  description = "90%"  
+  
+  [[feature]]
+  icon = "comment"
+  icon_pack = "far"
+  name = "Stakeholder Management"
+  description = "85%"  
 
 +++
 
