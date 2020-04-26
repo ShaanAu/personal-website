@@ -25,7 +25,10 @@ date_format = "Jan 2006"
   date_start = "2020-01-27"
   date_end = ""
   description = """
-  Responsibilities include:
+  I am the founder of GenZoomer.ai, our goal as a company was to create a platform for the younger generation to share their blogs and articles, as we found that many news platforms were primarily dominated by the older generation 
+  Responsibilities included:
+  * Managing the development of the website www.genzoomer.ai 
+  * Managing a team of 10+ writers, checking what articles were suitable for the website and 
   
   * Analysing
   * Modelling
