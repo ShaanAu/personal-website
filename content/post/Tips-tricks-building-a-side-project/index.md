@@ -13,11 +13,11 @@ image:
   preview_only: false
 lastmod: "2019-04-23T00:00:00Z"
 projects: []
-subtitle: 'Some of my tips on what I did beforehand before embarking on my venture at GenZoomer.ai'
-summary: Some of my tips on what I did beforehand before embarking on my venture at GenZoomer.ai.
+subtitle: 'Some of my tips on what I did before embarking on my venture at GenZoomer.ai'
+summary: Some of my tips on what I did before embarking on my venture at GenZoomer.ai.
 tags:
 - GenZoomer.ai
-title: 'Tips & Tricks on Building a Side Project'
+title: 'Tips & Tricks on Building a Side Hustle'
 ---
 
 I hear many people talking about how they don't have the time to follow up on their passion, to create their own side-hustle based on their interests, or perhaps just a money-making venture. But in this modern world of technology and with more and more countries going into lockdown to prevent COVID-19, it seems now is the best time, if any to start your own business or side-venture and how I went about it

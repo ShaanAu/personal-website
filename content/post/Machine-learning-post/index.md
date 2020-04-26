@@ -14,7 +14,7 @@ image:
 lastmod: "2019-04-17T00:00:00Z"
 projects: []
 subtitle: 'The basics of Machine Learning explained in an easy to understand format :brain:'
-summary: Machine Learning explained without the jargon.
+summary: Machine Learning explained in an easy-to-understand format without the jargon.
 tags:
 - Machine Learning
 - Artificial Intelligence
