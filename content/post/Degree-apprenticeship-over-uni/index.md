@@ -2,7 +2,7 @@
 authors:
 - admin
 categories:
-- Demo
+- Career
 date: "2016-04-20T00:00:00Z"
 draft: false
 featured: false
@@ -13,10 +13,10 @@ image:
   preview_only: false
 lastmod: "2019-04-17T00:00:00Z"
 projects: []
-subtitle: 'The basics of Machine Learning explained in an easy to understand format :brain:'
-summary: Create a beautifully simple website in under 10 minutes.
+subtitle: 'Why you should consider a Degree Apprenticeship before enrolling into University.'
+summary: My thoughts on the traditional university route vs the modern Degree Apprenticeships path.
 tags:
-- Academic
+- Apprenticeships
 title: 'Why I Chose A Degree Apprenticeship Over University'
 ---
 

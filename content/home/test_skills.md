@@ -6,7 +6,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 35  # Order that this section will appear.
 
-title = "More Skills - (In-depth)"
+title = "Skills & Interests Breakdown"
 subtitle = ""
 [design]
   # Toggle between the various page layout types.
@@ -17,31 +17,36 @@ subtitle = ""
   view = 2
 +++
 **Technical Skills** 
-* Python - pandas, numpy, seaborn, sklearn, matplotlib & many more packages
-* R and various packages
-* SQL/PostgreSQL
-* Machine Learning - sklearn
-* Data Visualizations - Plotly, Dash, Tableau
-* Data Wrangling, EDA, Feature Engineering & Data Modelling
-* Version Control - Git
-* Hadoop, Impala, Hive
-* C#
-* Web Development HTML5, CSS3
-* Cloud Computing - Cloudera, AWS(Learning)
+* **Python** - pandas, numpy, seaborn, sklearn, matplotlib & various other packages
+* **R** - blogdown, tidyverse, ggplot2 & various other packages
+* **Relation Databases** - SQL/PostgreSQL
+* **Machine Learning**
+* **Data Visualizations** - Plotly, Dash, Tableau
+* **Data Science/Data Analysis**
+* **Data Wrangling**
+* **Feature Engineering**
+* **Data Modelling**
+* **Version Control** - Git
+* **Hadoop, Impala, Hive**
+* **Object Orientated Programming** - C#, Python
+* **Web Development** HTML5, CSS3, Blogdown
+* **Cloud Computing** - Cloudera, AWS(Learning)
+* **Package Building**
 
 **Soft Skills**
-* Stakeholder Management
-* Mentoring
-* Public Speaking
-* Interpersonal Relationships
-* Networking
+* **Stakeholder Management**
+* **Mentoring**
+* **Public Speaking**
+* **Inter-personal Relationships**
+* **Networking**
+* **Domain Knowledge of Finance**
 
 **Other Skills and Interests**
-* Adobe Creative Suite
-* Microsoft Office
-* Video Editing
-* Foreign Television - Avid fan of Deutschland 83
-* Football, Fencing & Tennis
-* Vegan Food
+* **Adobe Creative Suite**
+* **Microsoft Office**
+* **Film Production & Video Editing**
+* **Foreign Television** - Avid fan of La Casa De Papel
+* **Football, Fencing & Tennis**
+* **Vegan Food**
 
 

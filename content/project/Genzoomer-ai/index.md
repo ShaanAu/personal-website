@@ -7,5 +7,5 @@ image:
 summary: A Global Platform Dedicated To Giving Gen Z a voice through articles, incorporates a Podcast ran by Shola West.
 tags: 
 - Website
-title: Genzoomer.ai
+title: GenZoomer.ai
 ---
