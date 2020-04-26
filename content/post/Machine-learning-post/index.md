@@ -14,10 +14,10 @@ image:
 lastmod: "2019-04-17T00:00:00Z"
 projects: []
 subtitle: 'The basics of Machine Learning explained in an easy to understand format :brain:'
-summary: Create a beautifully simple website in under 10 minutes.
+summary: Machine Learning explained without the jargon.
 tags:
 - Academic
-title: 'Machine Learning'
+title: 'What Is Machine Learning?'
 ---
 
 Hello everyone, over the past couple of years you have probably heard about the new phase within the industry regarding Artificial Intelligence. As a result, many companies have gone on to hire data specialists & machine learning engineers without truly understanding what they provide and whether their company has the right infrastructure set up. In light of this, I will be talking about some of the key concepts in Machine Learning which is a subset of artificial intelligence, and is the “Field of programming which gives computers the ability to learn without being explicitly programmed.” Arthur Samuel

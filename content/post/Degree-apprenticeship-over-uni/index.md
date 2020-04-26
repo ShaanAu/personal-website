@@ -3,18 +3,18 @@ authors:
 - admin
 categories:
 - Career
-date: "2016-04-20T00:00:00Z"
+date: "2019-04-20T00:00:00Z"
 draft: false
 featured: false
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/CpkOjOcXdUY)'
+  caption: 
   focal_point: ""
   placement: 2
   preview_only: false
-lastmod: "2019-04-17T00:00:00Z"
+lastmod: "2019-04-20T00:00:00Z"
 projects: []
 subtitle: 'Why you should consider a Degree Apprenticeship before enrolling into University.'
-summary: My thoughts on the traditional university route vs the modern Degree Apprenticeships path.
+summary: My thoughts on the traditional university route vs the modern Degree Apprenticeship path.
 tags:
 - Apprenticeships
 title: 'Why I Chose A Degree Apprenticeship Over University'
