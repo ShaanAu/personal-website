@@ -29,17 +29,18 @@ subtitle = ""
 * **Version Control** - Git
 * **Hadoop, Impala, Hive**
 * **Object Orientated Programming** - C#, Python
-* **Web Development** HTML5, CSS3, Blogdown
-* **Cloud Computing** - Cloudera, AWS(Learning)
+* **Web Development** HTML5, CSS3, blogdown
+* **Cloud Computing** - Cloudera, AWS (Learning)
 * **Package Building**
 
-**Soft Skills**
+**Soft Skills/Business Skills**
 * **Stakeholder Management**
 * **Mentoring**
 * **Public Speaking**
 * **Inter-personal Relationships**
 * **Networking**
-* **Domain Knowledge of Finance**
+* **Financial Markets**
+* **Mortgages**
 
 **Other Skills and Interests**
 * **Adobe Creative Suite**
