@@ -61,7 +61,7 @@ subtitle = "% is a reflection of skill level"
   
   [[feature]]
   icon = "briefcase"
-  icon_pack = "far"
+  icon_pack = "fas"
   name = "Business Acumen"
   description = "90%"  
   
