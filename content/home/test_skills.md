@@ -17,11 +17,11 @@ subtitle = ""
   view = 2
 +++
 **Technical Skills** 
-* **Python** - pandas, numpy, seaborn, sklearn, matplotlib & various other packages
+* **Python** - pandas, numpy, matplotlib, seabron, sklearn, plotly, dash & various other packages
 * **R** - blogdown, tidyverse, ggplot2 & various other packages
 * **Relation Databases** - SQL/PostgreSQL
 * **Machine Learning**
-* **Data Visualizations** - Plotly, Dash, Tableau
+* **Data Visualizations** - Tableau, plotly, dash
 * **Data Science/Data Analysis**
 * **Data Wrangling**
 * **Feature Engineering**
@@ -29,7 +29,7 @@ subtitle = ""
 * **Version Control** - Git
 * **Hadoop, Impala, Hive**
 * **Object Orientated Programming** - C#, Python
-* **Web Development** HTML5, CSS3, blogdown
+* **Web Development/** HTML5, CSS3, blogdown
 * **Cloud Computing** - Cloudera, AWS (Learning)
 * **Package Building**
 
@@ -37,7 +37,7 @@ subtitle = ""
 * **Stakeholder Management**
 * **Mentoring**
 * **Public Speaking**
-* **Inter-personal Relationships**
+* **Interpersonal Relationships**
 * **Networking**
 * **Financial Markets**
 * **Mortgages**
