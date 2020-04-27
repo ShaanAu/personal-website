@@ -36,6 +36,6 @@ date_format = "Jan 2006"
   certificate_url = "https://www.datacamp.com/statement-of-accomplishment/track/49ff9b174658bfb2cd2c12d14772aed9d5a22167"
   date_start = "2019-11-15"
   date_end = ""
-  description = "Comprised of 26 Individual Courses"
+  description = ""
 
 +++

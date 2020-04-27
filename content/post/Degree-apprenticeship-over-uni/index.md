@@ -35,15 +35,16 @@ I highly encourage any aspiring data scientists/technologists to consider appren
 
 To summarise, I would consider an apprenticeship if you:
 
-Have a rough idea of what you want to achieve in the future or if the career path you want to pursue offers an apprenticeship in the sector of work you want to pursue.
-If you work in a creative role, generally a portfolio of work will showcase your work far more than any piece of paper could ever provide.
-If you want to gain real-life experience for a company where you will be at the forefront of change.
+* Have a rough idea of what you want to achieve in the future or if the career path you want to pursue offers an apprenticeship in the sector of work you want to pursue.
+* If you work in a creative role, generally a portfolio of work will showcase your work far more than any piece of paper could ever provide.
+* If you want to gain real-life experience for a company where you will be at the forefront of change.
+
+
 On the other hand, university offers the chance to:
 
-Learn a more specific skill set, I was quite fortunate in gaining a place on one of the only Data Science degree apprenticeships, however, university offers a wider range of subjects.
-If you want to enter a profession where university is required, such as Medicine or Law. However, even then, attitudes are starting to change.
-Have more free time, this is often overlooked however at university, you'll have the freedom to pursue any idea you have without the constraints of a full-time job.
-That is my take on apprenticeships compared with university. I found that an apprenticeship aligned with my goals, and through it, I have gained invaluable experience. However, each person should follow your gut instinct as that is generally where you will be most fulfilled within your career. All the best in your journeys and if you need any support, feel free to reach out to me.
-I will delve into more detail about unsupervised learning in a different post, as I wish to keep this article about the basics, and there is so much more to explore.
+* Learn a more specific skill set, I was quite fortunate in gaining a place on one of the only Data Science degree apprenticeships, however, university offers a wider range of subjects.
+* If you want to enter a profession where university is required, such as Medicine or Law. However, even then, attitudes are starting to change.
+* Have more free time, this is often overlooked however at university, you'll have the freedom to pursue any idea you have without the constraints of a full-time job.
 
-Thank you for taking the time to read my “What Is Machine Learning.” I hope you found it useful, regardless of your industry & sector of work/education and now you won’t need to nod your head when a colleague mentions Artificial Intelligence or Machine Learning without knowing what it truly achieves within the workplace.
+
+That is my take on apprenticeships compared with university. I found that an apprenticeship aligned with my goals, and through it, I have gained invaluable experience. However, each person should follow your gut instinct as that is generally where you will be most fulfilled within your career. All the best in your journeys and if you need any support, feel free to reach out to me.
