@@ -6,7 +6,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 35  # Order that this section will appear.
 
-title = "Skills & Interests Breakdown"
+title = "Skills Breakdown"
 subtitle = ""
 [design]
   # Toggle between the various page layout types.

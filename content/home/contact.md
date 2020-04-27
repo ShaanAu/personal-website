@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 130  # Order that this section will appear.
 
 title = "Contact"
-subtitle = "For any business enquiries, use one of the icons or the contact form"
+subtitle = "For any business enquiries, use any of the links/contact form below."
 
 # Automatically link email and phone?
 autolink = true
