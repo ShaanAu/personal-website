@@ -45,12 +45,12 @@ user_groups:
 
 I’m a Data Science Degree Apprentice at Santander UK, Founder at GenZoomer.ai, technology enthusiast and youth activist.
 
-I believe that many companies are not using data to its full potential, and is one of the reasons I chose this field.
+I believe that many companies are not using data to its full potential, and is one of the reasons why I chose this field.
 
 My career started within 2017 when I helped out Suneeta Cosmetics Ltd, my family business, in running the technical side of the business. This was by developing the websites, implementing a marketing strategy for the company, implementing SEO and leveraging the data provided to target customers who were likely to leave by offering them a promotion.
 
-I am currently working within Data Science at Santander UK, which allows me to combine my creativity and passion for programming in developing eating effective data solutions across the bank, whilst rotating across various teams ranging from Financial Crime to the Core Data Science Team.
+I am currently working within Data Science at Santander UK, which allows me to combine my creativity and passion for programming, in developing data solutions across the bank, whilst rotating across various teams ranging from Financial Crime to the Core Data Science Team.
 
-In 2020, I successfully launched GenZoomer.ai which is a platform dedicated to providing young individuals a platform to express their thoughts, with a core focus on technology and career advice, I helped develop the website and manage a team of enthusiastic writers as well as running a podcast.
+In 2020, I successfully launched GenZoomer.ai which is a platform dedicated to providing young individuals a platform to express their thoughts, with a core focus on technology and career advice. I led the developoment of the website and manage a team of enthusiastic writers as well as running a podcast on the site.
 
 

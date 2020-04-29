@@ -17,19 +17,19 @@ subtitle = ""
   view = 2
 +++
 **Technical Skills** 
-* **Python** - pandas, numpy, matplotlib, seabron, sklearn, plotly, dash & various other packages
-* **R** - blogdown, tidyverse, ggplot2 & various other packages
+* **Python** - Pandas, Numpy, Matplotlib, Seaborn, Sklearn, Plotly, Dash & various other packages
+* **R** - Blogdown, Tidyverse, ggplot2 & various other packages
 * **Relation Databases** - SQL/PostgreSQL
 * **Machine Learning**
-* **Data Visualizations** - Tableau, plotly, dash
+* **Data Visualizations** - Tableau, Plotly, Dash
 * **Data Science/Data Analysis**
 * **Data Wrangling**
 * **Feature Engineering**
 * **Data Modelling**
 * **Version Control** - Git
-* **Hadoop, Impala, Hive**
+* **Hadoop HDFS for Big Data Storage** - Impala, Hive
 * **Object Orientated Programming** - C#, Python
-* **Web Development/** HTML5, CSS3, blogdown
+* **Web Development** HTML5, CSS3, blogdown
 * **Cloud Computing** - Cloudera, AWS (Learning)
 * **Package Building**
 
@@ -46,8 +46,8 @@ subtitle = ""
 * **Adobe Creative Suite**
 * **Microsoft Office**
 * **Film Production & Video Editing**
-* **Foreign Television** - Avid fan of La Casa De Papel
-* **Football, Fencing & Tennis**
+* **Foreign Television** 
+* **Football, Skiing & Tennis**
 * **Vegan Food**
 
 
