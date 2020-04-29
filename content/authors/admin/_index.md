@@ -37,9 +37,9 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/ShaanAu
-- icon: cv
-  icon_pack: ai
-  link: files/cv.pdf
+#- icon: cv
+#  link: files/cv.pdf
+# icon_pack: ai
 superuser: true
 title: Shaan Aucharagram
 user_groups:
