@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "Certifications"
+title = "Certifications & Awards"
 subtitle = ""
 
 # Date format
@@ -37,5 +37,27 @@ date_format = "Jan 2006"
   date_start = "2019-11-15"
   date_end = ""
   description = ""
+  
+[[item]]
+  organization = "Reigate Sixth Form College"
+  organization_url = "https://www.reigate.ac.uk"
+  title = "Prestigious Principles Award In Computing For Outstanding Contribution"
+  url = ""
+  certificate_url = ""
+  date_start = "2019-05-01"
+  date_end = ""
+  description = ""
+
+[[item]]
+  organization = "Reigate Annual Film & Television Awards"
+  organization_url = "https://www.reigate.ac.uk"
+  title = "Best Television Script"
+  url = ""
+  certificate_url = ""
+  date_start = "2019-05-01"
+  date_end = ""
+  description = ""
+
+
 
 +++
