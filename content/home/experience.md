@@ -46,22 +46,16 @@ My responsibilities included:
   location = "London"
   date_start = "2019-09-30"
   date_end = ""
-  description = """
-My program involves me rotating across various teams within the bank, whilst working as a Data Scientist and also studying for my BSc in Data Science.
+  description = """ I was part of the first cohort of Data Science Degree Apprentices within London, my program involves me working as a Data Scientist & studying for my BSc in Data Science, whilst rotating across various teams. 
+  
+My rotations so far include: Core Data Science team
 
 
-Core Data Science Team, Sep 2019 – Present
-
-
-My first rotation was within the Core Data Science team of the bank where I was tasked with:
-
-
-* Creating a mortgage dashboard using Python with Plotly & Dash.
-* Liaising with the key stakeholders of the project.
-* Creating an internal package using Python within the bank to allow other Data Scientists to run Impala and Hive queries within Cloudera.
-* EDA and Feature Engineering in SQL and Python.
-* Running Queries in SQL, from table creation, joining tables & subqueries within the mortgages project.
-
+Core Data Science Team (Sep 2019 - Present):                                                                 
+* Creating a Mortgage Churn dashboard using Python with Plotly & Dash, using Git for Version Control and liaising with key stakeholders before presenting the dashboard to the team.
+* Developing an internal package within the bank to automate Impala and Hive Queries using Python, in turn allowing other Data Scientists to run queries more efficiently.
+* Performing SQL queries, from table creation, joining tables and subqueries.
+* Working on the end-to-end Mortgage Churn Model, where I was involved in data wrangling, data cleaning, data analysis, feature engineering and developing an XGBoost model using Machine Learning.
 """
 [[experience]]
     title = "Chief Technology Officer"
@@ -70,14 +64,12 @@ My first rotation was within the Core Data Science team of the bank where I was 
   location = "London"
   date_start = "2017-01-11"
   date_end = "2019-09-29"
-  description = """
-  My responsibilities included:
+  description = """ 
+   Some of my most notable achievement include:
   
-  
-* Leading the development of an iOS application for Suneeta London using Swift, whilst using Git for version control. Note: App was cancelled in development due to other priorities for the company.
-* Managing all the technical parts of the company, including the development of https://suneetacosmetics.co.uk and the sister company https://suneetacbd.co.uk.
-* Implementing Search Engine Optimization (SEO) on both websites to improve search results within Google.
-* Leveraging data provided to create insights for the company and help improve customer retention, by targeting customers which were likely to leave and offering them a promotion.
+  * Managing the technical side of the business at Suneeta Cosmetics, where overall, we improved customer retention, improved customer experience via the two websites whilst complying to CBD regulations.
+* Led team by leveraging the data provided to create insights for the business and identify which customers were likely to leave, we improved customer retention by 18%, via offering these customers a promotion.
+* Managed the development of the Suneeta Cosmetics website www.suneetacosmetics.co.uk and the respective CBD website www.suneetacbd.co.uk, whilst ensuring that we complied with legislation for the CBD website.
 
   """
 [[experience]]
