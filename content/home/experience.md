@@ -52,10 +52,10 @@ My rotations so far include: Core Data Science team
 
 
 Core Data Science Team (Sep 2019 - Present):                                                                 
-* Creating a Mortgage Churn dashboard using Python with Plotly & Dash, using Git for Version Control and liaising with key stakeholders before presenting the dashboard to the team.
+* Creating a mortgage dashboard using Python with Plotly & Dash, using Git for Version Control and liaising with key stakeholders before presenting the dashboard to the team.
 * Developing an internal package within the bank to automate Impala and Hive Queries using Python, in turn allowing other Data Scientists to run queries more efficiently.
 * Performing SQL queries, from table creation, joining tables and subqueries.
-* Working on the end-to-end Mortgage Churn Model, where I was involved in data wrangling, data cleaning, data analysis, feature engineering and developing an XGBoost model using Machine Learning.
+* Working on the end-to-end mortgage project, where I was involved in data wrangling, data cleaning, data analysis, feature engineering and developing an XGBoost model using Machine Learning.
 """
 [[experience]]
     title = "Chief Technology Officer"
