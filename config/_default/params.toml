@@ -42,10 +42,10 @@ local_business_type = ""
 
 # Organization name (optional)
 # Enter an organization or project name. Defaults to the site title from `config.toml`.
-org_name = ""
+org_name = "Shaan Aucharagram"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = "Hi I am Shaan, a Data Science Degree Apprentice at Santander UK, Founder at GenZoomer.ai and CTO at Suneeta Cosmetics Ltd & this is my personal website"
+description = "Hi I am Shaan, a Data Science Degree Apprentice at Santander UK, founder at GenZoomer.ai, technology enthusiast & youth activist."
 
 ############################
 ## Site Features
