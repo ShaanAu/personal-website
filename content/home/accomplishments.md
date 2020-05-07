@@ -41,7 +41,7 @@ date_format = "Jan 2006"
 [[item]]
   organization = "Reigate Sixth Form College"
   organization_url = "https://www.reigate.ac.uk"
-  title = "Prestigious Principals Award In Computing For Outstanding Achievement"
+  title = "Prestigious Principal's Award In Computing For Outstanding Achievement"
   url = ""
   certificate_url = ""
   date_start = "2019-05-01"
