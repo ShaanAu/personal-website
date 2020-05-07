@@ -40,7 +40,6 @@ subtitle = ""
 * **Interpersonal Relationships**
 * **Networking**
 * **Financial Markets**
-* **Mortgages**
 
 **Other Skills and Interests**
 * **Adobe Creative Suite**

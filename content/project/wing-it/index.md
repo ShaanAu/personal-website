@@ -7,5 +7,5 @@ image:
 summary: My sixth form coursework, made in C# with Unity based on Flappy Bird but with additional functionality.
 tags: 
 - Other
-title: Recreating Flappy Bird with a twist
+title: Recreating Flappy Bird With a Twist
 ---
