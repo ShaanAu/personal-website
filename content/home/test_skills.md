@@ -18,33 +18,27 @@ subtitle = ""
 +++
 **Technical Skills** 
 * **Python** - Pandas, Numpy, Matplotlib, Seaborn, Sklearn, Plotly, Dash & various other packages
-* **R** - Blogdown, Tidyverse, ggplot2 & various other packages
+* **C#** 
+* **R** - Blogdown, Tidyverse, ggplot2
 * **Relation Databases** - SQL/PostgreSQL
-* **Machine Learning**
+* **Machine Learning** - sklearn
 * **Data Visualizations** - Tableau, Plotly, Dash
 * **Data Science/Data Analysis**
-* **Data Wrangling**
-* **Feature Engineering**
-* **Data Modelling**
 * **Version Control** - Git
 * **Hadoop HDFS for Big Data Storage** - Impala, Hive
 * **Object Orientated Programming** - C#, Python
-* **Web Development** HTML5, CSS3, blogdown
-* **Cloud Computing** - Cloudera, AWS (Learning)
-* **Package Building**
+* **Web Development** - HTML, CSS, blogdown
+* **Package Building** - Created my own python package: https://pypi.org/project/strangerqueries/
 
 **Soft Skills/Business Skills**
 * **Stakeholder Management**
-* **Mentoring**
 * **Public Speaking**
 * **Interpersonal Relationships**
 * **Networking**
 * **Financial Markets**
 
-**Other Skills and Interests**
-* **Adobe Creative Suite**
-* **Microsoft Office**
-* **Film Production & Video Editing**
+**Interests**
+* **Film Production & Video Editing (Adobe Creative Suite)**
 * **Foreign Television** 
 * **Football, Skiing & Tennis**
 * **Vegan Food**
