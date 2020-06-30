@@ -51,11 +51,13 @@ My responsibilities included:
 My rotations so far include: Core Data Science team, CIB/CCB Financial Crime Analytics
 
 
-Core Data Science Team (Sep 2019 - Present):                                                                 
+Core Data Science Team (Sep 2019 - Jun 2020):                                                               
 * Creating an internal package within the bank to automate Impala and Hive queries in Python, reducing overheads for the data science community (150 people).
 * Using NLP to optimize our chatbots to meet customer needs, in turn reducing the workload on our Agents/Retail Staff.
 * Liaising with various internal and external stakeholders and meeting their project needs, before presenting the Mortgage Churn Dashboard made using Python packages Plotly Dash.
 * Working on the time-sensitive CBILS and BBLS project using SQL, to provide the government with an overview of the bank's transactions taken during COVID-19.
+
+Financial Crime Analytics (Jul 2020 - Present):
 """
 [[experience]]
     title = "Chief Technology Officer"
