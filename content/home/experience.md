@@ -48,14 +48,14 @@ My responsibilities included:
   date_end = ""
   description = """ I was part of the first cohort of Data Science Degree Apprentices within London, my program involves me working as a Data Scientist & studying for my BSc in Data Science, whilst rotating across various teams. 
   
-My rotations so far include: Core Data Science team
+My rotations so far include: Core Data Science team, CIB/CCB Financial Crime Analytics
 
 
 Core Data Science Team (Sep 2019 - Present):                                                                 
-* Creating a mortgage dashboard using Python with Plotly & Dash, using Git for Version Control and liaising with key stakeholders before presenting the dashboard to the team.
-* Developing an internal package within the bank to automate Impala and Hive queries using Python, in turn allowing other Data Scientists to run queries more efficiently.
-* Performing SQL queries, from table creation, joining tables and subqueries.
-* Working on the end-to-end mortgage project, where I was involved in data wrangling, data cleaning, data analysis, feature engineering and developing an XGBoost model using Machine Learning.
+* Creating an internal package within the bank to automate Impala and Hive queries in Python, reducing overheads for the data science community (150 people).
+* Using NLP to optimize our chatbots to meet customer needs, in turn reducing the workload on our Agents/Retail Staff.
+* Liaising with various internal and external stakeholders and meeting their project needs, before presenting the Mortgage Churn Dashboard made using Python packages Plotly Dash.
+* Working on the time-sensitive CBILS and BBLS project using SQL, to provide the government with an overview of the bank's transactions taken during COVID-19.
 """
 [[experience]]
     title = "Chief Technology Officer"
