@@ -15,12 +15,7 @@ subtitle = "% - Skill Level"
 # 
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
-[[feature]]
-  icon = "r-project"
-  icon_pack = "fab"
-  name = "R"
-  description = "75%"
-  
+
 
   
 [[feature]]
@@ -36,16 +31,23 @@ subtitle = "% - Skill Level"
   description = "90%"
   
   [[feature]]
+  icon = "r-project"
+  icon_pack = "fab"
+  name = "R"
+  description = "70%"
+  
+  
+  [[feature]]
   icon = "chart-pie"
   icon_pack = "fas"
   name = "Data Visualizations"
-  description = "95%" 
+  description = "90%" 
   
   [[feature]]
   icon = "database"
   icon_pack = "fas"
-  name = "Data Engineering"
-  description = "60%" 
+  name = "SQL"
+  description = "85%" 
   
     [[feature]]
   icon = "brain"

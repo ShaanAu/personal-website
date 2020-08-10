@@ -2,8 +2,8 @@
   "name": "Shaan Aucharagram",
   "short_name": "Shaan Aucharagram",
   "lang": "en-us",
-  "theme_color": "#2962ff",
-  "background_color": "#2962ff",
+  "theme_color": "#ff3860",
+  "background_color": "#ff3860",
   "icons": [{
     "src": "/images/icon_hu2a1556323dc1ce91109c84503ba01122_143912_192x192_fill_lanczos_center_2.png",
     "sizes": "192x192",

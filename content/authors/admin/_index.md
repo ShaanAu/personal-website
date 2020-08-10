@@ -7,22 +7,18 @@ education:
   - course: Level 4 in Data Analytics
     institution: Whitehat
     year: 2019 - 2021
-  - course: A Levels In Media (A), Mathematics (C)
+  - course: Computing (D*), Media (A), Maths (C)
     institution: Reigate Sixth Form College
-    year: 2017 - 2019
-  - course: BTEC Level 3 National Extended Certificate in Computing (D*)
-    institution: Reigate Sixth Form College
-    year: 2017 - 2019
+
 email: ""
 interests:
 - Data/Decision Science
-- Software Engineering
 - Financial Markets
 - Machine Learning
 
 organizations:
 - name: Santander UK
-  url: ""
+  url: "https://www.santander.co.uk"
 role: Data Science Degree Apprentice
 social:
 - icon: envelope
@@ -45,15 +41,13 @@ title: Shaan Aucharagram
 user_groups:
   
 ---
+I’m a Data Science Degree Apprentice at Santander UK, technology enthusiast and youth activist with a strong interest for the financial markets.
 
-I’m a Data Science Apprentice at Santander UK, Founder at GenZoomer.ai, technology enthusiast and youth activist.
+I started my career with my heart set out on technology, helping out Suneeta Cosmetics Ltd, my family business, in running the technical side of the business. This was primarily through creating the website and improving customer retention. I was also involved in collaborating with other companies, and attended various events and was invited to the HQ of ASOS all whilst completing my A-Levels.
 
-I have a strong interest in Engineering and Data and strive to make a difference using a combination of the two.
+After turning down university, I decided to pursue a degree apprenticeship within Data Science at Santander UK concurrently studying a BSc (Hons) in Data Science from NTU. Recently, I have been involved in a variety of public speaking events and have had the privilege to promote apprenticeships as an ambassador for Whitehat and LYAAN.
 
-My career started within 2017 when I helped out Suneeta Cosmetics Ltd, my family business, in running the technical side of the business. This was by developing the websites, implementing SEO and leveraging the data provided to target customers who were likely to leave by offering them a promotion.
+So far, I have been involved in a variety of projects from chatbots to customer churn. Whilst I'm not certain where the future may take me, I have learnt to embrace the uncertainty. 
 
-I am currently working within Data Science at Santander UK, which allows me to combine my creativity and passion for programming, in developing data solutions across the bank, whilst rotating across various teams.
-
-In 2020, I am currently working on GenZoomer.ai which is a platform dedicated to providing young individuals a platform to express their thoughts, with a core focus on technology and career advice. I led the developoment of the website and am looking to recruit a team of enthusiastic writers.
 
 

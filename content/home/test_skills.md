@@ -17,29 +17,28 @@ subtitle = ""
   view = 2
 +++
 **Technical Skills** 
-* **Python** - Pandas, Numpy, Matplotlib, Seaborn, Sklearn, Plotly, Dash & various other packages
-* **C#** 
-* **R** - Blogdown, Tidyverse, ggplot2
-* **Relation Databases** - SQL/PostgreSQL
-* **Machine Learning** - sklearn
-* **Data Visualizations** - Tableau, Plotly, Dash
+* **Python** 
+* **C++** 
+* **R**
+* **Relational Databases** - SQL/PostgreSQL
+* **Machine Learning** - NLP, Deep Learning
+* **Data Visualisations** - Tableau, Plotly, Dash
 * **Data Science/Data Analysis**
 * **Version Control** - Git
-* **Hadoop HDFS for Big Data Storage** - Impala, Hive
-* **Object Orientated Programming** - C#, Python
+* **Hadoop HDFS for Big Data Storage** - Impala, Hive, hadoop
 * **Web Development** - HTML, CSS, blogdown
-* **Package Building** - Created my own python package: https://pypi.org/project/strangerqueries/
+* **Package Building** - I created my own python package: https://pypi.org/project/strangerqueries/
 
 **Soft Skills/Business Skills**
 * **Stakeholder Management**
-* **Public Speaking**
+* **Public Speaking** - I have spoken at various events for Whitehat and LYAAN as an ambassador for apprenticeships
 * **Interpersonal Relationships**
-* **Networking**
-* **Financial Markets**
+* **Networking** 
 
-**Interests**
-* **Film Production & Video Editing (Adobe Creative Suite)**
+**Interests/Hobbies**
+* **Financial Markets**
 * **Foreign Television** 
+* **Film Production & Video Editing (Adobe Creative Suite)**
 * **Football, Skiing & Tennis**
 * **Vegan Food**
 

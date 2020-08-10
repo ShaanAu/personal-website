@@ -1,9 +1,9 @@
 {
-    "path" : "~/Documents/repos/shaan/public",
-    "sortOrder" : [
+    "path": "~/Documents/repos/shaan",
+    "sortOrder": [
         {
-            "ascending" : true,
-            "columnIndex" : 2
+            "columnIndex": 2,
+            "ascending": true
         }
     ]
 }
