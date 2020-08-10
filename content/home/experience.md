@@ -19,25 +19,6 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 
-[[experience]]
-  title = "Founder"
-  company = "GenZoomer.ai"
-  company_url = "https://genzoomer.ai"
-  location = "London"
-  date_start = "2020-01-27"
-  date_end = ""
-  description = """
- I am the founder of GenZoomer.ai, our goal as a company was to create a platform for the younger generation to express their thoughts, via articles, our content focuses on technology and career advice.
-
-
-My responsibilities included:
-
-
-* Managing the development of the website www.genzoomer.ai.
-* Managing a team of writers and verifying that the content produced was suitable for the website.
-* Updating the website with the articles and the Youth Unlocked Podcast.
-* Ensuring all parts of the website are jargon-free and if not, adding to the jargon-learner page with the respective definition.
-  """
 
 [[experience]]
   title = "Data Science Degree Apprentice"
@@ -46,21 +27,21 @@ My responsibilities included:
   location = "London"
   date_start = "2019-09-30"
   date_end = ""
-  description = """ I was part of the first cohort of Data Science Degree Apprentices within London, my program involves me working as a Data Scientist & studying for my BSc in Data Science, whilst rotating across various teams. 
+  description = """ Rotational degree apprenticeship program with a specialism in Data Science across the retail bank and CCB/CIB, part of the first cohort.
   
-My rotations so far include: Core Data Science team, CIB/CCB Financial Crime Analytics
-
-
 Core Data Science Team (Sep 2019 - Jun 2020):                                                               
-* Creating an internal package within the bank to automate Impala and Hive queries in Python, reducing overheads for the data science community (150 people).
+* Creating an internal package within the bank to automate Impala and Hive queries in Cloudera, reducing overheads for the data science community (150 people).
 * Using NLP to optimize our chatbots to meet customer needs, in turn reducing the workload on our Agents/Retail Staff.
 * Liaising with various internal and external stakeholders and meeting their project needs, before presenting the Mortgage Churn Dashboard made using Python packages Plotly Dash.
 * Working on the time-sensitive CBILS and BBLS project using SQL, to provide the government with an overview of the bank's transactions taken during COVID-19.
 
 Financial Crime Analytics (Jul 2020 - Present):
+
+* The sole developer of the Duedil data remediation project, which uses APIs to retrieve the latest data from Duedil for companies and compares it to the data stored within the banks data lake and replacing where neccesary.
+* Liasing with various people within CIB/CCB to create a solution which can be used by other teams within the bank.
 """
 [[experience]]
-    title = "Chief Technology Officer"
+    title = "Chief Technology Officer (CTO)"
   company = "Suneeta Cosmetics Ltd"
   company_url = "https://suneetacosmetics.com"
   location = "London"
@@ -69,20 +50,23 @@ Financial Crime Analytics (Jul 2020 - Present):
   description = """ 
    Some of my most notable achievement include:
   
-  * Managing the technical side of the business at Suneeta Cosmetics, where overall, we improved customer retention, improved customer experience via the two websites whilst complying to CBD regulations.
-* Led team by leveraging the data provided to create insights for the business and identify which customers were likely to leave, we improved customer retention by 18%, via offering these customers a promotion.
-* Managed the development of the Suneeta Cosmetics website www.suneetacosmetics.co.uk and the respective CBD website www.suneetacbd.co.uk, whilst ensuring that we complied with legislation for the CBD website.
+* Managing the development of the Suneeta Cosmetics website www.suneetacosmetics.co.uk and the respective CBD website www.suneetacbd.co.uk, whilst ensuring that we complied with legislation for the CBD website.
+
+* Identified where we could improve customer experience on the website, and as a result improved customer retention by 10%
+
+* Attending a variety of events and acting on the companies behalf, most notable collaboration was being invited to the HQ of ASOS.
+
 
   """
 [[experience]]
-    title = "Young Apprenticeship Ambassador"
-  company = "National Apprenticeship Services"
+    title = "Apprenticeship Ambassador / Leader"
+  company = "National Apprenticeship Services / Whitehat GB"
   company_url = "https://amazingapprenticeships.com/yaan/"
   location = "London"
   date_start = "2020-04-11"
   date_end = ""
   description = """
-I am a member of the London Young Apprenticeship Ambassador Network, which aims to promote apprenticeships to students as an alternative to university. I act as a role model by sharing my journey as an apprentice, as well as challenging the associated stigma of apprenticeships. This is by visiting schools in-person or remotely during COVID-19.
+I am an apprenticeship ambassador for Whitehat and LYAAN. I act as a role model by sharing my journey as an apprentice, as well as challenging the associated stigma of apprenticeships. This is through public speaking at events as well as creating content to encourage the younger generation to consider all their options.
   """
 
 +++
