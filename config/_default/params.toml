@@ -106,7 +106,6 @@ phone = "+44 7491 671 806"
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
 contact_links = [
-  {icon = "envelope", icon_pack= "fas", name = "info@shaanaucharagram.com", link = "mailto:info@shaanaucharagram.com"},
 
   {icon = "linkedin", icon_pack = "fab", name = "Connect With Me On Linkedin", link = "https://www.linkedin.com/in/shaan-aucharagram/"},
   
