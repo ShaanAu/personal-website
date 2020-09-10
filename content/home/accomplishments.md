@@ -46,7 +46,7 @@ date_format = "Jan 2006"
   certificate_url = ""
   date_start = "2019-05-01"
   date_end = ""
-  description = ""
+  description = "Recognition for the AI and software programmed in Computing. Involved in creating a unique 'Flappy Bird' style game and for demonstrating a strong interest in AI/Machine Learning."
 
 [[item]]
   organization = "Reigate Annual Film & Television Awards"
@@ -56,7 +56,7 @@ date_format = "Jan 2006"
   certificate_url = ""
   date_start = "2019-05-01"
   date_end = ""
-  description = ""
+  description = "Recognition for my Media Studies coursework, and for extensive use of postmodernism within the television script. Awarded out of all Film and Media students within Reigate College."
 
 
 
