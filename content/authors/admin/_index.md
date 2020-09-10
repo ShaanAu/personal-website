@@ -43,9 +43,9 @@ user_groups:
 ---
 I’m a Data Science Degree Apprentice at Santander UK, technology enthusiast and youth activist with a strong interest for the financial markets.
 
-I started my career with my heart set out on technology, helping out Suneeta Cosmetics Ltd, my family business, in running the technical side of the business. This was primarily through creating the website and improving customer retention. I was also involved in collaborating with other companies, and attended various events and was invited to the HQ of ASOS all whilst completing my A-Levels.
+I started my career with my heart set out on technology, helping out Suneeta London, my family business, in running the technical side of the business. This was primarily through creating the website and improving customer retention. I was also involved in collaborating with other companies, and attended various events and was invited to the HQ of ASOS all whilst completing my A-Levels.
 
-After turning down university, I decided to pursue a degree apprenticeship within Data Science at Santander UK concurrently studying a BSc (Hons) in Data Science from NTU. Recently, I have been involved in a variety of public speaking events and have had the privilege to promote apprenticeships as an ambassador for Whitehat and LYAAN.
+After turning down university, I decided to pursue a degree apprenticeship in data science at Santander UK concurrently studying a BSc (Hons) in Data Science from NTU. Recently, I have been involved in a variety of public speaking events and have had the privilege to promote apprenticeships as an ambassador for Whitehat and LYAAN.
 
 So far, I have been involved in a variety of projects from chatbots to customer churn. Whilst I'm not certain where the future may take me, I have learnt to embrace the uncertainty. 
 

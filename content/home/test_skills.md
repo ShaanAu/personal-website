@@ -18,15 +18,15 @@ subtitle = ""
 +++
 **Technical Skills** 
 * **Python** 
-* **C++** 
+* **C++**
 * **R**
 * **Relational Databases** - SQL/PostgreSQL
 * **Machine Learning** - NLP, Deep Learning
 * **Data Visualisations** - Tableau, Plotly, Dash
 * **Data Science/Data Analysis**
 * **Version Control** - Git
-* **Hadoop HDFS for Big Data Storage** - Impala, Hive, hadoop
-* **Web Development** - HTML, CSS, blogdown
+* **Hadoop HDFS for Big Data Storage** - Impala, Hive
+* **Web Development** - HTML, CSS, Blogdown
 * **Package Building** - I created my own python package: https://pypi.org/project/strangerqueries/
 
 **Soft Skills/Business Skills**
