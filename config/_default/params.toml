@@ -109,7 +109,7 @@ contact_links = [
 
   {icon = "linkedin", icon_pack = "fab", name = "Connect With Me On Linkedin", link = "https://www.linkedin.com/in/shaan-aucharagram/"},
   
-  {icon = "twitter", icon_pack = "fab", name = "Message Me On Twitter", link = "https://twitter.com/Twitter/shaan_au/"},
+  {icon = "twitter", icon_pack = "fab", name = "Message Me On Twitter", link = "https://twitter.com/shaan_au"},
   
   
 
