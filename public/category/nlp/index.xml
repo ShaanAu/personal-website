@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NLP | Shaan Aucharagram</title>
+    <link>https://shaanaucharagram.com/category/nlp/</link>
+      <atom:link href="https://shaanaucharagram.com/category/nlp/index.xml" rel="self" type="application/rss+xml" />
+    <description>NLP</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Shaan Aucharagram © 2020</copyright><lastBuildDate>Mon, 23 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://shaanaucharagram.com/img/avatar.jpg</url>
+      <title>NLP</title>
+      <link>https://shaanaucharagram.com/category/nlp/</link>
+    </image>
+    
+    <item>
+      <title>Classifying Random Cat Facts, NLP Tutorial</title>
+      <link>https://shaanaucharagram.com/post/copyofcat-api-nlp-project/</link>
+      <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://shaanaucharagram.com/post/copyofcat-api-nlp-project/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In this tutorial, we will be retrieving &lt;em&gt;&lt;strong&gt;random cat facts&lt;/strong&gt;&lt;/em&gt; using a Web API with the &lt;em&gt;&lt;strong&gt;requests&lt;/strong&gt;&lt;/em&gt; package in python.&lt;/p&gt;
+&lt;p&gt;Next We will use NLP with &lt;em&gt;&lt;strong&gt;spaCy&lt;/strong&gt;&lt;/em&gt; to tokenise, remove stop words, lemmatize our data.&lt;/p&gt;
+&lt;p&gt;Finally will use the cleaned data and then perform sentiment analysis using the &lt;em&gt;&lt;strong&gt;textblob&lt;/strong&gt;&lt;/em&gt; package to create a score for each fact and to see whether the score is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Positive:&lt;/strong&gt; Score &amp;gt; 0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Negative:&lt;/strong&gt; Score &amp;lt; 0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Neutral:&lt;/strong&gt; Score = 0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The notebook is available on my 
+&lt;a href=&#34;https://github.com/ShaanAu/NLP_API_Cat_Random_Facts/blob/master/random_cat_facts_analysis.ipynb&#34; title=&#34;Click Here For Notebook! :)&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;.
+I would suggest cloning the repository for anyone looking to work on the code themselves.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Required Packages&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If the package is failing to import, you can resolve the issue using pip e.g.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;!pip3 install pandas
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Import Packages and Libraries
+import json
+import requests
+import pandas as pd
+import spacy
+import numpy as np
+from textblob import TextBlob
+import pandas as pd
+import numpy as np
+import spacy
+from urllib.request import urlopen
+from spacy import displacy
+from spacy.matcher import Matcher
+import plotly.express as px
+import matplotlib.pyplot as plt
+import itertools
+from wordcloud import WordCloud 
+from collections import Counter
+import cufflinks as cf
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Retrieve Random Cat Facts&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The API I am using to retrieve the random cat facts, automatically generates a random fact each time you call the specified URL. Each time it will append the results to &lt;em&gt;&lt;strong&gt;responses&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def retrieve_cat_facts(url, no_facts):
+    &#39;&#39;&#39;
+    Retrieve Random Cat Facts Using API call
+    Append Into Responses
+    &#39;&#39;&#39;
+    responses = list()
+    for i in range(0,no_facts):
+       response = requests.get(f&amp;quot;{url}&amp;quot;) 
+       data=json.loads(response.text)
+       responses.append(data)
+    return responses, response
+
+responses, response = retrieve_cat_facts(url = &#39;https://cat-fact.herokuapp.com/facts/random&#39;, no_facts = 20)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Output&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The function will append all the responses from the function into dictionaries within a list. This is just a snapshot of the first dictionary within the list.
+&lt;img src=&#34;../../img/pic3.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;You can use the following code below to check that the API call is succesful.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;if response.status_code == 200:
+  print(&#39;Successful API call&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Load Pre-trained Model&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;nlp = spacy.load(&#39;en&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Create Lists of Lists of &amp;lsquo;Text&amp;rsquo; Data&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I decided to create a list of lists of all the random cat facts, as we are only concerned with the &lt;em&gt;&lt;strong&gt;text&lt;/strong&gt;&lt;/em&gt; data.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def create_list_of_lists(number_of_facts):
+    &#39;&#39;&#39;
+    Create A List Of Lists for the &#39;text&#39; columns
+    &#39;&#39;&#39;
+    doc_responses = list()
+    for x in range (0, number_of_facts):
+        doc = nlp(responses[x][&#39;text&#39;])
+        doc_responses.append(doc)
+    return doc_responses
+doc_responses = create_list_of_lists(20)
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Length of Sentences&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The following code will loop through the words of each sentence, before outputting the number of words in a sentence.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def getLengthSentences(number_of_facts, responses):
+    &#39;&#39;&#39;
+    Get Length of Sentence for each random cat fact
+    &#39;&#39;&#39;
+    for z in range (0, number_of_facts):
+        #passing  text into nlp object
+        sentence = nlp(responses[z][&#39;text&#39;])
+        #Identify the sentences using attribute
+        sentences = list(sentence.sents)
+        # Reading the sentences
+        for sent in sentences:
+            print(&#39;Sentence: &#39;, sent)
+            print(&amp;quot;The length of the sentences:&amp;quot;, len(sent))
+            
+getLengthSentences(20, responses)
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/pic11.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Stop Words&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stopwords are the most common words in any NLP model. To analyze text data and build NLP models, these stopwords might not add much value to the meaning of the document. Generally, the most common words used in a text are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;“the”&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;“is”&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;“in”&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&amp;ldquo;a&amp;rdquo;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We will remove the stopwords from our text data before scoring our random cat facts.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;stopwords = spacy.lang.en.stop_words.STOP_WORDS
+# check the length of Stop Words
+print(&amp;quot;The length of stopwords:&amp;quot;, len(stopwords))
+for i in list(stopwords)[:20]:
+   print(i)
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def remove_stopwords(doc):
+    &#39;&#39;&#39;Remove Stop Words From Text Data&#39;&#39;&#39;
+    final_doc = []
+    for sentence in doc:
+        print(&amp;quot;Number of tokens in the doc:&amp;quot;, len(sentence))
+        element = []
+        for word in sentence:
+          if not word.is_stop:
+            element.append(word)
+        final_doc.append(element)
+        print(&amp;quot;Number of tokens after removing stopwords:&amp;quot;, len(element))
+    return final_doc
+
+doc_no_stopwords = remove_stopwords(doc_responses)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/pic6.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remove Punctuation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Generally, you want to remove punctuation from text data, for this project we will remove punctuation. However, there are occasions where punctuation can be used to gain insight into text data.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def removePunctuation(doc):
+    &#39;&#39;&#39;
+    Remove Punctuation From Text Data
+    &#39;&#39;&#39;
+    final_doc = []
+    for sentence in doc:
+        element = []
+        for word in sentence:
+            if not word.is_punct:
+                element.append(word) 
+        final_doc.append(element)
+    return final_doc
+doc_no_punctuation = removePunctuation(final_doc)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Lemmatization&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In simpler terms, &lt;em&gt;&lt;strong&gt;a method that switches any kind of a word to its base root mode is called Lemmatization.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;‘troubled’&lt;/strong&gt;&lt;/em&gt; -&amp;gt; Lemmatization -&amp;gt; &lt;em&gt;&lt;strong&gt;‘trouble’&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;‘neglected’&lt;/strong&gt;&lt;/em&gt; -&amp;gt; Lemmatization -&amp;gt; &lt;em&gt;&lt;strong&gt;‘neglect’&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def lemmatization(doc):
+    &#39;&#39;&#39;
+    Apply Lemmatization On Text Data
+    &#39;&#39;&#39;
+    final_doc = []
+    for sentence in doc:
+        element = []
+        for word in sentence:
+            element.append(word.lemma_)
+        final_doc.append(element)
+    return final_doc
+        
+doc_lemmatization = lemmatization(doc_no_punctuation)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Comparison&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;doc_no_punctuation[0], doc_no_stopwords[0], doc_lemmatization[0]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;From the below image you can see that each of our functions have worked as expected.
+&lt;img src=&#34;../../img/pic7.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Part of Speech Tagging&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/Capture.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def changeDataType(doc):
+    &#39;&#39;&#39;Change Data Type into One List for POS&#39;&#39;&#39;
+    final_doc = []
+    for sentence in doc:
+        str1 = &#39; &#39;.join(sentence)
+        nlp_doc = nlp(str1)
+        final_doc.append(nlp_doc)
+    return final_doc
+
+doc_one_list = changeDataType(doc_lemmatization)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def pos_tagging(doc):
+    &#39;&#39;&#39;POS Tagging on Text Data&#39;&#39;&#39;
+    doc_pos = []
+    for sentence in doc:
+        for word in sentence:
+            print (word, word.tag_, word.pos_, spacy.explain(word.tag_))
+            doc_pos.append(word.pos_)
+    return doc_pos
+doc_pos = pos_tagging(doc_one_list)
+doc_pos
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Matcher&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;SpaCy also offers functionality to match on a pattern, here I have set to match on the words:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Tom&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Jerry&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Import spaCy Matcher
+from spacy.matcher import Matcher
+
+# Initialize the matcher with the spaCy vocabulary
+matcher = Matcher(nlp.vocab)
+
+matches = []
+for i in doc_lemmatization:
+    print(i)
+    str2 = &#39; &#39;.join(i)
+    doc = nlp(str2)
+    # Define rule
+    pattern = [{&#39;TEXT&#39;: &#39;People&#39;}, {&#39;TEXT&#39;: &#39;cat&#39;}]
+    # Add rule
+    matcher.add(&#39;rule_1&#39;, None, pattern)
+    matches.append(matcher)
+    matches_found = matcher(doc)
+    matches.append(matches_found)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Finding matches and passing the doc to the matches object
+matches
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can see from the image below, we have been provided with a unique id, and the respective start element &lt;strong&gt;6&lt;/strong&gt; and end element &lt;strong&gt;8&lt;/strong&gt; of the match
+&lt;img src=&#34;../../img/img15.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sentiment Analysis&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;score_list = []
+for i in doc_lemmatization:
+    str3 = &#39; &#39;.join(i)
+    blob = TextBlob(str3)
+    for sentence in blob.sentences:
+        score_list.append(sentence.sentiment.polarity)
+        print(i,sentence.sentiment.polarity)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can see the text after NLP next to the score where:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;1&lt;/strong&gt; is the most positive cat fact&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-1&lt;/strong&gt; is the most negative cat fact&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/score.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;df = pd.DataFrame(score_list)
+df[&#39;score&#39;] = df[0]
+del df[0]
+df
+
+df[&#39;Sentiment&#39;] = np.where(df[&#39;score&#39;] == 0, 
+                          &#39;Neutral&#39;, &#39;&#39;)
+df[&#39;Neutral Flag&#39;] = np.where(df[&#39;score&#39;] == 0, 
+                          1, 0)
+df[&#39;Sentiment&#39;] = np.where(df[&#39;score&#39;] &amp;gt; 0, 
+                          &#39;Positive&#39;, df[&#39;Sentiment&#39;])
+df[&#39;Positive Flag&#39;] = np.where(df[&#39;score&#39;] &amp;gt; 0, 
+                          1, 0)
+df[&#39;Sentiment&#39;] = np.where(df[&#39;score&#39;] &amp;lt; 0, 
+                          &#39;Negative&#39;, df[&#39;Sentiment&#39;])
+df[&#39;Negative Flag&#39;] = np.where(df[&#39;score&#39;] &amp;lt; 0, 
+                          1, 0)
+df[&#39;Sentiment&#39;]
+df = df[:20]
+df
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Classifying the data into Positive, Negative and Neutral depending on the score.
+&lt;img src=&#34;../../img/df.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Data Viz&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Being a big fan of Data Viz, what a better way to end with some graphs. I am a big fan of Plotly, but you can adapt the code for your preferred data viz choices.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Pie Chart&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fig = px.pie(df, names=&#39;Sentiment&#39;, title=&#39;Sentiment Analysis of Random Cat Facts&#39;, color_discrete_map={&#39;Thur&#39;:&#39;lightcyan&#39;,
+                                 &#39;Postive &#39;:&#39;green&#39;,
+                                 &#39;Neutral&#39;:&#39;grey&#39;,
+                                 &#39;Negative&#39;:&#39;red&#39;})
+fig.update_traces(textposition=&#39;inside&#39;, textinfo=&#39;percent+label&#39;)
+fig.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/pie.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Histogram&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;cf.go_offline()
+cf.set_config_file(offline=False, world_readable=True)
+
+df[&#39;score&#39;].iplot(
+    kind=&#39;hist&#39;,
+    bins=50,
+    xTitle=&#39;polarity&#39;,
+    linecolor=&#39;black&#39;,
+    yTitle=&#39;count&#39;,
+    title=&#39;Sentiment Polarity Distribution&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/hist.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Bar Chart Of Length Of Sentences&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;len_sentence = []
+for i in doc_lemmatization:
+    len_sentence.append(len(i))
+=df[&#39;len_sentence&#39;] = len_sentence
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;df[&#39;len_sentence&#39;].iplot(
+    kind=&#39;hist&#39;,
+    bins=100,
+    xTitle=&#39;word count&#39;,
+    linecolor=&#39;black&#39;,
+    yTitle=&#39;count&#39;,
+    title=&#39;Review Text Word Count Distribution&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/bar.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;WordCloud&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;merged = list(itertools.chain(*doc_lemmatization))
+#convert list to string and generate
+unique_string=(&amp;quot; &amp;quot;).join(merged)
+wordcloud = WordCloud(width = 1000, height = 500).generate(unique_string)
+plt.figure(figsize=(15,8))
+plt.imshow(wordcloud)
+plt.axis(&amp;quot;off&amp;quot;)
+plt.show()
+plt.close()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/Unknown.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Bar Chart Of POS Tagging&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;counts = Counter(doc_pos)
+common = counts.most_common()
+df_pos = pd.DataFrame(common)
+df_pos[&#39;Count&#39;] = df_pos[1]
+df_pos[&#39;POS_tagging&#39;] = df_pos[0]
+
+fig = px.bar(df_pos, x=&#39;POS_tagging&#39;, y=&#39;Count&#39;, title=&#39;Bar Chart of POS Tagging&#39;)
+fig.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/bar_pog.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s it for today. I hope you enjoyed this project as much as I have. Whilst there were limitations in the analysis due to the small sample size used, I believe the three things you can take from the project are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduction to APIs&lt;/li&gt;
+&lt;li&gt;Introduction to NLP&lt;/li&gt;
+&lt;li&gt;Introduction to Sentiment Analysis&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have time, you can further explore this project by potentially using the dates and creating a time series based model looking to predict the average cat fact &amp;lsquo;score&amp;rsquo; depending on the date.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

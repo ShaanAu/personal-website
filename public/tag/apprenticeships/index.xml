@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apprenticeships | Shaan Aucharagram</title>
-    <link>/tag/apprenticeships/</link>
-      <atom:link href="/tag/apprenticeships/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://shaanaucharagram.com/tag/apprenticeships/</link>
+      <atom:link href="https://shaanaucharagram.com/tag/apprenticeships/index.xml" rel="self" type="application/rss+xml" />
     <description>Apprenticeships</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Shaan Aucharagram © 2020</copyright><lastBuildDate>Sat, 20 Apr 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/avatar.jpg</url>
+      <url>https://shaanaucharagram.com/img/avatar.jpg</url>
       <title>Apprenticeships</title>
-      <link>/tag/apprenticeships/</link>
+      <link>https://shaanaucharagram.com/tag/apprenticeships/</link>
     </image>
     
     <item>
       <title>Why I Chose A Degree Apprenticeship Over University</title>
-      <link>/post/degree-apprenticeship-over-uni/</link>
+      <link>https://shaanaucharagram.com/post/degree-apprenticeship-over-uni/</link>
       <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/post/degree-apprenticeship-over-uni/</guid>
+      <guid>https://shaanaucharagram.com/post/degree-apprenticeship-over-uni/</guid>
       <description>&lt;p&gt;Today, I want to talk about why I chose the newest type of scheme, a degree apprenticeship, over the traditional university route. But before this, I want to address some of the negative connotations that are associated with apprenticeships.&lt;/p&gt;
 &lt;p&gt;Occasionally, you find people who when they hear about apprenticeships, they think of traditional roles such as construction, hairdressing amongst others. Whilst these types of apprenticeships still remain, since the introduction of the apprenticeship levy and degree apprenticeships in recent years, there has been an increase in the number of apprentices in sectors such as the financial sector, technology and entertainment companies. Whilst earning a qualification, in some cases a degree, this scheme may well put them ahead of graduates who find it difficult to find a role due to high levels of competition for graduate roles. These opportunities exist in roles such as Data Science, Software Engineering, Digital Marketing, Finance and various other fields.&lt;/p&gt;
 &lt;p&gt;Many companies upon the completion of an apprenticeship will retain their employees due to their working knowledge of the existing companies facilities. For example, within technology roles, graduates who have come from university tend to have little experience working on real-life projects with deadlines. Meaning, they are not used to programming for several hours at a time, and may not understand industry practices such as the agile methodology, where tasks are completed in a more structured way. I have found that many graduates struggle to understand concepts such as version control and have limited experience using Git, the industry-standard version control software.&lt;/p&gt;

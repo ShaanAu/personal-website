@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Other | Shaan Aucharagram</title>
-    <link>/tag/other/</link>
-      <atom:link href="/tag/other/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://shaanaucharagram.com/tag/other/</link>
+      <atom:link href="https://shaanaucharagram.com/tag/other/index.xml" rel="self" type="application/rss+xml" />
     <description>Other</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Shaan Aucharagram © 2020</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/avatar.jpg</url>
+      <url>https://shaanaucharagram.com/img/avatar.jpg</url>
       <title>Other</title>
-      <link>/tag/other/</link>
+      <link>https://shaanaucharagram.com/tag/other/</link>
     </image>
     
     <item>
       <title>Recreating Flappy Bird With a Twist</title>
-      <link>/project/wing-it/</link>
+      <link>https://shaanaucharagram.com/project/wing-it/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/wing-it/</guid>
+      <guid>https://shaanaucharagram.com/project/wing-it/</guid>
       <description></description>
     </item>
     

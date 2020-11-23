@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | Shaan Aucharagram</title>
-    <link>/authors/</link>
-      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://shaanaucharagram.com/authors/</link>
+      <atom:link href="https://shaanaucharagram.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Shaan Aucharagram © 2020</copyright><lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Shaan Aucharagram © 2020</copyright><lastBuildDate>Mon, 23 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/avatar.jpg</url>
+      <url>https://shaanaucharagram.com/img/avatar.jpg</url>
       <title>Authors</title>
-      <link>/authors/</link>
+      <link>https://shaanaucharagram.com/authors/</link>
     </image>
     
   </channel>

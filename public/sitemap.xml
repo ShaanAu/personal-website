@@ -3,137 +3,162 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/authors/</loc>
+    <loc>https://shaanaucharagram.com/authors/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shaanaucharagram.com/categories/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shaanaucharagram.com/post/copyofcat-api-nlp-project/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shaanaucharagram.com/tag/nlp/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shaanaucharagram.com/category/nlp/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shaanaucharagram.com/post/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shaanaucharagram.com/tag/python/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shaanaucharagram.com/tag/sentiment-analysis/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shaanaucharagram.com/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shaanaucharagram.com/author/shaan-aucharagram/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shaanaucharagram.com/tags/</loc>
+    <lastmod>2020-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shaanaucharagram.com/tag/career/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/career/</loc>
+    <loc>https://shaanaucharagram.com/category/career/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/category/career/</loc>
+    <loc>https://shaanaucharagram.com/tag/genzoomer.ai/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://shaanaucharagram.com/tag/networking/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/genzoomer.ai/</loc>
+    <loc>https://shaanaucharagram.com/post/networking-101/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/networking/</loc>
+    <loc>https://shaanaucharagram.com/post/tips-tricks-building-a-side-project/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/networking-101/</loc>
+    <loc>https://shaanaucharagram.com/category/website/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/author/shaan-aucharagram/</loc>
-    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/tips-tricks-building-a-side-project/</loc>
-    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/category/website/</loc>
-    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/apprenticeships/</loc>
+    <loc>https://shaanaucharagram.com/tag/apprenticeships/</loc>
     <lastmod>2019-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/degree-apprenticeship-over-uni/</loc>
+    <loc>https://shaanaucharagram.com/post/degree-apprenticeship-over-uni/</loc>
     <lastmod>2019-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/genzoomer-ai/</loc>
+    <loc>https://shaanaucharagram.com/project/genzoomer-ai/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/machine-learning/</loc>
+    <loc>https://shaanaucharagram.com/tag/machine-learning/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/machine_learning_aicore/</loc>
+    <loc>https://shaanaucharagram.com/project/machine_learning_aicore/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/personal_website/</loc>
+    <loc>https://shaanaucharagram.com/project/personal_website/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/other/</loc>
+    <loc>https://shaanaucharagram.com/tag/other/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/</loc>
+    <loc>https://shaanaucharagram.com/project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/wing-it/</loc>
+    <loc>https://shaanaucharagram.com/project/wing-it/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/website/</loc>
+    <loc>https://shaanaucharagram.com/tag/website/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/artificial-intelligence/</loc>
+    <loc>https://shaanaucharagram.com/tag/artificial-intelligence/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/category/machine-learning/</loc>
+    <loc>https://shaanaucharagram.com/category/machine-learning/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/machine-learning-post/</loc>
+    <loc>https://shaanaucharagram.com/post/machine-learning-post/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/</loc>
+    <loc>https://shaanaucharagram.com/publication_types/</loc>
   </url>
   
 </urlset>
