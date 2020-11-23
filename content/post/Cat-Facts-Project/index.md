@@ -51,15 +51,12 @@ If the package is failing to import, you can resolve the issue using pip e.g.
 import json
 import requests
 import pandas as pd
-import spacy
 import numpy as np
 from textblob import TextBlob
-import pandas as pd
-import numpy as np
 import spacy
-from urllib.request import urlopen
 from spacy import displacy
 from spacy.matcher import Matcher
+from urllib.request import urlopen
 import plotly.express as px
 import matplotlib.pyplot as plt
 import itertools
@@ -152,7 +149,7 @@ getLengthSentences(20, responses)
 
 **Stop Words**
 
-Stopwords are the most common words in any NLP model. To analyze text data and build NLP models, these stopwords might not add much value to the meaning of the document. Generally, the most common words used in a text are 
+Stop words are the most common words in any NLP model. To analyze text data and build NLP models, these stopwords might not add much value to the meaning of the document. Generally, the most common words used in a text are 
 * **“the”**
 * **“is”** 
 * **“in”**
@@ -240,7 +237,13 @@ From the below image you can see that each of our functions have worked as expec
 
 **Part of Speech Tagging**
 
+The process of classifying words into their parts of speech and labeling them accordingly is known as part-of-speech tagging, POS-tagging, or simply tagging.
+
+This can be useful within text data to gain a greater overview of what our data represents.
+
 <img src="../../img/Capture.PNG" alt="" />
+
+The first function converts a ***'list of lists'*** -> ***'one list'***
 
 
 ```python
@@ -256,6 +259,8 @@ def changeDataType(doc):
 doc_one_list = changeDataType(doc_lemmatization)
 ```
 
+
+The second function returns each word with their ***POS*** tag.
 
 ```python
 def pos_tagging(doc):
@@ -290,7 +295,7 @@ for i in doc_lemmatization:
     str2 = ' '.join(i)
     doc = nlp(str2)
     # Define rule
-    pattern = [{'TEXT': 'People'}, {'TEXT': 'cat'}]
+    pattern = [{'TEXT': 'tom'}, {'TEXT': 'jerry'}]
     # Add rule
     matcher.add('rule_1', None, pattern)
     matches.append(matcher)
@@ -306,6 +311,8 @@ You can see from the image below, we have been provided with a unique id, and th
 
 
 **Sentiment Analysis**
+
+We now create a score to see how positive or negative the each cat fact is, by loopng through the sentences and applying ***setiment.polarity*** on each element within the list.
 
 ```python
 score_list = []
@@ -352,15 +359,12 @@ Classifying the data into Positive, Negative and Neutral depending on the score.
 
 **Data Viz**
 
-Being a big fan of Data Viz, what a better way to end with some graphs. I am a big fan of Plotly, but you can adapt the code for your preferred data viz choices.
+Being a big fan of Data Viz, what a better way to end with some graphs. I am a big fan of Plotly, but you can adapt the code for your preferred tools.
 
 *Pie Chart*
 
 ```python
-fig = px.pie(df, names='Sentiment', title='Sentiment Analysis of Random Cat Facts', color_discrete_map={'Thur':'lightcyan',
-                                 'Postive ':'green',
-                                 'Neutral':'grey',
-                                 'Negative':'red'})
+fig = px.pie(df, names='Sentiment', title='Sentiment Analysis of Random Cat Facts')
 fig.update_traces(textposition='inside', textinfo='percent+label')
 fig.show()
 ```
@@ -442,5 +446,5 @@ That's it for today. I hope you enjoyed this project as much as I have. Whilst t
 * Introduction to NLP
 * Introduction to Sentiment Analysis
 
-If you have time, you can further explore this project by potentially using the dates and creating a time series based model looking to predict the average cat fact 'score' depending on the date.
+If you have time, you can further explore this project by potentially using the dates and creating a time series based model looking to predict the average sentiment score.
  

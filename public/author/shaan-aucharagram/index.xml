@@ -14,9 +14,9 @@
     
     <item>
       <title>Classifying Random Cat Facts, NLP Tutorial</title>
-      <link>https://shaanaucharagram.com/post/copyofcat-api-nlp-project/</link>
+      <link>https://shaanaucharagram.com/post/cat-facts-project/</link>
       <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://shaanaucharagram.com/post/copyofcat-api-nlp-project/</guid>
+      <guid>https://shaanaucharagram.com/post/cat-facts-project/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;In this tutorial, we will be retrieving &lt;em&gt;&lt;strong&gt;random cat facts&lt;/strong&gt;&lt;/em&gt; using a Web API with the &lt;em&gt;&lt;strong&gt;requests&lt;/strong&gt;&lt;/em&gt; package in python.&lt;/p&gt;
 &lt;p&gt;Next We will use NLP with &lt;em&gt;&lt;strong&gt;spaCy&lt;/strong&gt;&lt;/em&gt; to tokenise, remove stop words, lemmatize our data.&lt;/p&gt;
