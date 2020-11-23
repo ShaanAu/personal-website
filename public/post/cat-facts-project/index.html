@@ -674,7 +674,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    6 min read
+    7 min read
   </span>
   
 
@@ -721,9 +721,8 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p><strong>Introduction</strong></p>
-<p>In this tutorial, we will be retrieving <em><strong>random cat facts</strong></em> using a Web API with the <em><strong>requests</strong></em> package in python.</p>
-<p>Next We will use NLP with <em><strong>spaCy</strong></em> to tokenise, remove stop words, lemmatize our data.</p>
+      <p>In this tutorial, we will be retrieving <em><strong>random cat facts</strong></em> using a Web API with the <em><strong>requests</strong></em> package in python.</p>
+<p>Next, we will use NLP with <em><strong>spaCy</strong></em> to tokenise, remove stop words, lemmatize our data.</p>
 <p>Finally will use the cleaned data and then perform sentiment analysis using the <em><strong>textblob</strong></em> package to create a score for each fact and to see whether the score is:</p>
 <ul>
 <li><strong>Positive:</strong> Score &gt; 0</li>
@@ -742,15 +741,12 @@ I would suggest cloning the repository for anyone looking to work on the code th
 import json
 import requests
 import pandas as pd
-import spacy
 import numpy as np
 from textblob import TextBlob
-import pandas as pd
-import numpy as np
 import spacy
-from urllib.request import urlopen
 from spacy import displacy
 from spacy.matcher import Matcher
+from urllib.request import urlopen
 import plotly.express as px
 import matplotlib.pyplot as plt
 import itertools
@@ -823,7 +819,7 @@ getLengthSentences(20, responses)
 </code></pre>
 <p><img src="../../img/pic11.jpg" alt="" /></p>
 <p><strong>Stop Words</strong></p>
-<p>Stopwords are the most common words in any NLP model. To analyze text data and build NLP models, these stopwords might not add much value to the meaning of the document. Generally, the most common words used in a text are</p>
+<p>Stop words are the most common words in any NLP model. To analyze text data and build NLP models, these stopwords might not add much value to the meaning of the document. Generally, the most common words used in a text are</p>
 <ul>
 <li><strong>“the”</strong></li>
 <li><strong>“is”</strong></li>
@@ -891,10 +887,13 @@ doc_lemmatization = lemmatization(doc_no_punctuation)
 <p><strong>Comparison</strong></p>
 <pre><code class="language-python">doc_no_punctuation[0], doc_no_stopwords[0], doc_lemmatization[0]
 </code></pre>
-<p>From the below image you can see that each of our functions have worked as expected.
+<p>From the below image you can see that each of our functions has worked as expected.
 <img src="../../img/pic7.jpg" alt="" /></p>
 <p><strong>Part of Speech Tagging</strong></p>
+<p>The process of classifying words into their parts of speech and labelling them accordingly is known as part-of-speech tagging, POS-tagging, or simply tagging.</p>
+<p>This can be useful within text data to gain a greater overview of what our data represents.</p>
 <p><img src="../../img/Capture.PNG" alt="" /></p>
+<p>The first function converts a <em><strong>&lsquo;list of lists&rsquo;</strong></em> -&gt; <em><strong>&lsquo;one list&rsquo;</strong></em></p>
 <pre><code class="language-python">def changeDataType(doc):
     '''Change Data Type into One List for POS'''
     final_doc = []
@@ -906,6 +905,7 @@ doc_lemmatization = lemmatization(doc_no_punctuation)
 
 doc_one_list = changeDataType(doc_lemmatization)
 </code></pre>
+<p>The second function returns each word with their <em><strong>POS</strong></em> tag.</p>
 <pre><code class="language-python">def pos_tagging(doc):
     '''POS Tagging on Text Data'''
     doc_pos = []
@@ -918,13 +918,17 @@ doc_pos = pos_tagging(doc_one_list)
 doc_pos
 
 </code></pre>
+<p><img src="../../img/pos.png" alt="" /></p>
 <p><strong>Matcher</strong></p>
 <p>SpaCy also offers functionality to match on a pattern, here I have set to match on the words:</p>
 <ul>
 <li><em><strong>Tom</strong></em></li>
 <li><em><strong>Jerry</strong></em></li>
 </ul>
-<pre><code class="language-python"># Import spaCy Matcher
+<pre><code class="language-python">
+&lt;img src=&quot;../../img/tom.png&quot; alt=&quot;&quot; /&gt;
+
+# Import spaCy Matcher
 from spacy.matcher import Matcher
 
 # Initialize the matcher with the spaCy vocabulary
@@ -936,7 +940,7 @@ for i in doc_lemmatization:
     str2 = ' '.join(i)
     doc = nlp(str2)
     # Define rule
-    pattern = [{'TEXT': 'People'}, {'TEXT': 'cat'}]
+    pattern = [{'TEXT': 'Tom'}, {'TEXT': 'Jerry'}]
     # Add rule
     matcher.add('rule_1', None, pattern)
     matches.append(matcher)
@@ -949,6 +953,7 @@ matches
 <p>You can see from the image below, we have been provided with a unique id, and the respective start element <strong>6</strong> and end element <strong>8</strong> of the match
 <img src="../../img/img15.png" alt="" /></p>
 <p><strong>Sentiment Analysis</strong></p>
+<p>We now create a score to see how positive or negative each cat fact is, by looping through the sentences and applying <em><strong>sentiment.polarity</strong></em> on each element within the list.</p>
 <pre><code class="language-python">score_list = []
 for i in doc_lemmatization:
     str3 = ' '.join(i)
@@ -987,12 +992,9 @@ df
 <p>Classifying the data into Positive, Negative and Neutral depending on the score.
 <img src="../../img/df.png" alt="" /></p>
 <p><strong>Data Viz</strong></p>
-<p>Being a big fan of Data Viz, what a better way to end with some graphs. I am a big fan of Plotly, but you can adapt the code for your preferred data viz choices.</p>
+<p>Being a big fan of Data Viz, what a better way to end with some graphs. I am a big fan of Plotly, but you can adapt the code for your preferred tools.</p>
 <p><em>Pie Chart</em></p>
-<pre><code class="language-python">fig = px.pie(df, names='Sentiment', title='Sentiment Analysis of Random Cat Facts', color_discrete_map={'Thur':'lightcyan',
-                                 'Postive ':'green',
-                                 'Neutral':'grey',
-                                 'Negative':'red'})
+<pre><code class="language-python">fig = px.pie(df, names='Sentiment', title='Sentiment Analysis of Random Cat Facts')
 fig.update_traces(textposition='inside', textinfo='percent+label')
 fig.show()
 </code></pre>
@@ -1055,7 +1057,7 @@ fig.show()
 <li>Introduction to NLP</li>
 <li>Introduction to Sentiment Analysis</li>
 </ul>
-<p>If you have time, you can further explore this project by potentially using the dates and creating a time series based model looking to predict the average cat fact &lsquo;score&rsquo; depending on the date.</p>
+<p>If you have time, you can further explore this project by potentially using the dates and creating a time series based model looking to predict the average sentiment score.</p>
 
     </div>
 

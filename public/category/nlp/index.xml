@@ -17,9 +17,8 @@
       <link>https://shaanaucharagram.com/post/cat-facts-project/</link>
       <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://shaanaucharagram.com/post/cat-facts-project/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In this tutorial, we will be retrieving &lt;em&gt;&lt;strong&gt;random cat facts&lt;/strong&gt;&lt;/em&gt; using a Web API with the &lt;em&gt;&lt;strong&gt;requests&lt;/strong&gt;&lt;/em&gt; package in python.&lt;/p&gt;
-&lt;p&gt;Next We will use NLP with &lt;em&gt;&lt;strong&gt;spaCy&lt;/strong&gt;&lt;/em&gt; to tokenise, remove stop words, lemmatize our data.&lt;/p&gt;
+      <description>&lt;p&gt;In this tutorial, we will be retrieving &lt;em&gt;&lt;strong&gt;random cat facts&lt;/strong&gt;&lt;/em&gt; using a Web API with the &lt;em&gt;&lt;strong&gt;requests&lt;/strong&gt;&lt;/em&gt; package in python.&lt;/p&gt;
+&lt;p&gt;Next, we will use NLP with &lt;em&gt;&lt;strong&gt;spaCy&lt;/strong&gt;&lt;/em&gt; to tokenise, remove stop words, lemmatize our data.&lt;/p&gt;
 &lt;p&gt;Finally will use the cleaned data and then perform sentiment analysis using the &lt;em&gt;&lt;strong&gt;textblob&lt;/strong&gt;&lt;/em&gt; package to create a score for each fact and to see whether the score is:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Positive:&lt;/strong&gt; Score &amp;gt; 0&lt;/li&gt;
@@ -38,15 +37,12 @@ I would suggest cloning the repository for anyone looking to work on the code th
 import json
 import requests
 import pandas as pd
-import spacy
 import numpy as np
 from textblob import TextBlob
-import pandas as pd
-import numpy as np
 import spacy
-from urllib.request import urlopen
 from spacy import displacy
 from spacy.matcher import Matcher
+from urllib.request import urlopen
 import plotly.express as px
 import matplotlib.pyplot as plt
 import itertools
@@ -119,7 +115,7 @@ getLengthSentences(20, responses)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;../../img/pic11.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Stop Words&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Stopwords are the most common words in any NLP model. To analyze text data and build NLP models, these stopwords might not add much value to the meaning of the document. Generally, the most common words used in a text are&lt;/p&gt;
+&lt;p&gt;Stop words are the most common words in any NLP model. To analyze text data and build NLP models, these stopwords might not add much value to the meaning of the document. Generally, the most common words used in a text are&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;“the”&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;“is”&lt;/strong&gt;&lt;/li&gt;
@@ -187,10 +183,13 @@ doc_lemmatization = lemmatization(doc_no_punctuation)
 &lt;p&gt;&lt;strong&gt;Comparison&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;doc_no_punctuation[0], doc_no_stopwords[0], doc_lemmatization[0]
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;From the below image you can see that each of our functions have worked as expected.
+&lt;p&gt;From the below image you can see that each of our functions has worked as expected.
 &lt;img src=&#34;../../img/pic7.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Part of Speech Tagging&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The process of classifying words into their parts of speech and labelling them accordingly is known as part-of-speech tagging, POS-tagging, or simply tagging.&lt;/p&gt;
+&lt;p&gt;This can be useful within text data to gain a greater overview of what our data represents.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;../../img/Capture.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The first function converts a &lt;em&gt;&lt;strong&gt;&amp;lsquo;list of lists&amp;rsquo;&lt;/strong&gt;&lt;/em&gt; -&amp;gt; &lt;em&gt;&lt;strong&gt;&amp;lsquo;one list&amp;rsquo;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def changeDataType(doc):
     &#39;&#39;&#39;Change Data Type into One List for POS&#39;&#39;&#39;
     final_doc = []
@@ -202,6 +201,7 @@ doc_lemmatization = lemmatization(doc_no_punctuation)
 
 doc_one_list = changeDataType(doc_lemmatization)
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The second function returns each word with their &lt;em&gt;&lt;strong&gt;POS&lt;/strong&gt;&lt;/em&gt; tag.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def pos_tagging(doc):
     &#39;&#39;&#39;POS Tagging on Text Data&#39;&#39;&#39;
     doc_pos = []
@@ -214,13 +214,17 @@ doc_pos = pos_tagging(doc_one_list)
 doc_pos
 
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/pos.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Matcher&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;SpaCy also offers functionality to match on a pattern, here I have set to match on the words:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;&lt;strong&gt;Tom&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;&lt;strong&gt;Jerry&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Import spaCy Matcher
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+&amp;lt;img src=&amp;quot;../../img/tom.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
+
+# Import spaCy Matcher
 from spacy.matcher import Matcher
 
 # Initialize the matcher with the spaCy vocabulary
@@ -232,7 +236,7 @@ for i in doc_lemmatization:
     str2 = &#39; &#39;.join(i)
     doc = nlp(str2)
     # Define rule
-    pattern = [{&#39;TEXT&#39;: &#39;People&#39;}, {&#39;TEXT&#39;: &#39;cat&#39;}]
+    pattern = [{&#39;TEXT&#39;: &#39;Tom&#39;}, {&#39;TEXT&#39;: &#39;Jerry&#39;}]
     # Add rule
     matcher.add(&#39;rule_1&#39;, None, pattern)
     matches.append(matcher)
@@ -245,6 +249,7 @@ matches
 &lt;p&gt;You can see from the image below, we have been provided with a unique id, and the respective start element &lt;strong&gt;6&lt;/strong&gt; and end element &lt;strong&gt;8&lt;/strong&gt; of the match
 &lt;img src=&#34;../../img/img15.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sentiment Analysis&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We now create a score to see how positive or negative each cat fact is, by looping through the sentences and applying &lt;em&gt;&lt;strong&gt;sentiment.polarity&lt;/strong&gt;&lt;/em&gt; on each element within the list.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;score_list = []
 for i in doc_lemmatization:
     str3 = &#39; &#39;.join(i)
@@ -283,12 +288,9 @@ df
 &lt;p&gt;Classifying the data into Positive, Negative and Neutral depending on the score.
 &lt;img src=&#34;../../img/df.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Data Viz&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Being a big fan of Data Viz, what a better way to end with some graphs. I am a big fan of Plotly, but you can adapt the code for your preferred data viz choices.&lt;/p&gt;
+&lt;p&gt;Being a big fan of Data Viz, what a better way to end with some graphs. I am a big fan of Plotly, but you can adapt the code for your preferred tools.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Pie Chart&lt;/em&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fig = px.pie(df, names=&#39;Sentiment&#39;, title=&#39;Sentiment Analysis of Random Cat Facts&#39;, color_discrete_map={&#39;Thur&#39;:&#39;lightcyan&#39;,
-                                 &#39;Postive &#39;:&#39;green&#39;,
-                                 &#39;Neutral&#39;:&#39;grey&#39;,
-                                 &#39;Negative&#39;:&#39;red&#39;})
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fig = px.pie(df, names=&#39;Sentiment&#39;, title=&#39;Sentiment Analysis of Random Cat Facts&#39;)
 fig.update_traces(textposition=&#39;inside&#39;, textinfo=&#39;percent+label&#39;)
 fig.show()
 &lt;/code&gt;&lt;/pre&gt;
@@ -351,7 +353,7 @@ fig.show()
 &lt;li&gt;Introduction to NLP&lt;/li&gt;
 &lt;li&gt;Introduction to Sentiment Analysis&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;If you have time, you can further explore this project by potentially using the dates and creating a time series based model looking to predict the average cat fact &amp;lsquo;score&amp;rsquo; depending on the date.&lt;/p&gt;
+&lt;p&gt;If you have time, you can further explore this project by potentially using the dates and creating a time series based model looking to predict the average sentiment score.&lt;/p&gt;
 </description>
     </item>
     

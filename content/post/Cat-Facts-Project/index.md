@@ -20,12 +20,12 @@ tags:
 - NLP
 - Sentiment Analysis
 title: 'Classifying Random Cat Facts, NLP Tutorial'
+
 ---
-**Introduction**
 
 In this tutorial, we will be retrieving ***random cat facts*** using a Web API with the ***requests*** package in python.
 
-Next We will use NLP with ***spaCy*** to tokenise, remove stop words, lemmatize our data.
+Next, we will use NLP with ***spaCy*** to tokenise, remove stop words, lemmatize our data.
 
 Finally will use the cleaned data and then perform sentiment analysis using the ***textblob*** package to create a score for each fact and to see whether the score is:
 * **Positive:** Score > 0
@@ -232,12 +232,12 @@ doc_lemmatization = lemmatization(doc_no_punctuation)
 ```python
 doc_no_punctuation[0], doc_no_stopwords[0], doc_lemmatization[0]
 ```
-From the below image you can see that each of our functions have worked as expected.
+From the below image you can see that each of our functions has worked as expected.
 <img src="../../img/pic7.jpg" alt="" />
 
 **Part of Speech Tagging**
 
-The process of classifying words into their parts of speech and labeling them accordingly is known as part-of-speech tagging, POS-tagging, or simply tagging.
+The process of classifying words into their parts of speech and labelling them accordingly is known as part-of-speech tagging, POS-tagging, or simply tagging.
 
 This can be useful within text data to gain a greater overview of what our data represents.
 
@@ -276,6 +276,9 @@ doc_pos
 
 ```
 
+<img src="../../img/pos.png" alt="" />
+
+
 **Matcher**
 
 SpaCy also offers functionality to match on a pattern, here I have set to match on the words:
@@ -283,6 +286,9 @@ SpaCy also offers functionality to match on a pattern, here I have set to match 
 * ***Jerry***
 
 ```python
+
+<img src="../../img/tom.png" alt="" />
+
 # Import spaCy Matcher
 from spacy.matcher import Matcher
 
@@ -295,13 +301,14 @@ for i in doc_lemmatization:
     str2 = ' '.join(i)
     doc = nlp(str2)
     # Define rule
-    pattern = [{'TEXT': 'tom'}, {'TEXT': 'jerry'}]
+    pattern = [{'TEXT': 'Tom'}, {'TEXT': 'Jerry'}]
     # Add rule
     matcher.add('rule_1', None, pattern)
     matches.append(matcher)
     matches_found = matcher(doc)
     matches.append(matches_found)
 ```
+
 ```python   
 # Finding matches and passing the doc to the matches object
 matches
@@ -312,7 +319,7 @@ You can see from the image below, we have been provided with a unique id, and th
 
 **Sentiment Analysis**
 
-We now create a score to see how positive or negative the each cat fact is, by loopng through the sentences and applying ***setiment.polarity*** on each element within the list.
+We now create a score to see how positive or negative each cat fact is, by looping through the sentences and applying ***sentiment.polarity*** on each element within the list.
 
 ```python
 score_list = []
