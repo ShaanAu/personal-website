@@ -221,10 +221,7 @@ doc_pos
 &lt;li&gt;&lt;em&gt;&lt;strong&gt;Tom&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;&lt;strong&gt;Jerry&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
-&amp;lt;img src=&amp;quot;../../img/tom.png&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;
-
-# Import spaCy Matcher
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Import spaCy Matcher
 from spacy.matcher import Matcher
 
 # Initialize the matcher with the spaCy vocabulary
