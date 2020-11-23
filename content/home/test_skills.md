@@ -19,7 +19,6 @@ subtitle = ""
 **Technical Skills** 
 * **Python** 
 * **C++**
-* **R**
 * **Relational Databases** - SQL/PostgreSQL
 * **Machine Learning** - NLP, Deep Learning
 * **Data Visualisations** - Tableau, Plotly, Dash

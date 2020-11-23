@@ -20,6 +20,11 @@ tags:
 - Career
 title: 'Networking 101'
 ---
+```python
+def shaan():
+  a = b + aß
+```
+
 
 One skill that they don’t teach you at school and what I recently knew very little about, networking. How does one network? It is arguably one of the most sought out skills from the younger generation, who are savvier in terms of hard skills, subsequently neglecting the soft skills.
 
