@@ -286,9 +286,6 @@ SpaCy also offers functionality to match on a pattern, here I have set to match 
 * ***Jerry***
 
 ```python
-
-<img src="../../img/tom.png" alt="" />
-
 # Import spaCy Matcher
 from spacy.matcher import Matcher
 
@@ -308,6 +305,7 @@ for i in doc_lemmatization:
     matches_found = matcher(doc)
     matches.append(matches_found)
 ```
+
 
 ```python   
 # Finding matches and passing the doc to the matches object
