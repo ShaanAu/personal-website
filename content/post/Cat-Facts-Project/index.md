@@ -13,13 +13,13 @@ image:
   preview_only: false
 lastmod: "2020-11-23T00:00:00Z"
 projects: []
-subtitle: 'Natural Language Proccesing using SpaCy and Classifying Random Cat Facts Retrieved Via a Web API Into Positive, Negative or Neutral Using Sentiment Analysis.'
-summary: Natural Language Proccesing using SpaCy and Classifying Random Cat Facts Retrieved Via a Web API Into Positive, Negative or Neutral Using Sentiment Analysis.
+subtitle: 'Natural Language Processing using SpaCy and Classifying Random Cat Facts Retrieved Via a Web API Into Positive, Negative or Neutral Using Sentiment Analysis.'
+summary: Natural Language Processing using SpaCy and Classifying Random Cat Facts Retrieved Via a Web API Into Positive, Negative or Neutral Using Sentiment Analysis.
 tags:
 - Python
 - NLP
 - Sentiment Analysis
-title: 'Classifying Random Cat Facts, NLP Tutorial'
+title: 'Classifying Random Cat Facts using NLP and Sentiment Analysis'
 
 ---
 
