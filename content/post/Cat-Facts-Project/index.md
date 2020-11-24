@@ -25,7 +25,7 @@ title: 'Classifying Random Cat Facts using NLP and Sentiment Analysis'
 
 In this tutorial, we will be retrieving ***random cat facts*** using a Web API with the ***requests*** package in python.
 
-Next, we will use NLP with ***spaCy*** to tokenise, remove stop words, lemmatize our data.
+Next, we will use NLP with ***spaCy*** to tokenise, remove stop words and apply lemmatization on our text data.
 
 Finally will use the cleaned data and then perform sentiment analysis using the ***textblob*** package to create a score for each fact and to see whether the score is:
 * **Positive:** Score > 0

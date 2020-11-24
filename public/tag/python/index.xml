@@ -18,7 +18,7 @@
       <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://shaanaucharagram.com/post/cat-facts-project/</guid>
       <description>&lt;p&gt;In this tutorial, we will be retrieving &lt;em&gt;&lt;strong&gt;random cat facts&lt;/strong&gt;&lt;/em&gt; using a Web API with the &lt;em&gt;&lt;strong&gt;requests&lt;/strong&gt;&lt;/em&gt; package in python.&lt;/p&gt;
-&lt;p&gt;Next, we will use NLP with &lt;em&gt;&lt;strong&gt;spaCy&lt;/strong&gt;&lt;/em&gt; to tokenise, remove stop words, lemmatize our data.&lt;/p&gt;
+&lt;p&gt;Next, we will use NLP with &lt;em&gt;&lt;strong&gt;spaCy&lt;/strong&gt;&lt;/em&gt; to tokenise, remove stop words and apply lemmatization on our text data.&lt;/p&gt;
 &lt;p&gt;Finally will use the cleaned data and then perform sentiment analysis using the &lt;em&gt;&lt;strong&gt;textblob&lt;/strong&gt;&lt;/em&gt; package to create a score for each fact and to see whether the score is:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Positive:&lt;/strong&gt; Score &amp;gt; 0&lt;/li&gt;
