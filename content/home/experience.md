@@ -27,19 +27,15 @@ date_format = "Jan 2006"
   location = "London"
   date_start = "2019-09-30"
   date_end = ""
-  description = """ Rotational degree apprenticeship program with a specialism in Data Science across the retail bank and CCB/CIB, part of the first cohort.
+  description = """ Rotational degree apprenticeship program with a specialism in Data Science across the corporate and retail banks.
   
-Core Data Science Team (Sep 2019 - Jun 2020):                                                               
-* Creating an internal package within the bank to automate Impala and Hive queries in Cloudera, reducing overheads for the data science community (50 people).
-* Using NLP to optimize our chatbots to meet customer needs, in turn reducing the workload on our Agents/Retail Staff.
-* Liaising with various internal and external stakeholders and meeting their project needs, before presenting the mortgage churn dashboard made using Python packages Plotly Dash.
-* Working on the time-sensitive CBILS and BBLS project using SQL, to provide the government with an overview of the bank's transactions taken during COVID-19.
-
-Corporate Financial Crime Analytics (Jul 2020 - Present):
-
-* The sole developer of the entity resolution tool, which uses APIs to retrieve the latest financial data for our CIB/CCB clients and replacing company information where neccesary within the banks data lake.
-* Liasing with various stakeholders within CIB/CCB to create a solution which can be used by other teams within the bank.
-* Exposure to a range of software development best practises, including working in an agile enviroment, issue tracking, git and CI/CD.
+Rotations within **Core Data Science** and **Corporate Financial Crime Analytics**
+  
+Projects involved in include:
+* **Chatbot** using *NLP*
+* **Mortgage Churn** using *Python* and *Plotly Dash*
+* **Entity Resolution** using *Python* and exposure to a range of software engineering best practises
+* **BBB Reporting**, using *SQL* for data mapping and governance, to provide the goverment with an overview of the loan schemes provided
 """
 [[experience]]
     title = "Chief Technology Officer (CTO)"
@@ -49,13 +45,10 @@ Corporate Financial Crime Analytics (Jul 2020 - Present):
   date_start = "2017-01-11"
   date_end = "2019-09-29"
   description = """ 
-   Some of my most notable achievement include:
-  
-* Managing the development of the Suneeta London website www.suneetalondon.co.uk and the respective CBD website www.suneetacbd.co.uk, whilst ensuring that we complied with legislation for the CBD website.
+Managing the development of the Suneeta London website www.suneetalondon.co.uk and the respective CBD website www.suneetacbd.co.uk, whilst ensuring that we complied with legislation for the CBD website.
 
-* Identified where we could improve customer experience on the website, and as a result improved customer retention by 10%.
 
-* Attending a variety of events and acting on the companies behalf, most notable collaboration was being invited to the HQ of ASOS.
+Attending a variety of events and acting on the companies behalf, most notable collaboration was being invited to the HQ of ASOS.
 
 
   """
@@ -67,7 +60,7 @@ Corporate Financial Crime Analytics (Jul 2020 - Present):
   date_start = "2020-04-11"
   date_end = ""
   description = """
-I am an apprenticeship ambassador for LYAAN. I act as a role model by sharing my journey as an apprentice, as well as challenging the associated stigma of apprenticeships. This is through public speaking at events.
+Acting as a role model by sharing my journey as an apprentice, as well as challenging the associated stigma of apprenticeships. This is through public speaking at events.
   """
 
 +++

@@ -18,26 +18,24 @@ subtitle = ""
 +++
 **Technical Skills** 
 * **Python** 
+* **R**
 * **C++**
-* **Relational Databases** - SQL/PostgreSQL
-* **Machine Learning** - NLP, Deep Learning
-* **Data Visualisations** - Tableau, Plotly, Dash
-* **Data Science/Data Analysis**
-* **Version Control** - Git
-* **Hadoop HDFS for Big Data Storage** - Impala, Hive
-* **Web Development** - HTML, CSS, Blogdown
-* **Package Building** - I created my own python package: https://pypi.org/project/strangerqueries/
+* **Relational Databases**: SQL/PostgreSQL
+* **Machine Learning** 
+* **Data Viz**: Tableau, Plotly, Dash
+* **Version Control**: Git
+* **HDFS**: Impala, Hive
+* **Web Development**
+* **Package Building**: https://pypi.org/project/strangerqueries/
 
 **Soft Skills/Business Skills**
 * **Stakeholder Management**
-* **Public Speaking** - I have spoken at various events for Whitehat and LYAAN as an ambassador for apprenticeships
-* **Interpersonal Relationships**
+* **Public Speaking**: Spoken at various events as an ambassador for apprenticeships
 * **Networking** 
 
 **Interests/Hobbies**
-* **Financial Markets**
+* **Investing**
 * **Foreign Television** 
-* **Film Production & Video Editing (Adobe Creative Suite)**
 * **Football, Skiing & Tennis**
 * **Vegan Food**
 

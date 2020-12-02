@@ -1,9 +1,12 @@
 ---
 authors:
 - admin
-bio: Hi, I am Shaan, Data Science Degree Apprentice at Santander UK, technology and investment enthusiast. When I am not playing with the latest technology, you can usually find me playing football with my friends, travelling or spending too much time with my dog.
+bio: My interests include Quantitative Finance, Machine Learning and Data Viz.
 education:
   courses:
+  - course: BSc (Hons) in Data Science 
+    institution: Nottingham Trent University
+    year: 2021 - 2024
   - course: Level 4 in Data Analytics
     institution: Whitehat
     year: 2019 - 2021
@@ -12,9 +15,9 @@ education:
 
 email: ""
 interests:
-- Data/Decision Science
-- Financial Markets
+- Quantitative Finance
 - Machine Learning
+- Corporate Finance
 
 organizations:
 - name: Santander UK
@@ -41,13 +44,20 @@ title: Shaan Aucharagram
 user_groups:
   
 ---
-I’m a Data Science Degree Apprentice at Santander UK, technology enthusiast and youth activist with a strong interest for the financial markets.
+I’m a Data Science Degree Apprentice at Santander UK where I rotate across various teams within the corporate and retail bank whilst working as a Data Scientist. All whilst studying for a degree withn Data Science. 
 
-I started my career with my heart set out on technology, helping out Suneeta London, my family business, in running the technical side of the business. This was primarily through creating the website and improving customer retention. I was also involved in collaborating with other companies, and attended various events and was invited to the HQ of ASOS all whilst completing my A-Levels.
+I've worked on a variety of projects ranging from ***chatbots***, ***mortgage churn*** and ***entity resolotion*** using a wide range of technologies but primarily ***Python*** and ***SQL***.
 
-After turning down university, I decided to pursue a degree apprenticeship in data science at Santander UK concurrently studying a BSc (Hons) in Data Science from NTU. Recently, I have been involved in a variety of public speaking events and have had the privilege to promote apprenticeships as an ambassador for Whitehat and LYAAN.
 
-So far, I have been involved in a variety of projects from chatbots to customer churn. Whilst I'm not certain where the future may take me, I have learnt to embrace the uncertainty. 
+
+
+
+
+
+
+
+
+
 
 
 
