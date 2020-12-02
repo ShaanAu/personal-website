@@ -46,7 +46,7 @@ user_groups:
 ---
 I’m a Data Science Degree Apprentice at Santander UK where I rotate across various teams within the corporate and retail bank whilst working as a Data Scientist. All whilst studying for a degree withn Data Science. 
 
-I've worked on a variety of projects ranging from ***chatbots***, ***mortgage churn*** and ***entity resolotion*** using a wide range of technologies but primarily ***Python*** and ***SQL***.
+I've worked on a variety of projects ranging from ***chatbots***, ***mortgage churn*** and ***entity resolution*** using a wide range of technologies but primarily ***Python*** and ***SQL***.
 
 
 
