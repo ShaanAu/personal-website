@@ -47,31 +47,28 @@ subtitle = "% - Skill Level"
   icon = "database"
   icon_pack = "fas"
   name = "SQL"
-# description = "85%" 
   
     [[feature]]
   icon = "brain"
   icon_pack = "fas"
   name = "Machine Learning"
-# description = "80%" 
-  
+
   [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
   name = "Statistics"
-# description = "75%"  
+
   
   [[feature]]
   icon = "briefcase"
   icon_pack = "fas"
   name = "Domain Knowledge"
-# description = "90%"  
+
   
   [[feature]]
   icon = "comment"
   icon_pack = "far"
   name = "Stakeholder Management"
-# description = "85%"  
 
 +++
 

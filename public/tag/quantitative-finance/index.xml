@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quantitative Finance | Shaan Aucharagram</title>
+    <link>https://shaanaucharagram.com/tag/quantitative-finance/</link>
+      <atom:link href="https://shaanaucharagram.com/tag/quantitative-finance/index.xml" rel="self" type="application/rss+xml" />
+    <description>Quantitative Finance</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Shaan Aucharagram © 2021</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://shaanaucharagram.com/img/avatar.jpg</url>
+      <title>Quantitative Finance</title>
+      <link>https://shaanaucharagram.com/tag/quantitative-finance/</link>
+    </image>
+    
+    <item>
+      <title>Algorithmic Trading</title>
+      <link>https://shaanaucharagram.com/project/genzoomer-ai/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://shaanaucharagram.com/project/genzoomer-ai/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
