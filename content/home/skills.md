@@ -22,56 +22,56 @@ subtitle = "% - Skill Level"
   icon = "python"
   icon_pack = "fab"
   name = "Python"
-  description = "85%"
+# description = "85%"
   
   [[feature]]
   icon = "github"
   icon_pack = "fab"
   name = "Git"
-  description = "90%"
+# description = "90%"
   
   [[feature]]
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
-  description = "70%"
+# description = "70%"
   
   
   [[feature]]
   icon = "chart-pie"
   icon_pack = "fas"
-  name = "Data Visualizations"
-  description = "90%" 
+  name = "Data Viz"
+# description = "90%" 
   
   [[feature]]
   icon = "database"
   icon_pack = "fas"
   name = "SQL"
-  description = "85%" 
+# description = "85%" 
   
     [[feature]]
   icon = "brain"
   icon_pack = "fas"
   name = "Machine Learning"
-  description = "80%" 
+# description = "80%" 
   
   [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
   name = "Statistics"
-  description = "75%"  
+# description = "75%"  
   
   [[feature]]
   icon = "briefcase"
   icon_pack = "fas"
-  name = "Business Acumen"
-  description = "90%"  
+  name = "Domain Knowledge"
+# description = "90%"  
   
   [[feature]]
   icon = "comment"
   icon_pack = "far"
   name = "Stakeholder Management"
-  description = "85%"  
+# description = "85%"  
 
 +++
 

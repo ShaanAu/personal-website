@@ -17,25 +17,22 @@ subtitle = ""
   view = 2
 +++
 **Technical Skills** 
-* **Python** 
+* **Python**
+* **SAS**
 * **R**
-* **C++**
-* **Relational Databases**: SQL/PostgreSQL
-* **Machine Learning** 
-* **Data Viz**: Tableau, Plotly, Dash
-* **Version Control**: Git
+* **SQL**
+* **Tableau**
+* **Git**
 * **HDFS**: Impala, Hive
 * **Web Development**
 * **Package Building**: https://pypi.org/project/strangerqueries/
 
 **Soft Skills/Business Skills**
 * **Stakeholder Management**
-* **Public Speaking**: Spoken at various events as an ambassador for apprenticeships
-* **Networking** 
+* **Public Speaking**
 
 **Interests/Hobbies**
 * **Investing**
-* **Foreign Television** 
 * **Football, Skiing & Tennis**
 * **Vegan Food**
 

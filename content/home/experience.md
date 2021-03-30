@@ -27,15 +27,16 @@ date_format = "Jan 2006"
   location = "London"
   date_start = "2019-09-30"
   date_end = ""
-  description = """ Rotational degree apprenticeship program with a specialism in Data Science across the corporate and retail banks.
+  description = """ Rotational degree apprenticeship program with a specialism in Data Science across the corporate and retail bank.
   
-Rotations within **Core Data Science** and **Corporate Financial Crime Analytics**
+Rotations within **Core Data Science**, **Corporate Financial Crime Analytics** and **Quantitative Risk**
   
 Projects involved in include:
-* **Chatbot** using *NLP*
-* **Mortgage Churn** using *Python* and *Plotly Dash*
-* **Entity Resolution** using *Python* and exposure to a range of software engineering best practises
-* **BBB Reporting**, using *SQL* for data mapping and governance, to provide the goverment with an overview of the loan schemes provided
+* **Chatbot Optimisation** using *Natural Language Processing* in Python to improve customer satisfaction and identify where agents/chatbots can improve responses.
+* **Mortgage Churn Model** using *Python* and *Plotly Dash* to help improve customer retention.
+* **Entity Resolution** using *Python* to replace outdated companies data within the bank data lake using API calls and Data Engineering.
+* **BBB Reporting** using *SQL* to create ETL scripts in Hive-SQL to automate the invoicing reports to the British Business Bank for COVID business loans. This replaced the slow manual reporting tools by processing 150,000 contract accruals daily, generating £28M revenue in 2020.
+* **Credit Risk** using *SAS* to develop capital (economic + regulatory) models for the corporate bank.
 """
 [[experience]]
     title = "Chief Technology Officer (CTO)"
@@ -52,15 +53,6 @@ Attending a variety of events and acting on the companies behalf, most notable c
 
 
   """
-[[experience]]
-    title = "Apprenticeship Ambassador"
-  company = "National Apprenticeship Services"
-  company_url = "https://amazingapprenticeships.com/yaan/"
-  location = "London"
-  date_start = "2020-04-11"
-  date_end = ""
-  description = """
-Acting as a role model by sharing my journey as an apprentice, as well as challenging the associated stigma of apprenticeships. This is through public speaking at events.
-  """
+
 
 +++

@@ -7,9 +7,6 @@ education:
   - course: BSc (Hons) in Data Science 
     institution: Nottingham Trent University
     year: 2021 - 2024
-  - course: Level 4 in Data Analytics
-    institution: Whitehat
-    year: 2019 - 2021
   - course: Computing (D*), Media (A), Maths (C)
     institution: Reigate Sixth Form College
 
@@ -17,7 +14,6 @@ email: ""
 interests:
 - Quantitative Finance
 - Machine Learning
-- Corporate Finance
 
 organizations:
 - name: Santander UK
@@ -44,9 +40,9 @@ title: Shaan Aucharagram
 user_groups:
   
 ---
-I’m a Data Science Degree Apprentice at Santander UK where I rotate across various teams within the corporate and retail bank whilst working as a Data Scientist. All whilst studying for a degree withn Data Science. 
+I’m a Data Science Degree Apprentice at Santander UK, where I rotate across various teams within the bank whilst obtaining an undergraduate degree in Data Science. 
 
-I've worked on a variety of projects ranging from ***chatbots***, ***mortgage churn*** and ***entity resolution*** using a wide range of technologies but primarily ***Python*** and ***SQL***.
+I've worked on a variety of projects ranging from ***chatbots***, ***churn models*** and ***credit risk*** projects using a wide range of technologies but primarily ***Python***, ***SQL*** and ***SAS***.
 
 
 
