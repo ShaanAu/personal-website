@@ -33,9 +33,9 @@ Rotations within **Core Data Science**, **Corporate Financial Crime Analytics** 
   
 Projects involved in include:
 * **Chatbot Optimisation** using *Natural Language Processing* in Python to improve customer satisfaction and identify where agents/chatbots can improve responses.
-* **Mortgage Churn Model** using *Python* and *Plotly Dash* to help improve customer retention.
-* **Entity Resolution** using *Python* to replace outdated companies data within the bank data lake using API calls and Data Engineering.
-* **BBB Reporting** using *SQL* to create ETL scripts in Hive-SQL to automate the invoicing reports to the British Business Bank for COVID business loans. This replaced the slow manual reporting tools by processing 150,000 contract accruals daily, generating £28M revenue in 2020.
+* **Mortgage Churn Model** using *Python* and *Plotly Dash* to help improve customer retention by predicting customers who are likely to default on their mortgage.
+* **Entity Resolution** using *Python* to replace outdated companies data within the bank data lake using API calls and Data Engineering, presenting the project to a director within the bank.
+* **BBB Reporting** using *SQL* to create ETL scripts to automate the invoicing reports to the British Business Bank for COVID business loans. This replaced the slow manual reporting tools by processing 150,000 contract accruals daily, generating £28M revenue in 2020.
 * **Credit Risk** using *SAS* to develop capital (economic + regulatory) models for the corporate bank.
 """
 [[experience]]

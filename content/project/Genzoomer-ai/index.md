@@ -4,7 +4,7 @@ external_link: https://github.com/ShaanAu/Algo_Trading_Financial_Analysis
 image:
   caption: 
   focal_point: Smart
-summary: Algorithmic Trading using Moving Weighted Average trading strategy in Pytho.
+summary: Algorithmic Trading using Moving Weighted Average trading strategy in Python.
 tags: 
 - Quantitative Finance
 - Machine Learning
