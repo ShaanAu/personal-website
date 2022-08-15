@@ -18,18 +18,28 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
+[[experience]]
+    title = "Data Engineer"
+  company = "Hexegic - Contractor at Palantir"
+  company_url = "https://www.hexegic.com"
+  location = "London"
+  date_start = "2022-08-02"
+  date_end = ""
+  description = """ 
+●	Developing data pipelines using Python, Spark & SQL – debugging any issues with the pipelines for the foundry platform within Palantir.
+
+
+  """
 
 
 [[experience]]
-  title = "Data Science Degree Apprentice"
+  title = "Data Scientist"
   company = "Santander UK"
   company_url = ""
   location = "London"
   date_start = "2019-09-30"
-  date_end = ""
-  description = """ Rotational degree apprenticeship program with a specialism in Data Science across the corporate and retail bank.
-  
-Rotations within **Core Data Science**, **Corporate Financial Crime Analytics** and **Quantitative Risk**
+  date_end = "2022-07-30"
+  description = """
   
 Projects involved in include:
 * **Chatbot Optimisation** using *Natural Language Processing* in Python to improve customer satisfaction and identify where agents/chatbots can improve responses.

@@ -19,6 +19,16 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
+  organization = "BIMA (British Interactive Media Association)"
+  organization_url = "http://www.bima.co.uk"
+  title = "BIMA 100 Class of 2020"
+  url = ""
+  certificate_url = ""
+  date_start = "2020-03-01"
+  date_end = ""
+  description = "Top 100 most influential individuals within the technology sector"
+
+[[item]]
   organization = "Stanford University"
   organization_url = "https://www.stanford.edu"
   title = "Machine Learning"

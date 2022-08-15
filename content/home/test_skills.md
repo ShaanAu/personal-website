@@ -18,12 +18,17 @@ subtitle = ""
 +++
 **Technical Skills** 
 * **Python**
-* **SAS**
 * **R**
 * **SQL**
+* **SAS**
+* **AWS**
+* **Palantir Foundry**
+* **Cloudera**
 * **Tableau**
 * **Git**
-* **HDFS**: Impala, Hive
+* **Unix (bash) scripting**
+* **Plotly Dash**
+* **HDFS**: Hadoop, Impala, Hive
 * **Web Development**
 * **Package Building**: https://pypi.org/project/strangerqueries/
 
@@ -33,6 +38,7 @@ subtitle = ""
 
 **Interests/Hobbies**
 * **Investing**
+* **Web3**
 * **Football, Skiing & Tennis**
 * **Vegan Food**
 

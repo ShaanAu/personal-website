@@ -12,20 +12,19 @@ education:
 
 email: ""
 interests:
-- Quantitative Finance
+- Data Science
+- Data Engineeering
 - Machine Learning
+- Web3
 
 organizations:
-- name: Santander UK
-  url: "https://www.santander.co.uk"
-role: Data Science Degree Apprentice
+- name: Hexegic
+  url: "https://www.hexegic.com"
+role: Data Engineer
 social:
 - icon: envelope
-  icon_pack: fas
+  icon_pack: fass
   link: '#contact'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/shaan_au
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/shaan-aucharagram/
@@ -40,9 +39,10 @@ title: Shaan Aucharagram
 user_groups:
   
 ---
-I’m a Data Science Degree Apprentice at Santander UK, where I rotate across various teams within the bank whilst obtaining an undergraduate degree in Data Science. 
+High-performing and results-oriented individual working at Hexegic as a Data Engineer for Palantir. Previous experience within the financial sector as a Data Scientist for Santander.
 
-I've worked on a variety of projects ranging from ***chatbots***, ***churn models*** and ***credit risk*** projects using a wide range of technologies but primarily ***Python***, ***SQL*** and ***SAS***.
+Strong analytical, engineering and teamwork skills. Experienced in working with complex data problems, liaising between business and technical departments to perform data analytics, predictive analysis and data engineering.
+
 
 
 
