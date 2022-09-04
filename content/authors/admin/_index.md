@@ -13,7 +13,7 @@ education:
 email: ""
 interests:
 - Data Science
-- Data Engineeering
+- Data Engineering
 - Machine Learning
 - Web3
 
