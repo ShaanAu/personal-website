@@ -22,6 +22,7 @@ subtitle = ""
 * **SQL**
 * **SAS**
 * **AWS**
+* **Spark** (PySpark)
 * **Palantir Foundry**
 * **Cloudera**
 * **Tableau**

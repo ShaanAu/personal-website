@@ -19,16 +19,28 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[experience]]
-    title = "Data Engineer"
-  company = "Hexegic - Contractor at Palantir"
-  company_url = "https://www.hexegic.com"
+    title = "Senior Data Engineer"
+  company = "MainStreet Partners"
+  company_url = "https://www.mspartners.org"
   location = "London"
-  date_start = "2022-08-02"
+  date_start = "2022-10-11"
   date_end = ""
   description = """ 
-●	Developing data pipelines using Python, Spark & SQL – debugging any issues with the pipelines for the foundry platform within Palantir.
+  """
 
+[[experience]]
+    title = "Data Engineer"
+  company = "Palantir"
+  company_url = ""
+  location = "London"
+  date_start = "2022-08-02"
+  date_end = "2022-10-10"
+  description = """ 
+●	Developing data pipelines using Python, Spark & SQL – debugging any issues with the pipelines using the foundry platform within Palantir.
 
+●	Promoting a goal-setting and result-orientated attitude within the team using agile development techniques. Role further includes developing technical framework for data engineering for the healthcare data pipelines, which Palantir has a contract with the NHS.
+
+●	Liaising with technical and non-technical teams within Palantir to understand client requirements for the data pipelines and using Python-based ETL, with Git and CI/CD to ensure that the data scientists can operate.
   """
 
 

@@ -21,12 +21,22 @@ date_format = "Jan 2006"
 [[item]]
   organization = "BIMA (British Interactive Media Association)"
   organization_url = "http://www.bima.co.uk"
-  title = "BIMA 100 Class of 2020"
+  title = "BIMA 100 Class of 2021"
   url = ""
   certificate_url = ""
-  date_start = "2020-03-01"
+  date_start = "2021-09-09"
   date_end = ""
   description = "Top 100 most influential individuals within the technology sector"
+  
+  [[item]]
+  organization = "RateMyApprenticeship Award"
+  organization_url = "https://www.ratemyapprenticeshipawards.co.uk/apprentice-winners"
+  title = "Finalist in Outstanding Higher/Degree Apprentice Category (Level 6/7)"
+  url = ""
+  certificate_url = ""
+  date_start = "2020-06-06"
+  date_end = ""
+  description = ""
 
 [[item]]
   organization = "Stanford University"

@@ -2,13 +2,13 @@
 authors:
 - admin
 bio: My interests include Quantitative Finance, Machine Learning and Data Viz.
-education:
-  courses:
-  - course: BSc (Hons) in Data Science 
-    institution: Nottingham Trent University
-    year: 2021 - 2024
-  - course: Computing (D*), Media (A), Maths (C)
-    institution: Reigate Sixth Form College
+#education:
+# courses:
+#  - course: BSc (Hons) in Data Science 
+#    institution: Nottingham Trent University
+#    year: 2021 - 2024
+#  - course: Computing (D*), Media (A), Maths (C)
+#    institution: Reigate Sixth Form College
 
 email: ""
 interests:
@@ -18,9 +18,9 @@ interests:
 - Web3
 
 organizations:
-- name: Hexegic
-  url: "https://www.hexegic.com"
-role: Data Engineer
+- name: MainStreet Partners
+  url: "https://www.mspartners.org"
+role: Senior Data Engineer
 social:
 - icon: envelope
   icon_pack: fass
@@ -39,9 +39,10 @@ title: Shaan Aucharagram
 user_groups:
   
 ---
-High-performing and results-oriented individual working at Hexegic as a Data Engineer for Palantir. Previous experience within the financial sector as a Data Scientist for Santander.
+High-performing and results-oriented individual working as a Senior Data Engineer for MainStreet Partners. Prior experience includes working as a Data Scientist/Engineer for Santander & Palantir.
 
 Strong analytical, engineering and teamwork skills. Experienced in working with complex data problems, liaising between business and technical departments to perform data analytics, predictive analysis and data engineering.
+
 
 
 
