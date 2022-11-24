@@ -18,9 +18,9 @@ interests:
 - Web3
 
 organizations:
-- name: MainStreet Partners
-  url: "https://www.mspartners.org"
-role: Senior Data Engineer
+#- name: MainStreet Partners
+# url: "https://www.mspartners.org"
+# role: Senior Data Engineer
 social:
 - icon: envelope
   icon_pack: fass
@@ -39,7 +39,8 @@ title: Shaan Aucharagram
 user_groups:
   
 ---
-High-performing and results-oriented individual working as a Senior Data Engineer for MainStreet Partners. Prior experience includes working as a Data Scientist/Engineer for Santander & Palantir.
+High-performing and results-oriented individual. Prior experience includes working as a Data Scientist/Engineer.
+
 
 Strong analytical, engineering and teamwork skills. Experienced in working with complex data problems, liaising between business and technical departments to perform data analytics, predictive analysis and data engineering.
 
