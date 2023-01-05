@@ -22,6 +22,7 @@ subtitle = ""
 * **SQL**
 * **SAS**
 * **AWS**
+* **Docker**
 * **Spark** (PySpark)
 * **Palantir Foundry**
 * **Cloudera**
@@ -38,7 +39,7 @@ subtitle = ""
 * **Public Speaking**
 
 **Interests/Hobbies**
-* **Investing**
+* **Sustainability**
 * **Web3**
 * **Football, Skiing & Tennis**
 * **Vegan Food**

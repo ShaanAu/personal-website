@@ -19,8 +19,8 @@ interests:
 
 organizations:
 #- name: MainStreet Partners
-# url: "https://www.mspartners.org"
-# role: Senior Data Engineer
+#  url: "https://www.mspartners.org"
+role: Senior Data Engineer
 social:
 - icon: envelope
   icon_pack: fass
