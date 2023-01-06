@@ -60,6 +60,7 @@ date_format = "Jan 2006"
 
 ● Entity resolution using Python to automate client remediation within the banks data lake using API calls from the third-party DueDil and implement a robust data engineering solution, presenting the project C-Suite stakeholders, technologies used include Python, Spark & Impala SQL.
 
+
 ● BBB reporting using SQL to create ETL scripts to automate the invoicing reports to the British Business Bank for COVID business loans. This replaced the slow manual reporting tools by processing 150,000 contract accruals daily, generating £28M revenue in 2020.
 
 ● Model experimentation using Python for a range of proof-of-concept models internally using AWS for deployment.
