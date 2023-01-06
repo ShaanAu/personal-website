@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: My interests include Quantitative Finance, Machine Learning and Data Viz.
+bio: Building. Learning. Growing. 
 #education:
 # courses:
 #  - course: BSc (Hons) in Data Science 
