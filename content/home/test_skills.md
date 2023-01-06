@@ -32,7 +32,7 @@ subtitle = ""
 * **Plotly Dash**
 * **HDFS**: Hadoop, Impala, Hive
 * **Web Development**
-* **Package Building**: https://pypi.org/project/strangerqueries/
+* **Package Building**
 
 **Soft Skills/Business Skills**
 * **Stakeholder Management**
