@@ -52,18 +52,25 @@ date_format = "Jan 2006"
   date_start = "2019-09-30"
   date_end = "2022-07-30"
   description = """
-  
-Projects involved in include:
+● Chatbot optimization using natural language processing in Python to improve customer satisfaction and identify where agents/chatbots can improve responses and alert appropriate stakeholders when customer sentiment reaches a certain negative threshold.
 
-* Chatbot optimization using natural language processing in Python to improve customer satisfaction and identify where agents/chatbots can improve responses and alert appropriate stakeholders when customer sentiment reaches a certain negative threshold.
-* Mortgage churn model using Python and Plotly Dash to help improve customer retention by predicting customers who are likely to default on their mortgage. Improved customer retention by up to 3%.
-* Entity resolution using Python to automate client remediation within the banks data lake using API calls from the third-party DueDil and implement a robust data engineering solution, presenting the project C-Suite stakeholders, technologies used include Python, Spark & Impala SQL.
-* BBB reporting using SQL to create ETL scripts to automate the invoicing reports to the British Business Bank for COVID business loans. This replaced the slow manual reporting tools by processing 150,000 contract accruals daily, generating £28M revenue in 2020.
-* Model experimentation using Python for a range of proof-of-concept models internally using AWS for deployment.
-* Automating Data Lake ETL, CI/CD and model build in Docker images using Cloudera CDSW and AWS (Redshift, S3, Sagemaker, ECR).
-* Operating using the agile project management methodology within a team of data scientists.
-* Credit Risk using SAS to develop capital (economic + regulatory) models for the corporate bank.
-* Technical presentations such as CI/CD, Git for version control and AWS to employees within the bank.
+
+● Mortgage churn model using Python and Plotly Dash to help improve customer retention by predicting customers who are likely to default on their mortgage. Improved customer retention by up to 3%.
+
+
+● Entity resolution using Python to automate client remediation within the banks data lake using API calls from the third-party DueDil and implement a robust data engineering solution, presenting the project C-Suite stakeholders, technologies used include Python, Spark & Impala SQL.
+
+● BBB reporting using SQL to create ETL scripts to automate the invoicing reports to the British Business Bank for COVID business loans. This replaced the slow manual reporting tools by processing 150,000 contract accruals daily, generating £28M revenue in 2020.
+
+● Model experimentation using Python for a range of proof-of-concept models internally using AWS for deployment.
+
+● Automating Data Lake ETL, CI/CD and model build in Docker images using Cloudera CDSW and AWS (Redshift, S3, Sagemaker, ECR).
+
+● Operating using the agile project management methodology within a team of data scientists.
+
+● Credit Risk using SAS to develop capital (economic + regulatory) models for the corporate bank.
+
+● Technical presentations such as CI/CD, Git for version control and AWS to employees within the bank.
 
 
 """
