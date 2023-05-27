@@ -22,6 +22,9 @@ subtitle = ""
 * **SQL**
 * **SAS**
 * **AWS**
+* **Fivetran**
+* **DBT**
+* **Airflow**
 * **Docker**
 * **Spark** (PySpark)
 * **Palantir Foundry**

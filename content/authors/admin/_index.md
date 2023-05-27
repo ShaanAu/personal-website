@@ -20,7 +20,7 @@ interests:
 organizations:
 # - name: MainStreet Partners
 #  url: "https://www.mspartners.org"
-role: Senior Data Engineer
+role: Data Engineering Manager
 social:
 - icon: envelope
   icon_pack: fass
@@ -39,9 +39,9 @@ title: Shaan Aucharagram
 user_groups:
   
 ---
-High-performing and results-oriented individual. Prior experience includes working as a Data Scientist/Engineer at Santander, Palantir and MainStreet Partners.
+Data Engineering Manager at Penguin Random House UK 🐧📚, leading a team of 5 talented data engineers. Combining Data Science and Engineering expertise to build robust pipelines and drive growth 🚀🔥. Passionate about unlocking the power of data 🧠💡 to inform data-driven strategies 💼🔑. Prior experience at Palantir and at Santander.
 
-Strong analytical, engineering and teamwork skills. Experienced in working with complex data problems, liaising between business and technical departments to perform data analytics, predictive analysis and data engineering.
+🏆 BIMA100 (Young Trailblazer in Tech)
 
 
 

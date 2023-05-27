@@ -215,8 +215,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hud63212f3dd97c8290745d5d60902d21e_35565_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hud63212f3dd97c8290745d5d60902d21e_35565_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hud63212f3dd97c8290745d5d60902d21e_35565_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hud63212f3dd97c8290745d5d60902d21e_35565_192x192_fill_lanczos_center_3.png">
 
   <link rel="canonical" href="https://shaanaucharagram.com/post/cat-facts-project/">
 
@@ -289,7 +289,7 @@
     "name": "Shaan Aucharagram",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://shaanaucharagram.com/images/icon_hud63212f3dd97c8290745d5d60902d21e_35565_192x192_fill_lanczos_center_2.png"
+      "url": "https://shaanaucharagram.com/images/icon_hud63212f3dd97c8290745d5d60902d21e_35565_192x192_fill_lanczos_center_3.png"
     }
   },
   "description": "Natural Language Processing using SpaCy and Classifying Random Cat Facts Retrieved Via a Web API Into Positive, Negative or Neutral Using Sentiment Analysis."
@@ -834,7 +834,7 @@ getLengthSentences(20, responses)
 
 
 </code></pre>
-<p><img src="../../img/pic11.jpg" alt="" /></p>
+<img src="../../img/pic11.jpg" alt="" />
 <p><strong>Stop Words</strong></p>
 <p>Stop words are the most common words in any NLP model. To analyze text data and build NLP models, these stopwords might not add much value to the meaning of the document. Generally, the most common words used in a text are</p>
 <ul>
@@ -866,7 +866,7 @@ for i in list(stopwords)[:20]:
 
 doc_no_stopwords = remove_stopwords(doc_responses)
 </code></pre>
-<p><img src="../../img/pic6.jpg" alt="" /></p>
+<img src="../../img/pic6.jpg" alt="" />
 <p><strong>Remove Punctuation</strong></p>
 <p>Generally, you want to remove punctuation from text data, for this project we will remove punctuation. However, there are occasions where punctuation can be used to gain insight into text data.</p>
 <pre><code class="language-python">def removePunctuation(doc):
@@ -909,8 +909,8 @@ doc_lemmatization = lemmatization(doc_no_punctuation)
 <p><strong>Part of Speech Tagging</strong></p>
 <p>The process of classifying words into their parts of speech and labelling them accordingly is known as part-of-speech tagging, POS-tagging, or simply tagging.</p>
 <p>This can be useful within text data to gain a greater overview of what our data represents.</p>
-<p><img src="../../img/Capture.PNG" alt="" /></p>
-<p>The first function converts a <em><strong>&lsquo;list of lists&rsquo;</strong></em> -&gt; <em><strong>&lsquo;one list&rsquo;</strong></em></p>
+<img src="../../img/Capture.PNG" alt="" />
+<p>The first function converts a <em><strong>&rsquo;list of lists&rsquo;</strong></em> -&gt; <em><strong>&lsquo;one list&rsquo;</strong></em></p>
 <pre><code class="language-python">def changeDataType(doc):
     '''Change Data Type into One List for POS'''
     final_doc = []
@@ -935,7 +935,7 @@ doc_pos = pos_tagging(doc_one_list)
 doc_pos
 
 </code></pre>
-<p><img src="../../img/pos.png" alt="" /></p>
+<img src="../../img/pos.png" alt="" />
 <p><strong>Matcher</strong></p>
 <p>SpaCy also offers functionality to match on a pattern, here I have set to match on the words:</p>
 <ul>
@@ -981,7 +981,7 @@ for i in doc_lemmatization:
 <li><strong>1</strong> is the most positive cat fact</li>
 <li><strong>-1</strong> is the most negative cat fact</li>
 </ul>
-<p><img src="../../img/score.png" alt="" /></p>
+<img src="../../img/score.png" alt="" />
 <pre><code class="language-python">df = pd.DataFrame(score_list)
 df['score'] = df[0]
 del df[0]
@@ -1012,7 +1012,7 @@ df
 fig.update_traces(textposition='inside', textinfo='percent+label')
 fig.show()
 </code></pre>
-<p><img src="../../img/pie.png" alt="" /></p>
+<img src="../../img/pie.png" alt="" />
 <p><em>Histogram</em></p>
 <pre><code class="language-python">cf.go_offline()
 cf.set_config_file(offline=False, world_readable=True)
@@ -1025,7 +1025,7 @@ df['score'].iplot(
     yTitle='count',
     title='Sentiment Polarity Distribution')
 </code></pre>
-<p><img src="../../img/hist.png" alt="" /></p>
+<img src="../../img/hist.png" alt="" />
 <p><em>Bar Chart Of Length Of Sentences</em></p>
 <pre><code class="language-python">len_sentence = []
 for i in doc_lemmatization:
@@ -1040,7 +1040,7 @@ for i in doc_lemmatization:
     yTitle='count',
     title='Review Text Word Count Distribution')
 </code></pre>
-<p><img src="../../img/bar.png" alt="" /></p>
+<img src="../../img/bar.png" alt="" />
 <p><em>WordCloud</em></p>
 <pre><code class="language-python">merged = list(itertools.chain(*doc_lemmatization))
 #convert list to string and generate
@@ -1052,7 +1052,7 @@ plt.axis(&quot;off&quot;)
 plt.show()
 plt.close()
 </code></pre>
-<p><img src="../../img/Unknown.png" alt="" /></p>
+<img src="../../img/Unknown.png" alt="" />
 <p><em>Bar Chart Of POS Tagging</em></p>
 <pre><code class="language-python">counts = Counter(doc_pos)
 common = counts.most_common()
@@ -1063,7 +1063,7 @@ df_pos['POS_tagging'] = df_pos[0]
 fig = px.bar(df_pos, x='POS_tagging', y='Count', title='Bar Chart of POS Tagging')
 fig.show()
 </code></pre>
-<p><img src="../../img/bar_pog.png" alt="" /></p>
+<img src="../../img/bar_pog.png" alt="" />
 <p><strong>Conclusion</strong></p>
 <p>That&rsquo;s it for today. I hope you enjoyed this project as much as I have. Whilst there were limitations in the analysis due to the small sample size used, I believe the three things you can take from the project are:</p>
 <ul>
@@ -1134,7 +1134,7 @@ fig.show()
 
       <div class="media-body">
         <h5 class="card-title"><a href="https://shaanaucharagram.com/">Shaan Aucharagram</a></h5>
-        <h6 class="card-subtitle">Senior Data Engineer</h6>
+        <h6 class="card-subtitle">Data Engineering Manager</h6>
         <p class="card-text">Building. Learning. Growing.</p>
         <ul class="network-icon" aria-hidden="true">
   
@@ -1281,7 +1281,7 @@ fig.show()
     
     
     
-    <script src="/js/academic.min.a21fcc4a4cdf5eeefae0603e61b3030c.js"></script>
+    <script src="/js/academic.min.8741d44cdc5fc49466a5835d1bbea364.js"></script>
 
     
 

@@ -113,7 +113,7 @@ getLengthSentences(20, responses)
 
 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../../img/pic11.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;../../img/pic11.jpg&#34; alt=&#34;&#34; /&gt;
 &lt;p&gt;&lt;strong&gt;Stop Words&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Stop words are the most common words in any NLP model. To analyze text data and build NLP models, these stopwords might not add much value to the meaning of the document. Generally, the most common words used in a text are&lt;/p&gt;
 &lt;ul&gt;
@@ -145,7 +145,7 @@ for i in list(stopwords)[:20]:
 
 doc_no_stopwords = remove_stopwords(doc_responses)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../../img/pic6.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;../../img/pic6.jpg&#34; alt=&#34;&#34; /&gt;
 &lt;p&gt;&lt;strong&gt;Remove Punctuation&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Generally, you want to remove punctuation from text data, for this project we will remove punctuation. However, there are occasions where punctuation can be used to gain insight into text data.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def removePunctuation(doc):
@@ -188,8 +188,8 @@ doc_lemmatization = lemmatization(doc_no_punctuation)
 &lt;p&gt;&lt;strong&gt;Part of Speech Tagging&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The process of classifying words into their parts of speech and labelling them accordingly is known as part-of-speech tagging, POS-tagging, or simply tagging.&lt;/p&gt;
 &lt;p&gt;This can be useful within text data to gain a greater overview of what our data represents.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../../img/Capture.PNG&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;The first function converts a &lt;em&gt;&lt;strong&gt;&amp;lsquo;list of lists&amp;rsquo;&lt;/strong&gt;&lt;/em&gt; -&amp;gt; &lt;em&gt;&lt;strong&gt;&amp;lsquo;one list&amp;rsquo;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;img src=&#34;../../img/Capture.PNG&#34; alt=&#34;&#34; /&gt;
+&lt;p&gt;The first function converts a &lt;em&gt;&lt;strong&gt;&amp;rsquo;list of lists&amp;rsquo;&lt;/strong&gt;&lt;/em&gt; -&amp;gt; &lt;em&gt;&lt;strong&gt;&amp;lsquo;one list&amp;rsquo;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def changeDataType(doc):
     &#39;&#39;&#39;Change Data Type into One List for POS&#39;&#39;&#39;
     final_doc = []
@@ -214,7 +214,7 @@ doc_pos = pos_tagging(doc_one_list)
 doc_pos
 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../../img/pos.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;../../img/pos.png&#34; alt=&#34;&#34; /&gt;
 &lt;p&gt;&lt;strong&gt;Matcher&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;SpaCy also offers functionality to match on a pattern, here I have set to match on the words:&lt;/p&gt;
 &lt;ul&gt;
@@ -260,7 +260,7 @@ for i in doc_lemmatization:
 &lt;li&gt;&lt;strong&gt;1&lt;/strong&gt; is the most positive cat fact&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;-1&lt;/strong&gt; is the most negative cat fact&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;../../img/score.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;../../img/score.png&#34; alt=&#34;&#34; /&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;df = pd.DataFrame(score_list)
 df[&#39;score&#39;] = df[0]
 del df[0]
@@ -291,7 +291,7 @@ df
 fig.update_traces(textposition=&#39;inside&#39;, textinfo=&#39;percent+label&#39;)
 fig.show()
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../../img/pie.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;../../img/pie.png&#34; alt=&#34;&#34; /&gt;
 &lt;p&gt;&lt;em&gt;Histogram&lt;/em&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;cf.go_offline()
 cf.set_config_file(offline=False, world_readable=True)
@@ -304,7 +304,7 @@ df[&#39;score&#39;].iplot(
     yTitle=&#39;count&#39;,
     title=&#39;Sentiment Polarity Distribution&#39;)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../../img/hist.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;../../img/hist.png&#34; alt=&#34;&#34; /&gt;
 &lt;p&gt;&lt;em&gt;Bar Chart Of Length Of Sentences&lt;/em&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;len_sentence = []
 for i in doc_lemmatization:
@@ -319,7 +319,7 @@ for i in doc_lemmatization:
     yTitle=&#39;count&#39;,
     title=&#39;Review Text Word Count Distribution&#39;)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../../img/bar.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;../../img/bar.png&#34; alt=&#34;&#34; /&gt;
 &lt;p&gt;&lt;em&gt;WordCloud&lt;/em&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;merged = list(itertools.chain(*doc_lemmatization))
 #convert list to string and generate
@@ -331,7 +331,7 @@ plt.axis(&amp;quot;off&amp;quot;)
 plt.show()
 plt.close()
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../../img/Unknown.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;../../img/Unknown.png&#34; alt=&#34;&#34; /&gt;
 &lt;p&gt;&lt;em&gt;Bar Chart Of POS Tagging&lt;/em&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;counts = Counter(doc_pos)
 common = counts.most_common()
@@ -342,7 +342,7 @@ df_pos[&#39;POS_tagging&#39;] = df_pos[0]
 fig = px.bar(df_pos, x=&#39;POS_tagging&#39;, y=&#39;Count&#39;, title=&#39;Bar Chart of POS Tagging&#39;)
 fig.show()
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;../../img/bar_pog.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;../../img/bar_pog.png&#34; alt=&#34;&#34; /&gt;
 &lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;That&amp;rsquo;s it for today. I hope you enjoyed this project as much as I have. Whilst there were limitations in the analysis due to the small sample size used, I believe the three things you can take from the project are:&lt;/p&gt;
 &lt;ul&gt;
