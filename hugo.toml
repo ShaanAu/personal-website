@@ -16,7 +16,7 @@ buildExpired = false
 [params]
   env = "production"
   title = "Shaan Aucharagram"
-  description = "Senior Data Engineering Manager at JustEat Takeaway.com"
+  description = "Senior Data Engineering Manager at JustEat Takeaway.com. Previously led teams at Made Tech, Penguin Random House UK, Palantir, and Santander."
   keywords = ["Data Engineering", "Data Science", "Machine Learning", "Leadership", "Tech Executive"]
   author = "Shaan Aucharagram"
   defaultTheme = "auto"
