@@ -4,9 +4,9 @@ layout: "single"
 ShowBreadCrumbs: true
 ---
 
-## Get in Touch
+## 📬 Get in Touch
 
-I'm always interested in discussing data engineering, leadership opportunities, and speaking engagements.
+I'm always interested in discussing data engineering, leadership opportunities, speaking engagements, and mentoring.
 
 ---
 
@@ -14,7 +14,7 @@ I'm always interested in discussing data engineering, leadership opportunities, 
 
 - **LinkedIn:** [linkedin.com/in/shaan-aucharagram](https://www.linkedin.com/in/shaan-aucharagram/)
 - **GitHub:** [github.com/ShaanAu](https://github.com/ShaanAu)
-- **Email:** [contact@shaanaucharagram.com](mailto:contact@shaanaucharagram.com)
+- **Email:** [info@shaanaucharagram.com](mailto:info@shaanaucharagram.com)
 
 ---
 

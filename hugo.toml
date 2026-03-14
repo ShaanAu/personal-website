@@ -77,7 +77,7 @@ buildExpired = false
 
   [[params.socialIcons]]
     name = "email"
-    url = "mailto:contact@shaanaucharagram.com"
+    url = "mailto:info@shaanaucharagram.com"
 
 [params.cover]
   hidden = true

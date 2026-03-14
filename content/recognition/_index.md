@@ -4,12 +4,12 @@ layout: "single"
 ShowBreadCrumbs: true
 ---
 
-## Awards & Honours
+## 🏆 Awards & Honours
 
 ---
 
 ### BIMA100 - Trailblazer in Tech
-**British Interactive Media Association** | 2021
+**British Interactive Media Association**
 
 Recognised as one of the top 100 most influential individuals within the UK technology sector.
 
@@ -18,7 +18,7 @@ Recognised as one of the top 100 most influential individuals within the UK tech
 ---
 
 ### Outstanding Higher/Degree Apprentice Finalist
-**RateMyApprenticeship Awards** | 2020
+**RateMyApprenticeship Awards**
 
 Finalist in the Outstanding Higher/Degree Apprentice Category (Level 6/7), recognising excellence in degree apprenticeship programmes.
 

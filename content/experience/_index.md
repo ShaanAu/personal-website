@@ -4,14 +4,18 @@ layout: "single"
 ShowBreadCrumbs: true
 ---
 
-## Senior Manager, Data Engineering
-**JustEat Takeaway.com** | Feb 2026 - Present | London
-
-Leading data engineering initiatives across the platform.
+## 💼 Career
 
 ---
 
-## Lead Data & AI Engineer
+### 🍕 Senior Manager, Data Engineering
+**JustEat Takeaway.com** | Feb 2026 - Present | London
+
+Leading multi-disciplinary teams of data engineers and scientists across Customer Service and Fraud domains.
+
+---
+
+### 🏛️ Lead Data & AI Engineer
 **Made Tech** | Feb 2025 - Feb 2026 | London
 
 Lead Data Engineer/Architect for a talented team of data engineers and analysts, providing mentorship whilst actively building the wider Data & AI practice and advocating for DevOps best practices.
@@ -25,7 +29,7 @@ Lead Data Engineer/Architect for a talented team of data engineers and analysts,
 
 ---
 
-## Lead Data Engineer | Data Engineering Manager
+### 📚 Lead Data Engineer | Data Engineering Manager
 **Penguin Random House UK** | Feb 2023 - Sep 2024 | London
 
 Operational and technical lead for the data engineering team at Penguin. Managed a talented team of 5 engineers with specialisations across analytics, machine learning, platform, and test engineering.
@@ -34,7 +38,7 @@ Operational and technical lead for the data engineering team at Penguin. Managed
 
 ---
 
-## Data Engineer
+### 🔮 Data Engineer
 **Palantir Technologies** | Aug 2022 - Oct 2022 | London
 
 Developed and optimised data pipelines for the NHS in response to Covid-19.
@@ -49,7 +53,7 @@ Developed and optimised data pipelines for the NHS in response to Covid-19.
 
 ---
 
-## Data Scientist | Quantitative Developer
+### 🏦 Data Scientist | Quantitative Developer
 **Santander UK** | Sep 2019 - Jul 2022 | London
 
 Implemented various proof-of-concepts to help optimise cost and increase revenue across payments, quantitative risk, financial crime, and retail/corporate banking.

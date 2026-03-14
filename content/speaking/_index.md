@@ -4,7 +4,7 @@ layout: "single"
 ShowBreadCrumbs: true
 ---
 
-## Conference Presentations & Panel Discussions
+## 🎤 Conference Presentations & Panel Discussions
 
 I regularly share insights on data engineering, machine learning platforms, and data literacy at industry events.
 
