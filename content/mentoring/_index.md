@@ -2,6 +2,7 @@
 title: "Mentoring"
 layout: "single"
 ShowBreadCrumbs: true
+images: ["/mentoring-og.png"]
 ---
 
 <div class="mentoring-hero">
