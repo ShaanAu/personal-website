@@ -52,7 +52,7 @@ buildExpired = false
   [params.profileMode]
     enabled = true
     title = "Shaan Aucharagram"
-    subtitle = "Senior Data Engineering Manager at JustEat Takeaway.com. I combine Data Science and Engineering expertise to build robust data infrastructure that drives strategic business outcomes. Previously held leadership roles at Made Tech, Penguin Random House UK, Palantir Technologies, and Santander UK. BIMA100 Trailblazer in Tech."
+    subtitle = "💡 Senior Data Engineering Manager at JustEat Takeaway.com. I combine Data Science, AI, and Engineering expertise to build robust data infrastructure that drives strategic business outcomes. Previously held leadership roles at Made Tech, Penguin Random House UK, Palantir Technologies, and Santander UK. BIMA100 Trailblazer in Tech."
     imageUrl = "/avatar.jpg"
     imageWidth = 160
     imageHeight = 160
