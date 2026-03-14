@@ -1,0 +1,76 @@
+:root {
+    --accent: rgb(139, 92, 246);  /* Purple */
+    --accent-hover: rgb(124, 58, 237);  /* Darker purple on hover */
+}
+
+/* Light gradient background */
+body {
+    background: linear-gradient(135deg, rgb(250, 245, 255) 0%, rgb(255, 255, 255) 50%, rgb(245, 250, 255) 100%);
+    background-attachment: fixed;
+}
+
+.list {
+    background: transparent;
+}
+
+/* Links */
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+/* Profile buttons */
+.profile .buttons .button {
+    background: var(--accent);
+    color: white;
+    border: none;
+}
+
+.profile .buttons .button:hover {
+    background: var(--accent-hover);
+}
+
+/* Social icons hover */
+.social-icons a:hover svg {
+    color: var(--accent);
+    stroke: var(--accent);
+}
+
+/* Header nav links */
+#menu a {
+    color: var(--primary);
+}
+
+#menu a:hover,
+#menu a.active,
+#menu a[aria-current="page"] {
+    color: var(--accent);
+}
+
+/* Page titles and headings */
+h1, h2, h3 {
+    color: var(--primary);
+}
+
+/* Content links should be purple */
+.post-content a,
+.main a:not(.button) {
+    color: var(--accent);
+}
+
+.post-content a:hover,
+.main a:not(.button):hover {
+    color: var(--accent-hover);
+}
+
+/* Footer links */
+.footer a {
+    color: var(--accent);
+}
+
+.footer a:hover {
+    color: var(--accent-hover);
+}
