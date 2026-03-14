@@ -1,0 +1,121 @@
+baseURL = "https://shaanaucharagram.com/"
+title = "Shaan Aucharagram"
+theme = "PaperMod"
+languageCode = "en-gb"
+defaultContentLanguage = "en"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = "production"
+  title = "Shaan Aucharagram"
+  description = "Senior Data Engineering Manager at JustEat Takeaway.com"
+  keywords = ["Data Engineering", "Data Science", "Machine Learning", "Leadership", "Tech Executive"]
+  author = "Shaan Aucharagram"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = false
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  [params.assets]
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+    safari_pinned_tab = "/safari-pinned-tab.svg"
+
+  [params.label]
+    text = "Shaan Aucharagram"
+    icon = "/apple-touch-icon.png"
+    iconHeight = 35
+
+  [params.profileMode]
+    enabled = true
+    title = "Shaan Aucharagram"
+    subtitle = "Senior Data Engineering Manager at JustEat Takeaway.com. I combine Data Science and Engineering expertise to build robust data infrastructure that drives strategic business outcomes. Previously held leadership roles at Made Tech, Penguin Random House UK, Palantir Technologies, and Santander UK. BIMA100 Trailblazer in Tech."
+    imageUrl = "/avatar.jpg"
+    imageWidth = 160
+    imageHeight = 160
+    imageTitle = "Shaan Aucharagram"
+    [[params.profileMode.buttons]]
+      name = "Experience"
+      url = "/experience/"
+    [[params.profileMode.buttons]]
+      name = "Speaking"
+      url = "/speaking/"
+    [[params.profileMode.buttons]]
+      name = "Recognition"
+      url = "/recognition/"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/shaan-aucharagram/"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/ShaanAu"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:contact@shaanaucharagram.com"
+
+[params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+  identifier = "experience"
+  name = "Experience"
+  url = "/experience/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "speaking"
+  name = "Speaking"
+  url = "/speaking/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "recognition"
+  name = "Recognition"
+  url = "/recognition/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 40
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
