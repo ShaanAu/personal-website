@@ -9,6 +9,11 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [minify]
   disableXML = true
   minifyOutput = true
@@ -58,14 +63,17 @@ buildExpired = false
     imageHeight = 160
     imageTitle = "Shaan Aucharagram"
     [[params.profileMode.buttons]]
-      name = "Experience"
+      name = "💼 Experience"
       url = "/experience/"
     [[params.profileMode.buttons]]
-      name = "Speaking"
+      name = "🎤 Speaking"
       url = "/speaking/"
     [[params.profileMode.buttons]]
-      name = "Recognition"
+      name = "🏆 Recognition"
       url = "/recognition/"
+    [[params.profileMode.buttons]]
+      name = "🎯 Mentoring"
+      url = "/mentoring/"
 
   [[params.socialIcons]]
     name = "linkedin"
@@ -95,25 +103,31 @@ buildExpired = false
 
 [[menu.main]]
   identifier = "experience"
-  name = "Experience"
+  name = "💼 Experience"
   url = "/experience/"
   weight = 10
 
 [[menu.main]]
   identifier = "speaking"
-  name = "Speaking"
+  name = "🎤 Speaking"
   url = "/speaking/"
   weight = 20
 
 [[menu.main]]
   identifier = "recognition"
-  name = "Recognition"
+  name = "🏆 Recognition"
   url = "/recognition/"
   weight = 30
 
 [[menu.main]]
+  identifier = "mentoring"
+  name = "🎯 Mentoring"
+  url = "/mentoring/"
+  weight = 35
+
+[[menu.main]]
   identifier = "contact"
-  name = "Contact"
+  name = "✉️ Contact"
   url = "/contact/"
   weight = 40
 

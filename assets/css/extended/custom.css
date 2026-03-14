@@ -74,3 +74,176 @@ h1, h2, h3 {
 .footer a:hover {
     color: var(--accent-hover);
 }
+
+/* ========================================
+   MENTORING PAGE - Premium Styling
+   ======================================== */
+
+/* Hero Section */
+.mentoring-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.02) 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(139, 92, 246, 0.15);
+}
+
+.mentoring-hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.mentoring-hero p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--secondary);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Pricing Grid - 2x2 Layout */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Pricing Cards */
+.pricing-card {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.75rem;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(139, 92, 246, 0.15);
+    border-color: var(--accent);
+}
+
+/* Featured Card (Most Popular) */
+.pricing-card.featured {
+    border: 2px solid var(--accent);
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, var(--entry) 100%);
+}
+
+/* Package Card */
+.pricing-card.package {
+    border-style: dashed;
+}
+
+/* Badge */
+.pricing-card .badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: var(--accent);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Card Header */
+.card-header h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.75rem 0;
+    color: var(--primary);
+}
+
+.card-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-meta .duration {
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--accent);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.card-meta .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* Card Body */
+.card-body {
+    flex-grow: 1;
+}
+
+.card-body p {
+    color: var(--secondary);
+    line-height: 1.6;
+    margin: 0 0 0.75rem 0;
+}
+
+.card-body .note {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--accent);
+}
+
+/* Card Footer */
+.card-footer {
+    margin-top: 1.25rem;
+}
+
+/* Book Button */
+.book-btn {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.book-btn:hover {
+    background: var(--accent-hover);
+    transform: scale(1.02);
+}
+
+.pricing-card.featured .book-btn {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+}
+
+/* Mentoring Footer */
+.mentoring-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--entry);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.mentoring-footer p {
+    margin: 0;
+    color: var(--secondary);
+}
