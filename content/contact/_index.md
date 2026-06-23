@@ -38,6 +38,22 @@ ShowBreadCrumbs: true
 <input id="cf-email" type="email" name="email" autocomplete="email" required>
 </div>
 <div class="form-row">
+<label for="cf-engagement">What's this about?</label>
+<select id="cf-engagement" name="engagement" required>
+<option value="" disabled selected>Select an option…</option>
+<option>Leadership / advisory role</option>
+<option>Speaking or panel</option>
+<option>Mentoring</option>
+<option>Data &amp; AI collaboration</option>
+<option>Podcast appearance</option>
+<option>Something else</option>
+</select>
+</div>
+<div class="form-row">
+<label for="cf-subject">Subject</label>
+<input id="cf-subject" type="text" name="subject" placeholder="A short summary" required>
+</div>
+<div class="form-row">
 <label for="cf-message">Message</label>
 <textarea id="cf-message" name="message" rows="5" required></textarea>
 </div>
@@ -55,6 +71,14 @@ ShowBreadCrumbs: true
 <span class="chip">Data & AI collaboration</span>
 <span class="chip">Podcast appearances</span>
 </div>
+</div>
+
+<div class="contact-map">
+<h2>📍 Where I'm based</h2>
+<div class="map-frame">
+<iframe title="Map showing London, United Kingdom" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.34%2C51.40%2C0.10%2C51.61&amp;layer=mapnik&amp;marker=51.5074%2C-0.1278"></iframe>
+</div>
+<p class="map-note">Based in <strong>London, UK</strong> — available for engagements across the UK and remote worldwide. <a href="https://www.openstreetmap.org/?mlat=51.5074&amp;mlon=-0.1278#map=11/51.5074/-0.1278" target="_blank" rel="noopener">View larger map →</a></p>
 </div>
 
 <div class="cred-cta">
