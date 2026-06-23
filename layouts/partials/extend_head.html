@@ -58,11 +58,11 @@
         x: Math.random() * w,
         y: anywhere ? Math.random() * h : h + 10,
         len: 5 + Math.random() * 7,            // petal length
-        vy: 0.07 + Math.random() * 0.2,        // slow upward drift
-        vx: (Math.random() - 0.5) * 0.15,      // gentle sway
+        vy: 0.16 + Math.random() * 0.44,       // slow upward drift
+        vx: (Math.random() - 0.5) * 0.24,      // gentle sway
         a: 0.1 + Math.random() * 0.26,         // opacity
         sway: Math.random() * Math.PI * 2,
-        ss: 0.003 + Math.random() * 0.006,
+        ss: 0.0055 + Math.random() * 0.01,
         rot: Math.random() * Math.PI * 2,      // current rotation
         vr: (Math.random() - 0.5) * 0.02       // tumble speed
       };
@@ -92,7 +92,7 @@
         p.sway += p.ss;
         p.rot += p.vr;
         p.y -= p.vy;
-        p.x += p.vx + Math.sin(p.sway) * 0.2;
+        p.x += p.vx + Math.sin(p.sway) * 0.25;
         if (p.y < -15) { particles[i] = spawn(false); continue; }
         ctx.save();
         ctx.translate(p.x, p.y);
