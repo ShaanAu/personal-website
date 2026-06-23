@@ -8,15 +8,27 @@ ShowBreadCrumbs: true
 
 ---
 
-### 🍕 Senior Manager, Data Engineering
-**JustEat Takeaway.com** | Feb 2026 - Present | London
+<div class="exp-head">
+  <span class="exp-logo"><img src="/img/logos/justeat.svg" alt="JustEat Takeaway.com logo" loading="lazy"></span>
+  <div class="exp-meta">
+    <h3>Senior Manager, Data Engineering</h3>
+    <span class="exp-company">JustEat Takeaway.com</span>
+    <span class="exp-when">Feb 2026 – Present · London</span>
+  </div>
+</div>
 
 Leading multi-disciplinary teams of data engineers and scientists across Customer Service and Fraud domains.
 
 ---
 
-### 🏛️ Lead Data & AI Engineer
-**Made Tech** | Feb 2025 - Feb 2026 | London
+<div class="exp-head">
+  <span class="exp-logo"><img src="/img/logos/madetech.svg" alt="Made Tech logo" loading="lazy"></span>
+  <div class="exp-meta">
+    <h3>Lead Data &amp; AI Engineer</h3>
+    <span class="exp-company">Made Tech</span>
+    <span class="exp-when">Feb 2025 – Feb 2026 · London</span>
+  </div>
+</div>
 
 Lead Data Engineer/Architect for a talented team of data engineers and analysts, providing mentorship whilst actively building the wider Data & AI practice and advocating for DevOps best practices.
 
@@ -29,8 +41,14 @@ Lead Data Engineer/Architect for a talented team of data engineers and analysts,
 
 ---
 
-### 📚 Lead Data Engineer | Data Engineering Manager
-**Penguin Random House UK** | Feb 2023 - Sep 2024 | London
+<div class="exp-head">
+  <span class="exp-logo"><img src="/img/logos/penguin.svg" alt="Penguin Random House logo" loading="lazy"></span>
+  <div class="exp-meta">
+    <h3>Lead Data Engineer | Data Engineering Manager</h3>
+    <span class="exp-company">Penguin Random House UK</span>
+    <span class="exp-when">Feb 2023 – Sep 2024 · London</span>
+  </div>
+</div>
 
 Operational and technical lead for the data engineering team at Penguin. Managed a talented team of 5 engineers with specialisations across analytics, machine learning, platform, and test engineering.
 
@@ -38,8 +56,14 @@ Operational and technical lead for the data engineering team at Penguin. Managed
 
 ---
 
-### 🔮 Data Engineer
-**Palantir Technologies** | Aug 2022 - Oct 2022 | London
+<div class="exp-head">
+  <span class="exp-logo"><img src="/img/logos/palantir.svg" alt="Palantir Technologies logo" loading="lazy"></span>
+  <div class="exp-meta">
+    <h3>Data Engineer</h3>
+    <span class="exp-company">Palantir Technologies</span>
+    <span class="exp-when">Aug 2022 – Oct 2022 · London</span>
+  </div>
+</div>
 
 Developed and optimised data pipelines for the NHS in response to Covid-19.
 
@@ -53,8 +77,14 @@ Developed and optimised data pipelines for the NHS in response to Covid-19.
 
 ---
 
-### 🏦 Data Scientist | Quantitative Developer
-**Santander UK** | Sep 2019 - Jul 2022 | London
+<div class="exp-head">
+  <span class="exp-logo"><img src="/img/logos/santander.svg" alt="Santander UK logo" loading="lazy"></span>
+  <div class="exp-meta">
+    <h3>Data Scientist | Quantitative Developer</h3>
+    <span class="exp-company">Santander UK</span>
+    <span class="exp-when">Sep 2019 – Jul 2022 · London</span>
+  </div>
+</div>
 
 Implemented various proof-of-concepts to help optimise cost and increase revenue across payments, quantitative risk, financial crime, and retail/corporate banking.
 

@@ -67,10 +67,7 @@ buildExpired = false
       name = "💼 Experience"
       url = "/experience/"
     [[params.profileMode.buttons]]
-      name = "🎤 Speaking"
-      url = "/speaking/"
-    [[params.profileMode.buttons]]
-      name = "🏆 Recognition"
+      name = "🏆 Recognition & Speaking"
       url = "/recognition/"
     [[params.profileMode.buttons]]
       name = "🎯 Mentoring"
@@ -109,16 +106,10 @@ buildExpired = false
   weight = 10
 
 [[menu.main]]
-  identifier = "speaking"
-  name = "🎤 Speaking"
-  url = "/speaking/"
-  weight = 20
-
-[[menu.main]]
   identifier = "recognition"
-  name = "🏆 Recognition"
+  name = "🏆 Recognition & Speaking"
   url = "/recognition/"
-  weight = 30
+  weight = 20
 
 [[menu.main]]
   identifier = "mentoring"
