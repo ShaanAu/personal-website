@@ -4,7 +4,7 @@ layout: "single"
 ShowBreadCrumbs: true
 ---
 
-<p class="contact-intro">Whether it's a leadership opportunity, a speaking slot, a mentoring session, or just a chat about data &amp; AI — I'd love to hear from you. Pick whichever works best.</p>
+<p class="contact-intro">I'm always keen to hear from you, whether it's around a leadership opportunity, a speaking slot or some mentoring, as well as just having a chat about data &amp; AI. Feel free to use whichever option works best for you.</p>
 
 <div class="contact-grid">
 <a class="contact-card" href="https://www.linkedin.com/in/shaan-aucharagram/" target="_blank" rel="noopener">
