@@ -7,7 +7,7 @@ images: ["/mentoring-og.png"]
 
 <div class="mentoring-hero">
   <h2>Stuck at a plateau in your data engineering career?</h2>
-  <p>Most data engineers hit a wall — the grind from mid to senior, the leap into staff or lead, the shift from hands-on engineering into leadership. I've made every one of those jumps, growing from engineer to Senior Data Engineering Manager across Santander, Palantir, Penguin Random House, Made Tech, and now JustEat. I help data engineers figure out what's actually holding them back and build a plan to get to the next level.</p>
+  <p>Most data engineers hit a wall at some point: the grind from mid to senior, the leap into staff or lead, the shift from hands-on engineering into leadership. I've made every one of those jumps, growing from engineer to Senior Data Engineering Manager across Santander, Palantir, Penguin Random House, Made Tech & now JustEat. I help data engineers figure out what's actually holding them back & build a plan to get to the next level.</p>
 </div>
 
 <div class="pricing-grid">
@@ -38,7 +38,7 @@ images: ["/mentoring-og.png"]
       </div>
     </div>
     <div class="card-body">
-      <p>A focused session to diagnose why you've stalled — scope, visibility, technical depth, or the wrong kind of work — and build a concrete plan to reach the next level, whether that's senior, staff, lead, or stepping into management. I'll share what actually moves the needle.</p>
+      <p>A focused session to diagnose why you've stalled (scope, visibility, technical depth or the wrong kind of work) & build a concrete plan to reach the next level, whether that's senior, staff, lead or stepping into management. I'll share what actually moves the needle.</p>
     </div>
     <div class="card-footer">
       <button data-cal-link="shaan-aucharagram/breaking-into-data-a" data-cal-config='{"layout":"month_view"}' class="book-btn">Book Now</button>
@@ -54,7 +54,7 @@ images: ["/mentoring-og.png"]
       </div>
     </div>
     <div class="card-body">
-      <p>Going for your next level but your CV or promotion case isn't landing? I'll review it line-by-line and tell you what senior hiring managers and promotion panels are really looking for — and how to frame the impact you've already had.</p>
+      <p>Going for your next level but your CV or promotion case isn't landing? I'll review it line-by-line and tell you what senior hiring managers and promotion panels are really looking for, as well as how to frame the impact you've already had.</p>
     </div>
     <div class="card-footer">
       <button data-cal-link="shaan-aucharagram/get-your-cv-noticed" data-cal-config='{"layout":"month_view"}' class="book-btn">Book Now</button>

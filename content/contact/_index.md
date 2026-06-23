@@ -59,7 +59,7 @@ ShowBreadCrumbs: true
 </div>
 <button type="submit" class="book-btn">Send message</button>
 </form>
-<div class="form-success" id="form-success" hidden>✅ Thanks — your message is on its way. I'll get back to you soon.</div>
+<div class="form-success" id="form-success" hidden>✅ Thanks, your message is on its way & I'll get back to you soon.</div>
 </div>
 
 <div class="contact-open">
@@ -78,11 +78,11 @@ ShowBreadCrumbs: true
 <div class="map-frame">
 <iframe title="Map showing London, United Kingdom" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.34%2C51.40%2C0.10%2C51.61&amp;layer=mapnik&amp;marker=51.5074%2C-0.1278"></iframe>
 </div>
-<p class="map-note">Based in <strong>London, UK</strong> — available for engagements across the UK and remote worldwide. <a href="https://www.openstreetmap.org/?mlat=51.5074&amp;mlon=-0.1278#map=11/51.5074/-0.1278" target="_blank" rel="noopener">View larger map →</a></p>
+<p class="map-note">Based in <strong>London, UK</strong>, available for engagements across the UK & remote worldwide. <a href="https://www.openstreetmap.org/?mlat=51.5074&amp;mlon=-0.1278#map=11/51.5074/-0.1278" target="_blank" rel="noopener">View larger map →</a></p>
 </div>
 
 <div class="cred-cta">
-<p>Looking for 1:1 career help? <a href="/mentoring/">Book a mentoring session</a> — or just drop me a line and we'll figure it out.</p>
+<p>Looking for 1:1 career help? <a href="/mentoring/">Book a mentoring session</a>, or just drop me a line & we'll figure it out.</p>
 </div>
 
 <script>
