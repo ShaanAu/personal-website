@@ -5,7 +5,7 @@ ShowBreadCrumbs: true
 aliases: ["/speaking/"]
 ---
 
-<p class="cred-intro">Industry recognition for my work in data &amp; AI — and the stages where I share what I've learned.</p>
+<p class="cred-intro">Industry recognition for my work in data &amp; AI, as well as the stages where I share what I've learned.</p>
 
 <section class="cred-section">
 <h2>🏆 Awards &amp; Honours</h2>
