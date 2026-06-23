@@ -48,7 +48,7 @@
       canvas.width = w * dpr; canvas.height = h * dpr;
       canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      var target = Math.round(Math.min(70, (w * h) / 22000)); // scale to viewport
+      var target = Math.round(Math.min(48, (w * h) / 32000)); // scale to viewport
       particles = [];
       for (var i = 0; i < target; i++) particles.push(spawn(true));
     }
@@ -58,11 +58,11 @@
         x: Math.random() * w,
         y: anywhere ? Math.random() * h : h + 10,
         len: 5 + Math.random() * 7,            // petal length
-        vy: 0.15 + Math.random() * 0.45,       // slow upward drift
-        vx: (Math.random() - 0.5) * 0.25,      // gentle sway
-        a: 0.12 + Math.random() * 0.38,        // opacity
+        vy: 0.07 + Math.random() * 0.2,        // slow upward drift
+        vx: (Math.random() - 0.5) * 0.15,      // gentle sway
+        a: 0.1 + Math.random() * 0.26,         // opacity
         sway: Math.random() * Math.PI * 2,
-        ss: 0.005 + Math.random() * 0.01,
+        ss: 0.003 + Math.random() * 0.006,
         rot: Math.random() * Math.PI * 2,      // current rotation
         vr: (Math.random() - 0.5) * 0.02       // tumble speed
       };
@@ -92,7 +92,7 @@
         p.sway += p.ss;
         p.rot += p.vr;
         p.y -= p.vy;
-        p.x += p.vx + Math.sin(p.sway) * 0.3;
+        p.x += p.vx + Math.sin(p.sway) * 0.2;
         if (p.y < -15) { particles[i] = spawn(false); continue; }
         ctx.save();
         ctx.translate(p.x, p.y);
