@@ -24,6 +24,28 @@ ShowBreadCrumbs: true
 </a>
 </div>
 
+<div class="contact-form-wrap">
+<h2>Send a message</h2>
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form" id="contact-form">
+<input type="hidden" name="form-name" value="contact">
+<p class="hidden-field"><label>Leave this empty: <input name="bot-field"></label></p>
+<div class="form-row">
+<label for="cf-name">Name</label>
+<input id="cf-name" type="text" name="name" autocomplete="name" required>
+</div>
+<div class="form-row">
+<label for="cf-email">Email</label>
+<input id="cf-email" type="email" name="email" autocomplete="email" required>
+</div>
+<div class="form-row">
+<label for="cf-message">Message</label>
+<textarea id="cf-message" name="message" rows="5" required></textarea>
+</div>
+<button type="submit" class="book-btn">Send message</button>
+</form>
+<div class="form-success" id="form-success" hidden>✅ Thanks — your message is on its way. I'll get back to you soon.</div>
+</div>
+
 <div class="contact-open">
 <h2>Open to</h2>
 <div class="chips">
@@ -38,3 +60,26 @@ ShowBreadCrumbs: true
 <div class="cred-cta">
 <p>Looking for 1:1 career help? <a href="/mentoring/">Book a mentoring session</a> — or just drop me a line and we'll figure it out.</p>
 </div>
+
+<script>
+(function () {
+  var f = document.getElementById('contact-form');
+  if (!f) return;
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var btn = f.querySelector('button[type="submit"]');
+    if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+    var body = new URLSearchParams(new FormData(f)).toString();
+    fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body })
+      .then(function (r) {
+        if (!r.ok) throw new Error('bad response');
+        f.hidden = true;
+        document.getElementById('form-success').hidden = false;
+      })
+      .catch(function () {
+        if (btn) { btn.disabled = false; btn.textContent = 'Send message'; }
+        alert('Sorry, something went wrong. Please email me at info@shaanaucharagram.com instead.');
+      });
+  });
+})();
+</script>
