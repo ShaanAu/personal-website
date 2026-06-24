@@ -42,7 +42,7 @@ Lead Data Engineer/Architect for a talented team of data engineers and analysts,
 ---
 
 <div class="exp-head">
-  <span class="exp-logo"><img src="/img/logos/penguin.svg" alt="Penguin Random House logo" loading="lazy"></span>
+  <span class="exp-logo"><img src="/img/logos/prh.png" alt="Penguin Random House logo" loading="lazy"></span>
   <div class="exp-meta">
     <h3>Lead Data Engineer | Data Engineering Manager</h3>
     <span class="exp-company">Penguin Random House UK</span>
