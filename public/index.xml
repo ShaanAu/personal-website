@@ -2,10 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Home on Shaan Aucharagram</title>
-    <link>http://localhost:1314/</link>
+    <link>https://shaanaucharagram.com/</link>
     <description>Recent content in Home on Shaan Aucharagram</description>
+    <image>
+      <title>Shaan Aucharagram</title>
+      <url>https://shaanaucharagram.com/og-image.png</url>
+      <link>https://shaanaucharagram.com/og-image.png</link>
+    </image>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <atom:link href="http://localhost:1314/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://shaanaucharagram.com/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

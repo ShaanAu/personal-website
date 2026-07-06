@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1314/categories/</loc>
+    <loc>https://shaanaucharagram.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1314/contact/</loc>
+    <loc>https://shaanaucharagram.com/experience/</loc>
   </url><url>
-    <loc>http://localhost:1314/experience/</loc>
+    <loc>https://shaanaucharagram.com/contact/</loc>
   </url><url>
-    <loc>http://localhost:1314/</loc>
+    <loc>https://shaanaucharagram.com/</loc>
   </url><url>
-    <loc>http://localhost:1314/recognition/</loc>
+    <loc>https://shaanaucharagram.com/mentoring/</loc>
   </url><url>
-    <loc>http://localhost:1314/speaking/</loc>
+    <loc>https://shaanaucharagram.com/recognition/</loc>
   </url><url>
-    <loc>http://localhost:1314/tags/</loc>
+    <loc>https://shaanaucharagram.com/tags/</loc>
   </url>
 </urlset>
