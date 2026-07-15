@@ -352,16 +352,12 @@ html {
     background-attachment: fixed;
     --particle-rgb: 210, 90, 168;   /* cherry blossom pink in light mode */
     --particle-glow: 0;
-    --branch-rgb: 35, 10, 20;
-    --branch-alpha: 0.82;
 }
 
 html[data-theme="dark"] {
     background: linear-gradient(135deg, rgb(22, 18, 33) 0%, rgb(16, 16, 20) 50%, rgb(18, 22, 33) 100%);
     --particle-rgb: 245, 155, 215;  /* luminous pink so petals read on near-black */
     --particle-glow: 1;
-    --branch-rgb: 200, 140, 175;
-    --branch-alpha: 0.12;
 }
 
 
