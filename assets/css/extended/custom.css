@@ -408,10 +408,14 @@ a:hover {
     background: var(--accent-hover);
 }
 
-/* Social icons hover */
+/* Social icons hover — flash through petal pink, settle on purple */
+@keyframes icon-petal-flash {
+    0%   { color: rgb(210, 90, 168); stroke: rgb(210, 90, 168); }
+    100% { color: var(--accent);     stroke: var(--accent); }
+}
+
 .social-icons a:hover svg {
-    color: var(--accent);
-    stroke: var(--accent);
+    animation: icon-petal-flash 0.45s ease-out forwards;
 }
 
 /* Header nav links */
