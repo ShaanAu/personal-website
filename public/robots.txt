@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://shaanaucharagram.com/sitemap.xml

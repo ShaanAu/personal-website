@@ -24,6 +24,7 @@
 
     var w, h, dpr, particles = [];
     var glowSprite = null, glowKey = '';
+    var branchSprite = null, branchTips = [];
     var cachedTheme = null;
     var wind = 0, windTarget = 0, windTimer = 0;
 
@@ -43,16 +44,69 @@
     function readTheme() {
       var s = getComputedStyle(document.documentElement);
       cachedTheme = {
-        rgb:  s.getPropertyValue('--particle-rgb').trim() || '139, 92, 246',
-        glow: parseFloat(s.getPropertyValue('--particle-glow')) > 0
+        rgb:         s.getPropertyValue('--particle-rgb').trim() || '139, 92, 246',
+        glow:        parseFloat(s.getPropertyValue('--particle-glow')) > 0,
+        branchRgb:   s.getPropertyValue('--branch-rgb').trim() || '60, 20, 40',
+        branchAlpha: parseFloat(s.getPropertyValue('--branch-alpha')) || 0.18
       };
+    }
+
+    function buildBranch() {
+      if (!w || !h) return;
+      branchTips = [];
+      var oc = document.createElement('canvas');
+      oc.width = w * dpr; oc.height = h * dpr;
+      var bc = oc.getContext('2d');
+      bc.setTransform(dpr, 0, 0, dpr, 0, 0);
+      bc.lineCap = 'round';
+      bc.lineJoin = 'round';
+      var brgb = cachedTheme.branchRgb, ba = cachedTheme.branchAlpha;
+      function branch(x, y, angle, len, depth) {
+        if (depth < 0 || len < 2.5) {
+          // only collect tips that are on-screen (where petals can actually be seen falling from)
+          if (x >= 0 && x <= w && y >= -20 && y <= h * 0.8) branchTips.push({x: x, y: y});
+          return;
+        }
+        var ex = x + Math.cos(angle) * len;
+        var ey = y + Math.sin(angle) * len;
+        bc.beginPath();
+        bc.moveTo(x, y);
+        bc.quadraticCurveTo(
+          x + Math.cos(angle - 0.15) * len * 0.5,
+          y + Math.sin(angle - 0.15) * len * 0.5,
+          ex, ey
+        );
+        bc.lineWidth = Math.max(0.8, Math.pow(2.0, depth) * 0.65);
+        bc.strokeStyle = 'rgba(' + brgb + ',' + (ba * (0.5 + depth * 0.10)).toFixed(3) + ')';
+        bc.stroke();
+        branch(ex, ey, angle - 0.35, len * 0.70, depth - 1);
+        branch(ex, ey, angle + 0.28, len * 0.65, depth - 1);
+        if (depth >= 2 && depth <= 4) {
+          branch(ex, ey, angle - 0.68, len * 0.50, depth - 2);
+        }
+      }
+      branch(w + 30, -10, Math.PI * 0.73, h * 0.33, 5);
+      branch(w + 20, h * 0.11, Math.PI * 0.82, h * 0.22, 4);
+      branchSprite = oc;
+    }
+
+    // Spawn a particle near a random branch tip (so petals appear to fall from the tree)
+    function spawnFromTip(layer) {
+      var p = spawnLayer(layer, false);
+      if (branchTips.length > 0 && Math.random() < 0.72) {
+        var tip = branchTips[Math.floor(Math.random() * branchTips.length)];
+        p.x = tip.x + (Math.random() - 0.5) * 35;
+        p.y = tip.y + (Math.random() - 0.5) * 20;
+      }
+      return p;
     }
 
     // 0 = far (small/slow/faint), 1 = mid, 2 = near (large/fast/solid)
     var layerDefs = [
       { lenMin: 3,  lenMax: 6,  vyMin: 0.08, vyMax: 0.18, aMin: 0.06, aMax: 0.16, swayAmp: 0.12 },
       { lenMin: 6,  lenMax: 10, vyMin: 0.15, vyMax: 0.28, aMin: 0.12, aMax: 0.28, swayAmp: 0.20 },
-      { lenMin: 10, lenMax: 16, vyMin: 0.25, vyMax: 0.45, aMin: 0.18, aMax: 0.42, swayAmp: 0.30 }
+      { lenMin: 10, lenMax: 16, vyMin: 0.25, vyMax: 0.45, aMin: 0.18, aMax: 0.42, swayAmp: 0.30 },
+      { lenMin: 22, lenMax: 40, vyMin: 0.06, vyMax: 0.12, aMin: 0.08, aMax: 0.18, swayAmp: 0.40 }
     ];
 
     function spawnLayer(layer, anywhere) {
@@ -61,7 +115,7 @@
         layer:    layer,
         x:        Math.random() * (w + 100) - 50,
         y:        anywhere ? Math.random() * h : -20,
-        len:      3 + Math.pow(Math.random(), 1.5) * 13,
+        len:      layer === 3 ? c.lenMin + Math.random() * (c.lenMax - c.lenMin) : 5 + Math.pow(Math.random(), 1.5) * 11,
         vy:       c.vyMin  + Math.random() * (c.vyMax  - c.vyMin),
         vx:       (Math.random() - 0.5) * 0.12,
         a:        c.aMin   + Math.random() * (c.aMax   - c.aMin),
@@ -113,6 +167,8 @@
       ctx.clearRect(0, 0, w, h);
       var th = cachedTheme, color = th.rgb;
 
+      if (branchSprite) ctx.drawImage(branchSprite, 0, 0, w, h);
+
       // smooth wind gusts
       if (--windTimer <= 0) {
         windTarget = (Math.random() - 0.5) * 0.22;
@@ -127,7 +183,7 @@
         p.y    += p.vy;
         p.x    += p.vx + Math.sin(p.sway) * p.swayAmp + Math.sin(p.sway * 2.3) * p.swayAmp * 0.3 + wind * (0.4 + p.layer * 0.4);
 
-        if (p.y > h + 20 || p.x < -40 || p.x > w + 40) { particles[i] = spawnLayer(p.layer, false); continue; }
+        if (p.y > h + 20 || p.x < -40 || p.x > w + 40) { particles[i] = spawnFromTip(p.layer); continue; }
 
         // fade in over first 60px from top, fade out over last 80px at bottom
         var alpha = p.a * Math.min(1, p.y / 60) * Math.min(1, (h - p.y) / 80);
@@ -161,18 +217,20 @@
       var counts = [
         Math.round(22 * base + 8),
         Math.round(16 * base + 5),
-        Math.round(10 * base + 3)
+        Math.round(10 * base + 3),
+        3
       ];
       particles = [];
-      for (var layer = 0; layer < 3; layer++) {
+      for (var layer = 0; layer < 4; layer++) {
         for (var j = 0; j < counts[layer]; j++) {
           particles.push(spawnLayer(layer, true));
         }
       }
+      buildBranch();
     }
 
     readTheme();
-    new MutationObserver(readTheme).observe(document.documentElement, {
+    new MutationObserver(function () { readTheme(); buildBranch(); }).observe(document.documentElement, {
       attributes: true, attributeFilter: ['data-theme', 'class']
     });
 
