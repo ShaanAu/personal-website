@@ -1,3 +1,8 @@
+<!-- Plus Jakarta Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <!-- Cal.com Embed Script -->
 <script type="text/javascript">
   (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
@@ -6,7 +11,7 @@
   Cal("ui", {"styles":{"branding":{"brandColor":"#8B5CF6"}},"hideEventTypeDetails":false,"layout":"month_view"});
 </script>
 
-<!-- Drifting particle background (Sami-style ambient motion) -->
+<!-- Drifting particle background (cherry blossom style) -->
 <script>
 (function () {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -19,108 +24,190 @@
 
     var w, h, dpr, particles = [];
     var glowSprite = null, glowKey = '';
+    var cachedTheme = null;
+    var wind = 0, windTarget = 0, windTimer = 0;
 
-    // pre-render a soft radial glow once per colour (cheap to blit, unlike shadowBlur)
     function buildGlow(color) {
-      var size = 64, oc = document.createElement('canvas');
+      var size = 80, oc = document.createElement('canvas');
       oc.width = oc.height = size;
       var g = oc.getContext('2d');
       var grd = g.createRadialGradient(size/2, size/2, 0, size/2, size/2, size/2);
-      grd.addColorStop(0,   'rgba(' + color + ',0.55)');
-      grd.addColorStop(0.4, 'rgba(' + color + ',0.20)');
+      grd.addColorStop(0,   'rgba(' + color + ',0.45)');
+      grd.addColorStop(0.35,'rgba(' + color + ',0.15)');
       grd.addColorStop(1,   'rgba(' + color + ',0)');
       g.fillStyle = grd;
       g.fillRect(0, 0, size, size);
       glowSprite = oc; glowKey = color;
     }
 
-    function theme() {
+    function readTheme() {
       var s = getComputedStyle(document.documentElement);
-      return {
-        rgb: (s.getPropertyValue('--particle-rgb').trim() || '139, 92, 246'),
+      cachedTheme = {
+        rgb:  s.getPropertyValue('--particle-rgb').trim() || '139, 92, 246',
         glow: parseFloat(s.getPropertyValue('--particle-glow')) > 0
       };
     }
 
-    function resize() {
-      dpr = Math.min(window.devicePixelRatio || 1, 2);
-      w = window.innerWidth; h = window.innerHeight;
-      canvas.width = w * dpr; canvas.height = h * dpr;
-      canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      var target = Math.round(Math.min(48, (w * h) / 32000)); // scale to viewport
-      particles = [];
-      for (var i = 0; i < target; i++) particles.push(spawn(true));
-    }
+    // 0 = far (small/slow/faint), 1 = mid, 2 = near (large/fast/solid)
+    var layerDefs = [
+      { lenMin: 3,  lenMax: 6,  vyMin: 0.08, vyMax: 0.18, aMin: 0.06, aMax: 0.16, swayAmp: 0.12 },
+      { lenMin: 6,  lenMax: 10, vyMin: 0.15, vyMax: 0.28, aMin: 0.12, aMax: 0.28, swayAmp: 0.20 },
+      { lenMin: 10, lenMax: 16, vyMin: 0.25, vyMax: 0.45, aMin: 0.18, aMax: 0.42, swayAmp: 0.30 }
+    ];
 
-    function spawn(anywhere) {
+    function spawnLayer(layer, anywhere) {
+      var c = layerDefs[layer];
       return {
-        x: Math.random() * w,
-        y: anywhere ? Math.random() * h : h + 10,
-        len: 5 + Math.random() * 7,            // petal length
-        vy: 0.1 + Math.random() * 0.26,        // slow upward drift
-        vx: (Math.random() - 0.5) * 0.14,      // gentle sway
-        a: 0.1 + Math.random() * 0.26,         // opacity
-        sway: Math.random() * Math.PI * 2,
-        ss: 0.0033 + Math.random() * 0.006,
-        rot: Math.random() * Math.PI * 2,      // current rotation
-        vr: (Math.random() - 0.5) * 0.012      // tumble speed
+        layer:    layer,
+        x:        Math.random() * (w + 100) - 50,
+        y:        anywhere ? Math.random() * h : -20,
+        len:      3 + Math.pow(Math.random(), 1.5) * 13,
+        vy:       c.vyMin  + Math.random() * (c.vyMax  - c.vyMin),
+        vx:       (Math.random() - 0.5) * 0.12,
+        a:        c.aMin   + Math.random() * (c.aMax   - c.aMin),
+        swayAmp:  c.swayAmp,
+        sway:     Math.random() * Math.PI * 2,
+        ss:       0.008 + Math.random() * 0.012,
+        rot:      Math.random() * Math.PI * 2,
+        vr:       (Math.random() - 0.5) * 0.014,
+        nPetals:  [4, 5, 5, 5][Math.floor(Math.random() * 4)],
+        asymm:    0.82 + Math.random() * 0.36,
+        bright:   0.82 + Math.random() * 0.36
       };
     }
 
-    // draw a 4-petal blossom centred at 0,0
-    function petal(ctx, len, color, a) {
-      var wd = len * 0.55;
-      for (var k = 0; k < 4; k++) {
+    // Single petal — cubic bezier with a heart notch at the tip (cherry blossom shape)
+    function drawPetal(len, wd) {
+      var n = len * 0.09;
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.bezierCurveTo( wd * 0.85,  len * 0.15,  wd * 0.50,  len * 0.66,  wd * 0.12, len * 0.94);
+      ctx.quadraticCurveTo( wd * 0.04, len,  0, len - n);
+      ctx.quadraticCurveTo(-wd * 0.04, len, -wd * 0.12, len * 0.94);
+      ctx.bezierCurveTo(-wd * 0.50,  len * 0.66, -wd * 0.85,  len * 0.15,  0, 0);
+      ctx.closePath();
+    }
+
+    function drawBlossom(p, color, alpha) {
+      var len  = p.len;
+      var wd   = len * p.asymm * 0.48;
+      var step = (Math.PI * 2) / p.nPetals;
+      for (var k = 0; k < p.nPetals; k++) {
         ctx.save();
-        ctx.rotate(k * Math.PI / 2);
-        ctx.beginPath();
-        ctx.moveTo(0, 0);
-        ctx.quadraticCurveTo(wd, -len * 0.5, 0, -len);
-        ctx.quadraticCurveTo(-wd, -len * 0.5, 0, 0);
-        ctx.fillStyle = 'rgba(' + color + ',' + a + ')';
+        ctx.rotate(k * step + (k % 2 === 0 ? 0.04 : -0.04));
+        var ps = 0.90 + (k % 2) * 0.20;
+        ctx.scale(ps, ps);
+        drawPetal(len, wd);
+        ctx.fillStyle = 'rgba(' + color + ',' + (alpha * (0.85 + k * 0.03)).toFixed(3) + ')';
         ctx.fill();
         ctx.restore();
       }
+      // centre pip
+      ctx.beginPath();
+      ctx.arc(0, 0, len * 0.1, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(' + color + ',' + Math.min(1, alpha * 1.5).toFixed(3) + ')';
+      ctx.fill();
     }
 
     function frame() {
       ctx.clearRect(0, 0, w, h);
-      var th = theme(), color = th.rgb;
+      var th = cachedTheme, color = th.rgb;
+
+      // smooth wind gusts
+      if (--windTimer <= 0) {
+        windTarget = (Math.random() - 0.5) * 0.22;
+        windTimer  = 200 + Math.floor(Math.random() * 400);
+      }
+      wind += (windTarget - wind) * 0.004;
+
       for (var i = 0; i < particles.length; i++) {
         var p = particles[i];
         p.sway += p.ss;
-        p.rot += p.vr;
-        p.y -= p.vy;
-        p.x += p.vx + Math.sin(p.sway) * 0.25;
-        if (p.y < -15) { particles[i] = spawn(false); continue; }
+        p.rot  += p.vr;
+        p.y    += p.vy;
+        p.x    += p.vx + Math.sin(p.sway) * p.swayAmp + Math.sin(p.sway * 2.3) * p.swayAmp * 0.3 + wind * (0.4 + p.layer * 0.4);
+
+        if (p.y > h + 20 || p.x < -40 || p.x > w + 40) { particles[i] = spawnLayer(p.layer, false); continue; }
+
+        // fade in over first 60px from top, fade out over last 80px at bottom
+        var alpha = p.a * Math.min(1, p.y / 60) * Math.min(1, (h - p.y) / 80);
+        if (alpha < 0.005) continue;
+
         ctx.save();
         ctx.translate(p.x, p.y);
-        if (th.glow) {                       // soft luminous halo on dark (cached sprite)
+        if (th.glow) {
           if (glowKey !== color) buildGlow(color);
-          var gs = p.len * 4;
-          ctx.globalAlpha = Math.min(1, p.a + 0.15);
+          var gs = p.len * 5;
+          ctx.globalAlpha = Math.min(1, alpha * 1.6);
           ctx.drawImage(glowSprite, -gs / 2, -gs / 2, gs, gs);
           ctx.globalAlpha = 1;
         }
         ctx.rotate(p.rot);
-        // squash on one axis as it tumbles, for a fluttering feel
-        ctx.scale(1, 0.6 + 0.4 * Math.abs(Math.sin(p.sway * 1.3)));
-        petal(ctx, p.len, color, th.glow ? Math.min(1, p.a + 0.25) : p.a);
+        // flutter: squash horizontally as it tumbles (natural for a falling petal)
+        ctx.scale(0.55 + 0.45 * Math.abs(Math.sin(p.sway * 1.3)), 1);
+        drawBlossom(p, color, alpha * p.bright);
         ctx.restore();
       }
       requestAnimationFrame(frame);
     }
 
-    var t;
-    window.addEventListener('resize', function () {
-      clearTimeout(t); t = setTimeout(resize, 200);
+    function resize() {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = window.innerWidth; h = window.innerHeight;
+      canvas.width  = w * dpr; canvas.height = h * dpr;
+      canvas.style.width  = w + 'px'; canvas.style.height = h + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      var base = Math.min(1.2, (w * h) / (1440 * 900));
+      var counts = [
+        Math.round(22 * base + 8),
+        Math.round(16 * base + 5),
+        Math.round(10 * base + 3)
+      ];
+      particles = [];
+      for (var layer = 0; layer < 3; layer++) {
+        for (var j = 0; j < counts[layer]; j++) {
+          particles.push(spawnLayer(layer, true));
+        }
+      }
+    }
+
+    readTheme();
+    new MutationObserver(readTheme).observe(document.documentElement, {
+      attributes: true, attributeFilter: ['data-theme', 'class']
     });
+
+    var t;
+    window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(resize, 200); });
     resize();
     requestAnimationFrame(frame);
   }
 
   if (document.body) start();
   else document.addEventListener('DOMContentLoaded', start);
+})();
+</script>
+
+<!-- Scroll reveal -->
+<script>
+(function () {
+  function initReveal() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('reveal-visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry, idx) {
+        if (entry.isIntersecting) {
+          (function (el, delay) {
+            setTimeout(function () { el.classList.add('reveal-visible'); }, delay);
+          })(entry.target, idx * 90);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initReveal);
+  else initReveal();
 })();
 </script>

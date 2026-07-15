@@ -5,14 +5,14 @@ ShowBreadCrumbs: true
 images: ["/mentoring-og.png"]
 ---
 
-<div class="mentoring-hero">
+<div class="mentoring-hero reveal">
   <h2>Stuck at a plateau in your data engineering career?</h2>
   <p>Most data engineers hit a wall at some point: the grind from mid to senior, the leap into staff or lead, the shift from hands-on engineering into leadership. I've made every one of those jumps, growing from engineer to Senior Data Engineering Manager across Santander, Palantir, Penguin Random House, Made Tech & now JustEat. I help data engineers figure out what's actually holding them back & build a plan to get to the next level.</p>
 </div>
 
 <div class="pricing-grid">
 
-  <div class="pricing-card">
+  <div class="pricing-card reveal">
     <div class="card-header">
       <h3>Career check-in</h3>
       <div class="card-meta">
@@ -28,7 +28,7 @@ images: ["/mentoring-og.png"]
     </div>
   </div>
 
-  <div class="pricing-card featured">
+  <div class="pricing-card featured reveal">
     <div class="badge">Most Popular</div>
     <div class="card-header">
       <h3>Break through your plateau</h3>
@@ -45,7 +45,7 @@ images: ["/mentoring-og.png"]
     </div>
   </div>
 
-  <div class="pricing-card">
+  <div class="pricing-card reveal">
     <div class="card-header">
       <h3>Promotion &amp; CV review</h3>
       <div class="card-meta">
@@ -61,7 +61,7 @@ images: ["/mentoring-og.png"]
     </div>
   </div>
 
-  <div class="pricing-card package">
+  <div class="pricing-card package reveal">
     <div class="card-header">
       <h3>Your 90-day growth plan</h3>
       <div class="card-meta">
@@ -80,6 +80,6 @@ images: ["/mentoring-og.png"]
 
 </div>
 
-<div class="mentoring-footer">
+<div class="mentoring-footer reveal">
   <p>All sessions are 1:1 video calls. Once you book, you'll receive a calendar invite with a Google Meet link. Questions? <a href="/contact/">Get in touch</a>.</p>
 </div>

@@ -350,13 +350,13 @@
 html {
     background: linear-gradient(135deg, rgb(250, 245, 255) 0%, rgb(255, 255, 255) 50%, rgb(245, 250, 255) 100%);
     background-attachment: fixed;
-    --particle-rgb: 139, 92, 246;   /* purple particles in light mode */
+    --particle-rgb: 210, 90, 168;   /* cherry blossom pink in light mode */
     --particle-glow: 0;
 }
 
 html[data-theme="dark"] {
     background: linear-gradient(135deg, rgb(22, 18, 33) 0%, rgb(16, 16, 20) 50%, rgb(18, 22, 33) 100%);
-    --particle-rgb: 196, 170, 255;  /* brighter purple so petals read on near-black */
+    --particle-rgb: 245, 155, 215;  /* luminous pink so petals read on near-black */
     --particle-glow: 1;
 }
 
@@ -621,4 +621,74 @@ h1, h2, h3 {
 .mentoring-footer p {
     margin: 0;
     color: var(--secondary);
+}
+
+/* ========================================
+   TYPOGRAPHY — Plus Jakarta Sans
+   ======================================== */
+body, .post-content, .profile, button, input, select, textarea {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* ========================================
+   SCROLL REVEAL
+   ======================================== */
+.reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.reveal.reveal-visible {
+    opacity: 1;
+    transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+    .reveal { transition: none; }
+}
+
+/* ========================================
+   EXPERIENCE — role cards
+   ======================================== */
+.exp-card {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.exp-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 36px rgba(139, 92, 246, 0.14);
+}
+.exp-card .exp-head {
+    margin: 0 0 1rem;
+}
+.exp-card ul {
+    padding-left: 1.25rem;
+    margin: 0.5rem 0;
+}
+.exp-card p {
+    margin: 0.5rem 0;
+}
+.exp-tech {
+    font-size: 0.88rem;
+    color: var(--secondary);
+    margin-top: 0.75rem !important;
+}
+
+/* ========================================
+   NAV — glassmorphism
+   ======================================== */
+.header {
+    background: rgba(250, 245, 255, 0.92) !important;
+    border-bottom: 1px solid var(--border);
+}
+html[data-theme="dark"] .header {
+    background: rgba(16, 16, 20, 0.94) !important;
+}
+@media (prefers-color-scheme: dark) {
+    html:not([data-theme="light"]) .header {
+        background: rgba(16, 16, 20, 0.94) !important;
+    }
 }

@@ -6,7 +6,7 @@ ShowBreadCrumbs: true
 
 <p class="contact-intro">I'm always keen to hear from you, whether it's around a leadership opportunity, a speaking slot or some mentoring, as well as just having a chat about data &amp; AI. Feel free to use whichever option works best for you.</p>
 
-<div class="contact-grid">
+<div class="contact-grid reveal">
 <a class="contact-card" href="https://www.linkedin.com/in/shaan-aucharagram/" target="_blank" rel="noopener">
 <span class="contact-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
 <span class="contact-name">LinkedIn</span>
@@ -24,7 +24,7 @@ ShowBreadCrumbs: true
 </a>
 </div>
 
-<div class="contact-form-wrap">
+<div class="contact-form-wrap reveal">
 <h2>Send a message</h2>
 <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form" id="contact-form">
 <input type="hidden" name="form-name" value="contact">
@@ -62,7 +62,7 @@ ShowBreadCrumbs: true
 <div class="form-success" id="form-success" hidden>✅ Thanks, your message is on its way & I'll get back to you soon.</div>
 </div>
 
-<div class="contact-open">
+<div class="contact-open reveal">
 <h2>Open to</h2>
 <div class="chips">
 <span class="chip">Leadership & advisory roles</span>
@@ -73,7 +73,7 @@ ShowBreadCrumbs: true
 </div>
 </div>
 
-<div class="contact-map">
+<div class="contact-map reveal">
 <h2>📍 Where I'm based</h2>
 <div class="map-frame">
 <iframe title="Map showing London, United Kingdom" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.34%2C51.40%2C0.10%2C51.61&amp;layer=mapnik&amp;marker=51.5074%2C-0.1278"></iframe>
@@ -81,7 +81,7 @@ ShowBreadCrumbs: true
 <p class="map-note">Based in <strong>London, UK</strong>, available for engagements across the UK & remote worldwide. <a href="https://www.openstreetmap.org/?mlat=51.5074&amp;mlon=-0.1278#map=11/51.5074/-0.1278" target="_blank" rel="noopener">View larger map →</a></p>
 </div>
 
-<div class="cred-cta">
+<div class="cred-cta reveal">
 <p>Looking for 1:1 career help? <a href="/mentoring/">Book a mentoring session</a>, or just drop me a line & we'll figure it out.</p>
 </div>
 
