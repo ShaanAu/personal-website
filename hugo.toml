@@ -64,14 +64,8 @@ buildExpired = false
     imageHeight = 160
     imageTitle = "Shaan Aucharagram"
     [[params.profileMode.buttons]]
-      name = "💼 Experience"
-      url = "/experience/"
-    [[params.profileMode.buttons]]
-      name = "🏆 Recognition & Speaking"
-      url = "/recognition/"
-    [[params.profileMode.buttons]]
-      name = "🎯 Mentoring"
-      url = "/mentoring/"
+      name = "Get in touch"
+      url = "/contact/"
 
   [[params.socialIcons]]
     name = "linkedin"
