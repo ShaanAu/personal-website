@@ -1,6 +1,7 @@
 :root {
     --accent: rgb(139, 92, 246);  /* Purple */
     --accent-hover: rgb(124, 58, 237);  /* Darker purple on hover */
+    --petal: rgb(210, 90, 168);  /* Petal pink — social icon hover flash */
 }
 
 /* ========================================
@@ -412,13 +413,13 @@ a:hover {
     object-fit: cover;
 }
 
-/* Whole thing — photo and both rings — grows on hover */
+/* Whole thing — photo and both rings — grows on hover, rings turn petal pink */
 .profile-avatar:hover {
     transform: scale(1.09);
     box-shadow:
-        0 0 0 2px var(--accent-hover),
+        0 0 0 2px var(--petal),
         0 0 0 9px var(--theme),
-        0 0 0 11px var(--accent-hover);
+        0 0 0 11px var(--petal);
 }
 
 /* Profile buttons */
@@ -434,7 +435,7 @@ a:hover {
 
 /* Social icons hover — flash through petal pink, settle on purple */
 @keyframes icon-petal-flash {
-    0%   { color: rgb(210, 90, 168); stroke: rgb(210, 90, 168); }
+    0%   { color: var(--petal); stroke: var(--petal); }
     100% { color: var(--accent);     stroke: var(--accent); }
 }
 
