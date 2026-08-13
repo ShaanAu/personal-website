@@ -389,6 +389,38 @@ a:hover {
     color: var(--accent-hover);
 }
 
+/* Profile avatar — double ring with a gap, image zooms slightly on hover */
+.profile-avatar {
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    /* inner ring, gap, outer ring */
+    box-shadow:
+        0 0 0 2px var(--accent),
+        0 0 0 9px var(--theme),
+        0 0 0 11px var(--accent);
+    margin-bottom: 11px;   /* room for the outer ring */
+    transform-origin: center;
+    transition: transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.35s ease;
+}
+
+.profile-avatar img {
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Whole thing — photo and both rings — grows on hover */
+.profile-avatar:hover {
+    transform: scale(1.09);
+    box-shadow:
+        0 0 0 2px var(--accent-hover),
+        0 0 0 9px var(--theme),
+        0 0 0 11px var(--accent-hover);
+}
+
 /* Profile buttons */
 .profile .buttons .button {
     background: var(--accent);
